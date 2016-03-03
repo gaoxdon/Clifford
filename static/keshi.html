@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="/static/css/index.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title></title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body>
+	<div id="keshi_searchG">
+		<div class="keshi_searchBoxG">请输入医生姓名进行搜索<i class="fandaG icon icon_fanda"></i></div>
+	</div>
+	<div class="keshi_pageG">
+		<div id="keshi_typeG">
+				<ul>
+					<li><p>内科</p></li>
+					<li><p>妇儿科</p></li>
+					<li><p>外科</p></li>
+					<li><p>其他<br>特色科室</p></li>
+					<li><p>辅助科室</p></li>
+					<li><p>内科</p></li>
+					<li><p>妇儿科</p></li>
+					<li><p>外科</p></li>
+					<li><p>其他<br>特色科室</p></li>
+					<li><p>辅助科室</p></li>
+					<li><p>内科</p></li>
+					<li><p>妇儿科</p></li>
+					<li><p>外科</p></li>
+					<li><p>其他<br>特色科室</p></li>
+					<li><p>辅助科室</p></li>
+				</ul>
+		</div>
+		<div id="keshi_listG"></div>
+	</div>
+	<script type="text/javascript" src="/static/js/iscroll.js"></script>
+	<script>
+		window.onload = function(){
+			var myScroll = new IScroll('#keshi_typeG', { mouseWheel: true });
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		}
+	</script>
+</body>
+</html>

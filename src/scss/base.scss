@@ -1,0 +1,30 @@
+$base-color:#C8C9C9;
+$font1:#595757;
+$font2:#9E9F9F;
+
+@mixin absolute($top:0,$left:0){
+	position:absolute;
+	top:$top;
+	left:$left;
+}
+
+%display-flex{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	display:flex;
+}
+%flex-align{
+	-webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+@mixin flex($count:1){
+	-webkit-box-flex: $count;
+    -webkit-flex: $count;
+    -ms-flex: $count;
+    flex: $count;
+}

@@ -1,2 +1,2 @@
 /* 2016-03-03  */
-.icon{display:inline-block;zoom:1}
+.icon{display:inline-block;zoom:1;background-repeat:no-repeat}.icon_fanda{background-position:0 0;width:15px;height:16px}.icon_fanda{background-image:url(../../../static/images/icon.png?20160303173403)}@media only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi),only screen and (min-resolution:2dppx){.icon_fanda{background-image:url(../../../static/images/icon@2x.png?20160303173403);background-size:15px auto}.icon_fanda{background-position:0 0}}.css_stamp{content:"20160303173403"}

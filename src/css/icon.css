@@ -1,6 +1,13 @@
 .icon {
   display: inline-block;
   zoom: 1;
+  background-repeat: no-repeat;
+}
+
+.icon_fanda {
+  background-image: url("../slice/icon-fanda.png");
+  width: 15px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=icon.css.map */

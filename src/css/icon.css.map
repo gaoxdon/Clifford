@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,KAAK;EACD,OAAO,EAAE,YAAY;EACrB,IAAI,EAAC,CAAC",
+"mappings": "AAAA,KAAK;EACD,OAAO,EAAE,YAAY;EACrB,IAAI,EAAC,CAAC;EACT,iBAAiB,EAAG,SAAS;;;AAQ9B,WAAW;EAJV,gBAAgB,EAAC,8BAAO;EACxB,KAAK,EAIe,IAAI;EAHxB,MAAM,EAGmB,IAAI",
 "sources": ["../scss/icon.scss"],
 "names": [],
 "file": "icon.css"

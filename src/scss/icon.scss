@@ -1,11 +1,14 @@
 .icon{
     display: inline-block;
     zoom:1;
-
+	background-repeat : no-repeat;
 }
 
 @mixin background($w:24px,$h:24px,$b:"../slice/icon_switch-off.png"){
 	background-image:url($b);
 	width:$w;
 	height:$h;
+}
+.icon_fanda{
+	@include background(15px,16px,"../slice/icon-fanda.png");
 }
