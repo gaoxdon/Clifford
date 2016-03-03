@@ -1,0 +1,11 @@
+.icon{
+    display: inline-block;
+    zoom:1;
+
+}
+
+@mixin background($w:24px,$h:24px,$b:"../slice/icon_switch-off.png"){
+	background-image:url($b);
+	width:$w;
+	height:$h;
+}
