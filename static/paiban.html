@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="/static/css/index.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>肿瘤科</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+	<div class="paiban_timeTitleG">
+		<span class="paiban_timeL"><i class="icon icon_time"></i><p id="paiban_time">2016-02-23</p></span>
+		<span class="paiban_timeR"><i class="icon icon_data"></i><p>日期排班</p></span>
+	</div>
+	<div id="paiban_table">
+		<span data-da="2016-02-23" class="active"><i>23</i><em>一</em></span>
+		<span data-da="2016-02-24"><i>23</i><em>二</em></span>
+		<span data-da="2016-02-25"><i>满</i><em>三</em></span>
+		<span data-da="2016-02-26"><i>23</i><em>四</em></span>
+		<span data-da="2016-02-27"><i>23</i><em>五</em></span>
+		<span data-da="2016-02-28"><i>23</i><em>六</em></span>
+		<span data-da="2016-02-29"><i>23</i><em>日</em></span>
+	</div>
+	<div id="paiban_doctor">
+		<div>
+			<a href="keshi.html" style="display: block"><div class="paiban_item">
+							<img src="/static/images/doctor.jpg">
+							<div class="paiban_info">
+								<h3>医生名称</h3>
+								<h4>副主任医师</h4>
+								<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
+							</div>
+							<div class="paiban_less">15/25</div>
+							<i class="icon icon_jj"></i>
+						</div></a>
+			<a href="keshi.html" style="display: block"><div class="paiban_item">
+							<img src="/static/images/doctor.jpg">
+							<div class="paiban_info">
+								<h3>医生名称</h3>
+								<h4>副主任医师</h4>
+								<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
+							</div>
+							<div class="paiban_less">15/25</div>
+							<i class="icon icon_jj"></i>
+						</div></a>
+			<a href="keshi.html" style="display: block"><div class="paiban_item">
+							<img src="/static/images/doctor.jpg">
+							<div class="paiban_info">
+								<h3>医生名称</h3>
+								<h4>副主任医师</h4>
+								<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
+							</div>
+							<div class="paiban_less">15/25</div>
+							<i class="icon icon_jj"></i>
+						</div></a>
+			<a href="keshi.html" style="display: block"><div class="paiban_item">
+							<img src="/static/images/doctor.jpg">
+							<div class="paiban_info">
+								<h3>医生名称</h3>
+								<h4>副主任医师</h4>
+								<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
+							</div>
+							<div class="paiban_less">15/25</div>
+							<i class="icon icon_jj"></i>
+						</div></a>
+			<a href="keshi.html" style="display: block"><div class="paiban_item">
+							<img src="/static/images/doctor.jpg">
+							<div class="paiban_info">
+								<h3>医生名称</h3>
+								<h4>副主任医师</h4>
+								<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
+							</div>
+							<div class="paiban_less">15/25</div>
+							<i class="icon icon_jj"></i>
+						</div></a>
+			<a href="keshi.html" style="display: block"><div class="paiban_item">
+							<img src="/static/images/doctor.jpg">
+							<div class="paiban_info">
+								<h3>医生名称</h3>
+								<h4>副主任医师</h4>
+								<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
+							</div>
+							<div class="paiban_less">15/25</div>
+							<i class="icon icon_jj"></i>
+						</div></a>
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/js/iscroll.js"></script>
+	<script>
+		window.onload = function(){
+			var time = document.getElementById("paiban_table");
+			var timelist = time.getElementsByTagName("span");
+			var data = document.getElementById("paiban_time");
+			var keshiType = new IScroll("#paiban_doctor", { 
+				mouseWheel: true,
+            	click: true
+             });
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			for(var i=0;i<timelist.length;i++){
+				timelist[i].addEventListener("touchend",function(){
+					for(j in timelist){
+						if(timelist[j].className == "active")
+						timelist[j].className = "";
+					}
+					this.className = "active";
+					data.innerHTML = this.getAttribute("data-da");
+				})
+			}
+		}
+	</script>
+</body>
+</html>

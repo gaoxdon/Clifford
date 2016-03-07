@@ -5,29 +5,172 @@
 }
 
 .icon_fanda {
-  background-position: 0 0;
+  background-position: -23px -82px;
   width: 15px;
   height: 16px;
+}
+
+.icon_feibinke {
+  background-position: -56px 0;
+  width: 26px;
+  height: 27px;
+}
+
+.icon_jj {
+  background-position: -56px -79px;
+  width: 6px;
+  height: 11px;
+}
+
+.icon_sanjiao {
+  background-position: 0 -104px;
+  width: 3px;
+  height: 6px;
+}
+
+.icon_data {
+  background-position: -82px -33px;
+  width: 15px;
+  height: 15px;
+}
+
+.icon_time {
+  background-position: -73px -57px;
+  width: 15px;
+  height: 15px;
+}
+
+.icon_person {
+  background-position: -26px -56px;
+  width: 18px;
+  height: 20px;
+}
+
+.icon_choice {
+  background-position: -88px 0;
+  width: 22px;
+  height: 16px;
+}
+
+.icon_person2 {
+  background-position: -56px -33px;
+  width: 20px;
+  height: 18px;
+}
+
+.icon_greenjj {
+  background-position: -44px -82px;
+  width: 6px;
+  height: 11px;
+}
+
+.icon_rmb {
+  background-position: 0 -56px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon_select {
+  background-position: 0 -82px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon_noselect {
+  background-position: -50px -57px;
+  width: 17px;
+  height: 16px;
+}
+
+.icon_finish {
+  background-position: 0 0;
+  width: 50px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=icon.css.map */
 
 
-/* ../../../static/images/icon.png?20160303173403 */
-.icon_fanda{
-background-image: url(../../../static/images/icon.png?20160303173403);
+/* ../../../static/images/icon.png?20160307143904 */
+.icon_fanda,
+.icon_feibinke,
+.icon_jj,
+.icon_sanjiao,
+.icon_data,
+.icon_time,
+.icon_person,
+.icon_choice,
+.icon_person2,
+.icon_greenjj,
+.icon_rmb,
+.icon_select,
+.icon_noselect,
+.icon_finish{
+background-image: url(../../../static/images/icon.png?20160307143904);
 }
 
 
-/* ../../../static/images/icon@2x.png?20160303173403 */
+/* ../../../static/images/icon@2x.png?20160307143904 */
 @media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
-.icon_fanda{
-background-image: url(../../../static/images/icon@2x.png?20160303173403);
-background-size: 15px auto;
+.icon_fanda,
+.icon_feibinke,
+.icon_jj,
+.icon_sanjiao,
+.icon_data,
+.icon_time,
+.icon_person,
+.icon_choice,
+.icon_person2,
+.icon_greenjj,
+.icon_rmb,
+.icon_select,
+.icon_noselect,
+.icon_finish{
+background-image: url(../../../static/images/icon@2x.png?20160307143904);
+background-size: 96px auto;
 }
 .icon_fanda{
+background-position: -19px -76px;
+}
+.icon_feibinke{
+background-position: -53px 0;
+}
+.icon_jj{
+background-position: -52.5px -72px;
+}
+.icon_sanjiao{
+background-position: -82px -17px;
+}
+.icon_data{
+background-position: -76px -29px;
+}
+.icon_time{
+background-position: -82px 0;
+}
+.icon_person{
+background-position: -23px -53px;
+}
+.icon_choice{
+background-position: -62px -50px;
+}
+.icon_person2{
+background-position: -53px -29px;
+}
+.icon_greenjj{
+background-position: -43px -72px;
+}
+.icon_rmb{
+background-position: 0 -53px;
+}
+.icon_select{
+background-position: 0 -76px;
+}
+.icon_noselect{
+background-position: -43px -53px;
+}
+.icon_finish{
 background-position: 0 0;
 } 
 }
 
-.css_stamp{ content:"20160303173403";}
+.css_stamp{ content:"20160307143904";}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="/static/css/index.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>确认挂号信息</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+	<div class="fin-top">
+		<i class="icon icon_finish"></i>
+		<div class="fin-info">
+			<div>
+				<span>挂号成功</span><em>2016-02-23  10:35:25</em>
+			</div>
+			<p>您已挂号成功，请携带就诊卡及门诊病历本提前15分钟到肿瘤科护士站报到。如果不能按约就诊，请提前一天取消预约。祝您身体健康！</p>
+		</div>
+	</div>
+	<div class="conf-doctor fin-margin">
+		<ul>
+			<li><span>就诊科室</span><em>肿瘤科</em></li>
+			<li><span>就诊医生</span><em>武国强</em></li>
+			<li><span>就诊时间</span><em>2016-02-23  09:30</em></li>
+			<li><span>就诊人</span><em>张三</em></li>
+			<li><span>就诊卡号</span><em>440111111111111</em></li>
+		</ul>
+	</div>
+	<div class="conf-doctor fin-margin">
+		<ul>
+			<li><span>业务类型</span><em>挂号费</em></li>
+			<li><span>交易金额</span><em>7.0元</em></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="/static/js/iscroll.js"></script>
+	<script>
+		window.onload = function(){
+
+		}
+	</script>
+</body>
+</html>

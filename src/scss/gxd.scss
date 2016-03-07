@@ -1,23 +1,47 @@
 @import 'base';
 
+//------------------keshi----------------start
 #keshi_searchG{
 	padding:0.2rem 0.25rem;
 	background-color: #F7F7F7;
+	position: relative;
+    z-index: 10;
 	.keshi_searchBoxG{
 		position: relative;
 		height: 0.5rem;
 		font-size: 0.2rem;
-		line-height: 0.5rem;
 		color: $font2;
 		border:1px solid $font2;
 		border-radius: 4px;
 		text-indent: 0.1rem;
+		#searchG{
+			text-indent: 0.05rem;
+			font-size: 0.2rem;
+			line-height: 0.40rem;
+			height: 100%;
+			width: 4.5rem;
+	    	border: 0;
+	    	background: #F7F7F7;
+	    	padding: 0;
+	    }
 		.fandaG{
 			position:absolute;
 			top: 50%;
 			right: 0.2rem;
 			margin-top: -7px;
 		}
+		span{
+			display: none;
+			float: right;
+			line-height: 0.50rem;
+			margin-right: 0.1rem;
+		}
+	}
+	.active i{
+		display: none;
+	}
+	.active span{
+		display: inline-block;
 	}
 }
 
@@ -29,19 +53,497 @@
 	@include absolute(0.9rem,0);
 	bottom: 0;
 	z-index: 1;
+	border-right: 1px solid $font4;
 	overflow: hidden;
 	ul{
 		li{
 			display: table;
 			height: 1.1rem;
 			width: 1.25rem;
-			border-bottom: 1px solid $font1;
+			border-bottom: 1px solid $font4;
 			text-align: center;
+			position: relative;
 			p{
 				display: table-cell;
 				vertical-align: middle;
 				line-height: 0.30rem;
 			}
+			.icon{
+				@include absolute(50%,-4px);
+				margin-top: -3px;
+				display: none;
+			}
+		}
+		.active>.icon{
+			display: block;
 		}
 	}
 }
+
+#keshi_listG{
+	font-size: 0.26rem;
+	width: 4.65rem;
+	box-sizing: border-box;
+	
+	position: absolute;
+	right: 0;
+	top: 0.9rem;
+	bottom: 0;
+	z-index: 1;
+	overflow: hidden;
+	.listG_ul{
+		.listG_li{
+			height: 0.9rem;
+			width: 4.65rem;
+			overflow: hidden;
+			.listG_icon{
+				float: left;
+				width: 1rem;
+				height: 0.9rem;
+				position: relative;
+				.icon_feibinke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -13px;
+				}
+			}
+			.listG_font{
+				box-sizing: border-box;
+				float: right;
+				width: 3.65rem;
+				border-bottom: 1px solid $font4;
+				position: relative;
+				.fontJJ{
+					position: absolute;
+					top: 50%;
+					right: 10px;
+					margin-top: -6px;
+				}
+				p{
+					line-height: 0.85rem;
+				}
+			}
+		}
+	}
+}
+#doctorListG{
+	display: none;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0.9rem 0.25rem 0;
+	@include absolute(0,0);
+	z-index: 9;
+	background: #fff;
+	overflow: scroll;
+	transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	opacity: 0;
+	transform: translate(0,50px);
+	-webkit-transform: translate(0,50px);
+	a{
+		display: block;
+		text-indent: 0.45rem;
+		text-decoration: none;
+		width: 100%;
+		font-size: 0.25rem;
+		height: 0.80rem;
+		line-height: 0.80rem;
+		color: $font2;
+		border-bottom: 1px solid $font4;
+		position: relative;
+		i{
+			@include absolute(50%,0);
+			margin-top: -7px;
+		}
+	}
+}
+//------------------keshi----------------end
+
+
+//------------------paiban----------------start
+.paiban_timeTitleG{
+	padding: 0 0.25rem;
+	height: 0.8rem;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+	.paiban_timeL{
+		font-size: 0.23rem;
+		display: block;
+		line-height: 0.8rem;
+		width: 2rem;
+		float: left;
+		position: relative;
+		i{
+			@include absolute(50%,0);
+			margin-top: -7px;
+		}
+		p{
+			display: inline;
+			padding-left: 18px;
+		}
+	}
+	.paiban_timeR{
+		font-size: 0.23rem;
+		display: block;
+		line-height: 0.8rem;
+		width: 2rem;
+		float: right;
+		position: relative;
+		text-align: right;
+		i{
+			position: absolute;
+			top: 50%;
+			margin-top: -8px;
+		}
+		p{
+			display: inline;
+			padding-left: 18px;
+			
+		}
+	}
+}
+#paiban_table{
+	padding: 0.05rem 0.25rem 0;
+	@extend %display-flex;
+	border-bottom: 1px solid $font4;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+	span{
+		display: block;
+		font-size: 0.25rem;
+		@include flex(1);
+		text-align: center;
+		border-bottom: 2px solid #fff;
+		i{
+			display: inline-block;
+			width: 0.55rem;
+			height: 0.55rem;
+			border-radius: 50%;
+			background: #fff;
+			line-height: 0.55rem;
+		}
+		em{
+			display: inline-block;
+			width: 0.55rem;
+			height: 0.55rem;
+			line-height: 0.55rem;
+		}
+	}
+	.active{
+		border-bottom: 2px solid $base-color;
+	}
+	.active i{
+		background: $base-color;
+		color: #fff;
+	}
+	.active em{
+		color: $base-color;
+	}
+}
+#paiban_doctor{
+	
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 2.1rem;
+    bottom: 0;
+    width: 100%;
+	.paiban_item{
+		padding-left: .25rem;
+		height: 1.6rem;
+		@extend %display-flex;
+		position: relative;
+		background: #fff;
+		img{
+			box-sizing: border-box;
+			padding: 0.12rem 0;
+			display: inline-block;
+			height: 100%;
+		}
+		.paiban_info{
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 0.12rem 0;
+			margin-left: 0.2rem;
+			@include flex(1);
+			border-bottom: 1px solid $font4;
+			h3{
+				font-size: 0.26rem;
+				line-height: 0.4rem;
+			}
+			h4{
+				font-size: 0.23rem;
+				margin-bottom: 0.15rem;
+				color: $font2;
+			}
+			p{
+				height: 0.6rem;
+				line-height: 0.32rem;
+				font-size: 0.2rem;
+				width: 3.2rem;
+				overflow: hidden;
+				color: $font2;
+			}
+		}
+		.paiban_less{
+			width: 0.8rem;
+			height: 0.35rem;
+			line-height: 0.35rem;
+			font-size: 0.22rem;
+			border-radius: 0.35rem;
+			color: $base-color;
+			border:1px solid $base-color;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			margin-top: -0.17rem;
+			right: 0.40rem;
+		}
+		.icon{
+			position: absolute;
+			right: 0.1rem;
+			top: 50%;
+			margin-top: -4px;
+		}
+	}
+	.paiban_item:last-child .paiban_info{
+		border-bottom: 0;
+	}
+}
+
+//------------------paiban----------------end
+
+
+
+
+//------------------confirm----------------start
+.conf-doctor{
+	background: #fff;
+	ul{
+		padding-left: 0.25rem;
+		li{
+			font-size: 0.25rem;
+			overflow: hidden;
+			height: 0.75rem;
+			line-height: 0.75rem;
+			padding-right: 0.25rem;
+			border-bottom: 1px solid $font4;
+			span{
+				float: left;
+			}
+			em{
+				float: right;
+			}
+		}
+		li:last-child{
+			border-bottom: 0;
+		}
+	}
+}
+.conf-price{
+	background: #fff;
+	margin-top: 0.15rem;
+	div{
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;
+		font-size: 0.25rem;
+		overflow: hidden;
+		height: 0.75rem;
+		line-height: 0.75rem;
+		span{
+			float: left;
+		}
+		em{
+			float: right;
+		}
+	}
+}
+.conf-you{
+	.conf-youtit{
+		padding-left: 0.25rem;
+		height: 0.75rem;
+		line-height: 0.75rem;
+		font-size: 0.23rem;
+		overflow: hidden;
+		height: 0.75rem;
+		position: relative;
+		.icon{
+			position: absolute;
+			top: 50%;
+			margin-top: -11px;
+		}
+		.icon_rmbposition{
+			margin-top: -9px;
+		}
+		span{
+			padding-left: 0.40rem;
+		}
+	}
+}
+.conf-selname{
+	 background: #fff;
+	 ul{
+	 	padding-left: 0.25rem;
+	 	li{
+	 		height: 0.75rem;
+	 		font-size: 0.23rem;
+	 		overflow: hidden;
+	 		border-bottom: 1px solid $font4;
+	 		position: relative;
+	 		.conf-sel1{
+	 			display: block;
+	 			margin: 0.12rem 0;
+	 		}
+	 		.conf-sel2{
+	 			display: block;
+	 		}
+	 		.icon{
+	 			display: none;
+				position: absolute;
+				right: 0.25rem;
+				top: 50%;
+				margin-top: -7px;
+	 		}
+	 	}
+	 	.acitve i{
+	 		display: block;
+	 	}
+	 	li:last-child{
+			border-bottom: 0;
+		}
+	 }
+}
+.conf-add{
+	background: #fff;
+	margin-top: 0.15rem;
+	.conf-addline{
+		padding-left: 0.25rem;
+		height: 0.75rem;
+		line-height: 0.75rem;
+		overflow: hidden;
+		position: relative;
+		span{
+			font-size: 0.23rem;
+			color: $font2;
+			float: left;
+			padding-left: 0.5rem;
+		}
+		em{
+			font-size: 0.23rem;
+			color: $font2;
+			float: right;
+			padding-right: 0.5rem;
+		}
+		.conf-iconL{
+			position: absolute;
+			left: 0.25rem;
+			top: 50%;
+			margin-top: -9px;
+		}
+		.conf-iconR{
+			position: absolute;
+			right: 0.25rem;
+			top: 50%;
+			margin-top: -6px;
+		}
+	}
+}
+.conf-pay{
+	background: #fff;
+	ul{
+		padding-left: 0.25rem;
+		li{
+			height: 0.75rem;
+			line-height: 0.75rem;
+			font-size: 0.25rem;
+			overflow: hidden;
+			position: relative;
+			border-bottom: 1px solid $font4;
+			span{
+				float: left;
+			}
+			em{
+				float: left;
+				color: $font2;
+			}
+			.icon{
+				position: absolute;
+				right: 0.25rem;
+				top: 50%;
+				margin-top: -8px;
+			}
+			.icon_select{
+				display: none;
+			}
+		}
+		.acitve .icon_select{
+			display: block;
+		}
+		.acitve .icon_noselect{
+			display: none;
+		}
+		li:last-child{
+			border-bottom: 0;
+		}
+	}
+}
+.conf-submit{
+	padding: 0 0.25rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.8rem;
+	span{
+		display: block;
+		height: 0.6rem;
+		background: $base-color;
+		color: #fff;
+		font-size: 0.26rem;
+		line-height: 0.6rem;
+		text-align: center;
+	}
+}
+
+//------------------confirm----------------end
+
+//------------------finish----------------end
+.fin-top{
+	background: #fff;
+	height: 2rem;
+	position: relative;
+	.icon{
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		left: 0.25rem;
+	}
+	.fin-info{
+		padding-left: 1.45rem;
+		padding-right: 0.25rem;
+		div{
+			overflow: hidden;
+			span{
+				float: left;
+				font-size: 0.25rem;
+				line-height: 0.8rem;
+			}
+			em{
+				float: right;
+				font-size: 0.23rem;
+				line-height: 0.8rem;
+			}
+		}
+		p{
+			font-size: 0.20rem;
+			line-height: 0.28rem;
+		}
+	}
+}
+.fin-margin{
+	margin-top: 0.15rem;
+}
+
+
+//------------------finish----------------end

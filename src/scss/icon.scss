@@ -12,3 +12,42 @@
 .icon_fanda{
 	@include background(15px,16px,"../slice/icon-fanda.png");
 }
+.icon_feibinke{
+	@include background(26px,27px,"../slice/feibinke.png");
+}
+.icon_jj{
+	@include background(6px,11px,"../slice/jj.png");
+}
+.icon_sanjiao{
+	@include background(3px,6px,"../slice/sanjiao.png");
+}
+.icon_data{
+	@include background(15px,15px,"../slice/data.png");
+}
+.icon_time{
+	@include background(15px,15px,"../slice/time.png");
+}
+.icon_person{
+	@include background(18px,20px,"../slice/icon-person.png");
+}
+.icon_choice{
+	@include background(22px,16px,"../slice/icon-choice.png");
+}
+.icon_person2{
+	@include background(20px,18px,"../slice/icon-person2.png");
+}
+.icon_greenjj{
+	@include background(6px,11px,"../slice/icon-greenjj.png");
+}
+.icon_rmb{
+	@include background(20px,20px,"../slice/icon-rmb.png");
+}
+.icon_select{
+	@include background(16px,16px,"../slice/icon-select.png");
+}
+.icon_noselect{
+	@include background(17px,16px,"../slice/icon-noselect.png");
+}
+.icon_finish{
+	@include background(50px,50px,"../slice/icon-finish.png");
+}
