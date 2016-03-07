@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 				imagepath_map: null,
 				spritedest: 'static/images/',
 				spritepath: null,
-				padding: 2,
+				padding: 5,
 				useimageset: false,
 				newsprite: false,
 				spritestamp: true,
