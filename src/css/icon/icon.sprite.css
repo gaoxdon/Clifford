@@ -36,24 +36,24 @@
 /*# sourceMappingURL=icon.css.map */
 
 
-/* ../../../static/images/icon.png?20160307153453 */
+/* ../../../static/images/icon.png?20160307153824 */
 .icon_collect_bigD,
 .icon_collect_bigonD,
 .icon_time_bigD,
 .icon_data_bigD,
 .icon_next_bigD{
-background-image: url(../../../static/images/icon.png?20160307153453);
+background-image: url(../../../static/images/icon.png?20160307153824);
 }
 
 
-/* ../../../static/images/icon@2x.png?20160307153453 */
+/* ../../../static/images/icon@2x.png?20160307153824 */
 @media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
 .icon_collect_bigD,
 .icon_collect_bigonD,
 .icon_time_bigD,
 .icon_data_bigD,
 .icon_next_bigD{
-background-image: url(../../../static/images/icon@2x.png?20160307153453);
+background-image: url(../../../static/images/icon@2x.png?20160307153824);
 background-size: 41px auto;
 }
 .icon_collect_bigD{
@@ -73,4 +73,4 @@ background-position: -26px -35px;
 } 
 }
 
-.css_stamp{ content:"20160307153453";}
+.css_stamp{ content:"20160307153824";}
