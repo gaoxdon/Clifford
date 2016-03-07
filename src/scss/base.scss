@@ -3,6 +3,7 @@ $font1:#595757;
 $font2:#9E9F9F;
 $font3:#B4B4B5;
 $font4:#DBDCDC;
+
 @mixin absolute($top:0,$left:0){
 	position:absolute;
 	top:$top;
@@ -36,4 +37,15 @@ $font4:#DBDCDC;
     -webkit-flex: $count;
     -ms-flex: $count;
     flex: $count;
+}
+@mixin filter($mohu:0) {	
+    -webkit-filter: blur($mohu); 
+    -moz-filter: blur($mohu);
+    -ms-filter: blur($mohu);    
+    filter: blur($mohu);
+}
+@mixin border-radius($bormun:0){
+	border-radius: $bormun; 
+	-moz-border-radius: $bormun; 
+	-webkit-border-radius: $bormun; 
 }
