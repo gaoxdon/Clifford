@@ -14,65 +14,7 @@
         rem = oW>=640?100:oW/6.4;
         html.style.fontSize = rem + "px";
     </script>
-    <script type="text/javascript">
-    var num=0;
-    function guahao(){
-    	$("#guahaoD").addClass("on");
-    	$("#jieshaoD").removeClass("on");
-    }
-     function jieshao(){
-    	$("#jieshaoD").addClass("on");
-    	$("#guahaoD").removeClass("on");
-    		
-    }
-    function jieshaob(){
-    	$("#scroller").css("transform ","translate(-6.4rem, 0px) translateZ(0px);");
-    	jieshao();
-    			
-    }
-    function guahaob(){
-    	$("#scroller").css("transform ","translate(0px, 0px) translateZ(0px);");
-    	guahao();
-    		
-    }
-    var shc=1
-   function shoucang(){
-	   	if(shc==1){
-	   		$(".doctor_collectD>i").addClass("icon_collect_bigonD");
-	   		shc=0;
-	   	}else{
-	   		$(".doctor_collectD>i").removeClass("icon_collect_bigonD");
-	   		shc=1;
-	   	}
-
-   }
     
-	var myScroll;
-	var daohang;
-	function loaded () {
-		
-		myScroll = new IScroll('#wrapper', {
-			scrollX: true,
-			scrollY: true,
-			momentum: false,
-			snap: true 
-			
-		});
-		myScroll.on('scrollEnd', function () {
-			$("#scroller").css("marginLeft ","0");
-			if(this.x!=num){
-				num=this.x;
-				if(num<0){
-					jieshao();
-				}else{
-					guahao();
-				}
-			}
-		});
-	}
-	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-	
-	</script>
 </head>
 <body onload="loaded()">
    <div class="doctor_schedulingD">
@@ -136,4 +78,58 @@
    		</div>
    </div>
 </body>
+<script type="text/javascript">
+	var lengths=$(".scheduling_jtdayD li").length;
+	var heights=0.74*lengths+1.24+"rem"
+	$("#wrapper").css("height",heights);
+	var num=0;
+    function guahao(){
+    	$("#guahaoD").addClass("on");
+    	$("#jieshaoD").removeClass("on");
+    }
+     function jieshao(){
+    	$("#jieshaoD").addClass("on");
+    	$("#guahaoD").removeClass("on");
+    }
+    function jieshaob(){
+    	$("#scroller").css("transform ","translate(-6.4rem, 0px) translateZ(0px);");
+    	jieshao();
+    }
+    function guahaob(){
+    	$("#scroller").css("transform ","translate(0px, 0px) translateZ(0px);");
+    	guahao();	
+    }
+    var shc=1
+   function shoucang(){
+	   	if(shc==1){
+	   		$(".doctor_collectD>i").addClass("icon_collect_bigonD");
+	   		shc=0;
+	   	}else{
+	   		$(".doctor_collectD>i").removeClass("icon_collect_bigonD");
+	   		shc=1;
+	   	}
+   }
+	var myScroll;
+	var daohang;
+	function loaded () {
+		myScroll = new IScroll('#wrapper', {
+			scrollX: true,
+			scrollY: true,
+			momentum: false,
+			snap: true 
+		});
+		myScroll.on('scrollEnd', function () {
+			$("#scroller").css("marginLeft ","0");
+			if(this.x!=num){
+				num=this.x;
+				if(num<0){
+					jieshao();
+				}else{
+					guahao();
+				}
+			}
+		});
+	}
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
 </html>

@@ -75,6 +75,7 @@
   display: table-cell;
   vertical-align: middle;
   line-height: 0.30rem;
+  color: #9E9F9F;
 }
 #keshi_typeG ul li .icon {
   position: absolute;
@@ -85,6 +86,9 @@
 }
 #keshi_typeG ul .active > .icon {
   display: block;
+}
+#keshi_typeG ul .active > p {
+  color: #595757;
 }
 
 #keshi_listG {
@@ -176,7 +180,7 @@
   overflow: hidden;
   background: #fff;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .paiban_timeTitleG .paiban_timeL {
   font-size: 0.23rem;
@@ -220,7 +224,7 @@
   border-bottom: 1px solid #DBDCDC;
   background: #fff;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 #paiban_table span {
   display: block;
@@ -264,6 +268,38 @@
   top: 2.1rem;
   bottom: 0;
   width: 100%;
+  overflow: hidden;
+}
+#paiban_doctor .paiban_scroller {
+  width: 44.8rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide {
+  width: 6.4rem;
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide1 {
+  left: 0;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide2 {
+  left: 6.4rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide3 {
+  left: 12.8rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide4 {
+  left: 19.2rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide5 {
+  left: 25.6rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide6 {
+  left: 32rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide7 {
+  left: 38.4rem;
 }
 #paiban_doctor .paiban_item {
   padding-left: .25rem;
@@ -324,9 +360,6 @@
   right: 0.1rem;
   top: 50%;
   margin-top: -4px;
-}
-#paiban_doctor .paiban_item:last-child .paiban_info {
-  border-bottom: 0;
 }
 
 .conf-doctor {
@@ -400,7 +433,7 @@
   padding-left: 0.25rem;
 }
 .conf-selname ul li {
-  height: 0.75rem;
+  height: 1rem;
   font-size: 0.23rem;
   overflow: hidden;
   border-bottom: 1px solid #DBDCDC;
@@ -408,7 +441,7 @@
 }
 .conf-selname ul li .conf-sel1 {
   display: block;
-  margin: 0.12rem 0;
+  margin: 0.19rem 0;
 }
 .conf-selname ul li .conf-sel2 {
   display: block;
@@ -553,6 +586,39 @@
 
 .fin-margin {
   margin-top: 0.15rem;
+}
+
+.finpay-top {
+  background: #fff;
+  height: 2rem;
+  position: relative;
+}
+.finpay-top .icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: 0.25rem;
+}
+.finpay-top .finpay-info {
+  padding-left: 1.45rem;
+  padding-right: 0.25rem;
+}
+.finpay-top .finpay-info div {
+  overflow: hidden;
+}
+.finpay-top .finpay-info div span {
+  float: left;
+  font-size: 0.25rem;
+  line-height: 1.2rem;
+}
+.finpay-top .finpay-info div em {
+  float: right;
+  font-size: 0.23rem;
+  line-height: 1.2rem;
+}
+.finpay-top .finpay-info p {
+  font-size: 0.20rem;
+  line-height: 0.28rem;
 }
 
 #paiban_table, #paiban_doctor .paiban_item {

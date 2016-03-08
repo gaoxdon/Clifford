@@ -209,14 +209,14 @@
 	<script type="text/javascript" src="/static/js/iscroll.js"></script>
 	<script>
 		window.onload = function(){
-			var keshiType = new IScroll('#keshi_typeG', { mouseWheel: true });
+			var keshiType = new IScroll('#keshi_typeG', { mouseWheel: true, tap: true });
 			var list;
 
 			var ks = document.querySelectorAll("#keshi_typeG li");
 
 			for(var i = 0;i<ks.length;i++){
 				(function(j){
-					ks[j].addEventListener("click",function(){
+					ks[j].addEventListener("tap",function(){
 						showkeshi(j);
 						for(index in ks){
 							if(ks[index].className=="active"){
