@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd:'src',
 					src:'**/*.js',
-					dest:'static'
+					dest:'wx/static'
 				}]
 			}
 		},
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd:'src',
 					src:'**/*.css',
-					dest:'static'
+					dest:'wx/static'
 		        }]
 			}
 		},
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
 		sass: {
             dist: {
                 files: {
-                    'src/css/index.css': 'src/scss/index.scss',
+                    'src/css/wx.css': 'src/scss/wx.scss',
                     'src/css/icon.css': 'src/scss/icon.scss'
                 },
                 options: {
