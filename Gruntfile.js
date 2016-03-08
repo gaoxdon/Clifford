@@ -104,7 +104,7 @@ module.exports = function(grunt) {
 					ext: '.sprite.css'
 				}]
 			}
-		}
+		},
 		// Task imagemin
 		//  imagemin: {
 		// 	dist: { // Target
@@ -119,22 +119,25 @@ module.exports = function(grunt) {
 		// },
 		
 		// Task htmlmin
-		// htmlmin: { 		
-		// 	dist: {
-		// 		options: {
-		// 			removeComments: true,		//去注析
-		// 			collapseWhitespace: false	//去换行
-		// 		},
-		// 		files: { // Dictionary of files
-		// 			'dist/html/index.html': ['src/html/index.html']
-		// 		}
-		// 	}
-		// }
+		htmlmin: { 		
+			dist: {
+				options: {
+					removeComments: false,		//去注析
+					collapseWhitespace: false	//去换行
+				},
+				files: [{
+					expand: true,
+					cwd:'static',
+					src:'**/*.html',
+					dest:'wx/static/templet/wx'
+		        }]
+			}
+		}
 		/* E--------------------------------------------------------------------------*/
 	});
 
 	// Load the plugin HTML/CSS/JS/IMG min
-	//grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
   	grunt.loadNpmTasks('grunt-contrib-watch');
@@ -144,6 +147,6 @@ module.exports = function(grunt) {
 
 	// Build task(s).
 	//grunt.registerTask('build', ['htmlmin', 'uglify', 'cssmin', 'imagemin']);
-  	grunt.registerTask('build', ['sass','sprite','uglify:buildall','cssmin']);
+  	grunt.registerTask('build', ['sass','sprite','uglify:buildall','cssmin','htmlmin']);
   	grunt.registerTask('icon', ['sprite']);
 };
