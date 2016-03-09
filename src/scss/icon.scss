@@ -70,5 +70,10 @@
 .icon_next_bigD{
 	@include background(6px,11px,"../slice/icon_next_bigD.png");
 }
-
+.icon_no_payD{
+	@include background(116px,116px,"../slice/icon_no_payD.png");
+}
+.icon_jiaofei{
+	@include background(31px,31px,"../slice/icon_jiaofei.png");
+}
 

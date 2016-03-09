@@ -845,6 +845,7 @@ a {
   left: 5.52rem;
   z-index: 4;
   text-align: center;
+  width: 0.6rem;
 }
 .doctor_collectD p {
   color: #595757;
@@ -885,6 +886,8 @@ a {
   top: 0.2rem;
   left: 3.2rem;
   background: #DBDCDC;
+  width: 1px;
+  height: 0.24rem;
 }
 
 #wrapper {
@@ -932,14 +935,14 @@ a {
 .scheduling_jtdayD li {
   height: 0.73rem;
   background: #fff;
-  border-bottom: 0.01rem solid #DBDCDC;
+  border-bottom: 1px solid #DBDCDC;
   line-height: 0.73rem;
   font-size: 0.25rem;
   padding-right: 0.24rem;
 }
 .scheduling_jtdayD .scheduling_dataD {
   height: 0.76rem;
-  line-height: 0.73rem;
+  line-height: 0.76rem;
   margin-bottom: 0.15rem;
   margin-top: 0.15rem;
   font-size: 0.23rem;
@@ -947,11 +950,26 @@ a {
   padding-left: 0.24rem;
   padding-right: 0.24rem;
 }
-.scheduling_jtdayD .scheduling_dataD i {
-  margin-right: 0.1rem;
+.scheduling_jtdayD .scheduling_dataD b {
+  color: #00B1B5;
+  position: relative;
+  padding-left: 0.4rem;
 }
 .scheduling_jtdayD .scheduling_dataD p {
   color: #00B1B5;
+  position: relative;
+}
+.scheduling_jtdayD .scheduling_dataD b i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+}
+.scheduling_jtdayD .scheduling_dataD p i {
+  position: absolute;
+  top: 50%;
+  left: 0.65rem;
+  margin-top: -7.5px;
 }
 .scheduling_jtdayD b {
   width: 3rem;
@@ -973,7 +991,7 @@ a {
   color: #ff375a;
   width: 0.78rem;
   height: 0.34rem;
-  border: 0.01rem solid #ff375a;
+  border: 1px solid #ff375a;
   border-radius: 0.2rem;
   -moz-border-radius: 0.2rem;
   -webkit-border-radius: 0.2rem;
@@ -1000,7 +1018,7 @@ a {
 }
 
 .doctor_goodD {
-  border-bottom: 0.01rem solid #DBDCDC;
+  border-bottom: 1px solid #DBDCDC;
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
   margin-bottom: 0.15rem;
@@ -1010,6 +1028,130 @@ a {
 .doctor_profilesD {
   padding-bottom: 0.15rem;
   padding-right: 0.24rem;
+}
+
+.no_payD {
+  text-align: center;
+}
+.no_payD i {
+  margin-top: 1.1rem;
+}
+.no_payD p {
+  font-size: 0.23rem;
+  margin-top: 0.5rem;
+}
+
+.patientD li {
+  height: 0.84rem;
+  font-size: 0.25rem;
+  line-height: 0.42rem;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #DBDCDC;
+  padding-left: 0.24rem;
+  padding-top: 0.08rem;
+}
+.patientD a {
+  display: block;
+}
+.patientD i {
+  position: absolute;
+  top: 0.44rem;
+  right: 0.24rem;
+}
+
+.chooseD {
+  margin-top: 0.15rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  background: #fff;
+  font-size: 0.23rem;
+  color: #9E9F9F;
+  padding-left: 0.24rem;
+  overflow: hidden;
+  position: relative;
+}
+.chooseD b {
+  height: 0.76rem;
+  position: absolute;
+  top: 0;
+  left: 0.24rem;
+  width: 2.02rem;
+  padding-left: 0.48rem;
+}
+.chooseD b i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -9px;
+}
+.chooseD p {
+  width: 2.4rem;
+  position: absolute;
+  top: 0px;
+  right: 0.24rem;
+  text-align: right;
+  margin-right: 0.24rem;
+}
+.chooseD p i {
+  vertical-align: middle;
+  margin-left: 0.1rem;
+}
+
+.Pend_payD li {
+  height: 1rem;
+  font-size: 0.25rem;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #DBDCDC;
+  position: relative;
+  padding-left: 0.24rem;
+}
+.Pend_payD a {
+  display: block;
+}
+.Pend_payD dl {
+  position: absolute;
+  top: 0;
+  left: 0.24rem;
+  width: 4.3rem;
+}
+.Pend_payD dl dt {
+  height: 1rem;
+}
+.Pend_payD dl dt i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+}
+.Pend_payD dl dd {
+  width: 3.46rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #9E9F9F;
+  font-size: 0.23rem;
+}
+.Pend_payD dl dd h6 {
+  color: #595757;
+  margin-top: 0.19rem;
+  margin-bottom: 0.15rem;
+  font-size: 0.25rem;
+}
+.Pend_payD p {
+  position: absolute;
+  top: 0;
+  right: 0.24rem;
+  width: 1.9rem;
+  text-align: right;
+  line-height: 1rem;
+  color: #FF375A;
+  font-size: 0.23rem;
+}
+.Pend_payD p i {
+  vertical-align: middle;
+  margin-left: 0.1rem;
 }
 
 html {
