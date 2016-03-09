@@ -80,8 +80,8 @@ module.exports = function(grunt) {
 			options: {
 				imagepath: 'src/slice/',
 				imagepath_map: null,
-				spritedest: 'static/images/',
-				spritepath: null,
+				spritedest: 'wx/static/images/',
+				spritepath: '/static/images/',
 				padding: 6,
 				useimageset: false,
 				newsprite: false,
