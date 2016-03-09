@@ -118,4 +118,16 @@
   height: 11px;
 }
 
+.icon_no_payD {
+  background-image: url("../slice/icon_no_payD.png");
+  width: 116px;
+  height: 116px;
+}
+
+.icon_jiaofei {
+  background-image: url("../slice/icon_jiaofei.png");
+  width: 31px;
+  height: 31px;
+}
+
 /*# sourceMappingURL=icon.css.map */

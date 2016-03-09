@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <script type="text/javascript" src="/static/js/iscroll.js"></script>
+    <script type="text/javascript" src="/static/js/zepto.min.js"></script>
+    <title></title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+    
+</head>
+<body>
+   <div class="choose_patientD">
+   		<div class="patientD">
+       <ul>
+         <li><a href="#"><p>张斌</p><p>4401000011185365</p><i class="icon icon_greenjj"></i></a></li>
+         <li><a href="#"><p>王力宏</p><p>440100001118512</p><i class="icon icon_greenjj"></i></a></li>
+         <li><a href="#"><p>欧阳娜娜</p><p>4401000011181265</p><i class="icon icon_greenjj"></i></a></li>
+       </ul>
+      </div>
+      <div class="chooseD">
+        <a href="#"><b><i class="icon icon_person2"></i>添加就诊人</b><p>还可以绑定4人<i class="icon icon_greenjj"></i></p></a>
+      </div>
+   </div>
+</body>
+</html>

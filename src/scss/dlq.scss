@@ -55,7 +55,7 @@ a{text-decoration:none;}
 	@include absolute(0.77rem,5.52rem);
 	z-index: 4;
 	text-align:center;
-	
+	width: 0.6rem;
 	p{
 		color:$font1;
 		line-height: 0.45rem;
@@ -96,6 +96,8 @@ a{text-decoration:none;}
 		
 		@include absolute(0.2rem,3.2rem);
 		background:$font4;
+		width: 1px;
+		height: 0.24rem;
 	}
 
 }
@@ -140,7 +142,7 @@ a{text-decoration:none;}
 	li{
 		height: 0.73rem;
 		background:#fff;
-		border-bottom:0.01rem solid $font4;
+		border-bottom:1px solid $font4;
 		line-height: 0.73rem;
 		font-size: 0.25rem;
 		padding-right: 0.24rem;
@@ -148,7 +150,7 @@ a{text-decoration:none;}
 	}
 	.scheduling_dataD{
 		height: 0.76rem;
-		line-height: 0.73rem;
+		line-height: 0.76rem;
 		margin-bottom:0.15rem;
 		margin-top:0.15rem;	
 		font-size: 0.23rem;
@@ -157,12 +159,24 @@ a{text-decoration:none;}
 		padding-right: 0.24rem;
 
 	}
-	.scheduling_dataD i{
-			
-		margin-right:0.1rem;
+	
+	.scheduling_dataD b{
+		color:$base-color; 
+		position:relative;
+		padding-left:0.4rem;
 	}
 	.scheduling_dataD p{
 		color:$base-color; 
+		position:relative;
+	}
+	.scheduling_dataD b i{	
+		@include absolute(50%,0);
+		margin-top:-7px;
+	}
+	.scheduling_dataD p i{
+		@include absolute(50%,0.65rem);
+		margin-top:-7.5px;
+
 	}
 
 	b{
@@ -183,7 +197,7 @@ a{text-decoration:none;}
 		color: #ff375a;
 		width: 0.78rem;
 		height: 0.34rem;
-		border:0.01rem solid #ff375a;
+		border:1px solid #ff375a;
 		@include border-radius(0.2rem);
 		vertical-align: middle;
 		font-size: 0.2rem;
@@ -207,7 +221,7 @@ a{text-decoration:none;}
 
 }
 .doctor_goodD{
-	border-bottom:0.01rem solid $font4;
+	border-bottom:1px solid $font4;
 	padding-top:0.15rem;
 	padding-bottom:0.15rem;
 	margin-bottom:0.15rem;
@@ -216,4 +230,130 @@ a{text-decoration:none;}
 .doctor_profilesD{
 	padding-bottom:0.15rem;
 	padding-right: 0.24rem;
+}
+.no_payD{
+	text-align:center;
+	i{
+	margin-top:1.1rem;
+	}
+	p{
+		font-size: 0.23rem;
+		margin-top: 0.5rem;
+
+	}
+}
+.choose_patientD{
+	
+}
+.patientD{
+	li{
+		height: 0.84rem;
+		font-size: 0.25rem;
+		line-height: 0.42rem;
+		position:relative;
+		background:#fff;
+		border-bottom:1px solid $font4;
+		padding-left:0.24rem;
+		padding-top:0.08rem;
+
+	}
+	a{
+		display: block;
+	}
+	i{
+		position:absolute;
+		top: 0.44rem;
+		right: 0.24rem;
+	}
+}
+.chooseD{
+	margin-top:0.15rem;
+	height:0.76rem;
+	line-height:0.76rem;
+	background:#fff;
+	font-size:0.23rem;
+	color:$font2;
+	padding-left:0.24rem;
+	overflow:hidden;
+	position:relative;
+	b{
+		height:0.76rem;
+		@include absolute(0,0.24rem);
+		width:2.02rem;
+		padding-left:0.48rem;
+		i{
+			@include absolute(50%,0);
+			margin-top:-9px;
+		}
+	}
+	p{
+		width:2.4rem;
+		position:absolute;
+		top: 0px;
+		right: 0.24rem;
+		text-align:right;
+		margin-right: 0.24rem;
+		i{
+	 	vertical-align: middle;
+	 	margin-left:0.1rem;
+	 	}
+	}
+	
+
+}
+.Pend_payD{
+	li{
+		height: 1rem;
+		font-size: 0.25rem;
+		position:relative;
+		background:#fff;
+		border-bottom:1px solid $font4;
+		position:relative;
+		padding-left:0.24rem;
+
+	}
+	a{
+		display: block;
+	}
+	dl{
+		@include absolute(0,0.24rem);
+		width:4.3rem;
+		dt{
+			height: 1rem;
+			i{
+				@include absolute(50%,0);
+				margin-top: -15px;	
+			}
+			
+		}
+		dd{
+			width:3.46rem;
+			position:absolute;
+			top: 0;
+			right: 0;
+			color:$font2; 
+			font-size: 0.23rem;
+			h6{
+				color:$font1; 
+				margin-top: 0.19rem;
+				margin-bottom: 0.15rem;
+				font-size: 0.25rem;
+			}
+
+		}
+	}
+	p{
+		position:absolute;
+		top: 0;
+		right: 0.24rem;
+		width:1.9rem;
+		text-align:right;
+		line-height: 1rem;
+		color: #FF375A;
+		font-size: 0.23rem;
+		i{
+	 	vertical-align: middle;
+	 	margin-left:0.1rem;
+	 	}
+	}
 }
