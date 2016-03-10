@@ -56,6 +56,7 @@
 	border-right: 1px solid $font4;
 	overflow: hidden;
 	ul{
+
 		li{
 			display: table;
 			height: 1.1rem;
@@ -67,6 +68,7 @@
 				display: table-cell;
 				vertical-align: middle;
 				line-height: 0.30rem;
+				color: $font2;
 			}
 			.icon{
 				@include absolute(50%,-4px);
@@ -76,6 +78,9 @@
 		}
 		.active>.icon{
 			display: block;
+		}
+		.active>p{
+			color: $font1;
 		}
 	}
 }
@@ -168,7 +173,7 @@
 	overflow: hidden;
 	background: #fff;
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 	.paiban_timeL{
 		font-size: 0.23rem;
 		display: block;
@@ -211,7 +216,7 @@
 	border-bottom: 1px solid $font4;
 	background: #fff;
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 	span{
 		display: block;
 		font-size: 0.25rem;
@@ -245,13 +250,33 @@
 	}
 }
 #paiban_doctor{
-	
     background-color: #fff;
     position: absolute;
     left: 0;
     top: 2.1rem;
     bottom: 0;
     width: 100%;
+    overflow: hidden;
+    .paiban_scroller{
+    	width: 44.8rem;
+		.paiban_Wamp{
+			.paiban_slide{
+		    	width: 6.4rem;
+			    top: 0;
+			    position: absolute;
+			    bottom: 0;
+			    z-index: 1;
+		    }
+		   	.paiban_slide1{left:0;}
+		    .paiban_slide2{left:6.4rem;}
+		    .paiban_slide3{left:6.4*2rem}
+		    .paiban_slide4{left:6.4*3rem}
+		    .paiban_slide5{left:6.4*4rem}
+		    .paiban_slide6{left:6.4*5rem}
+		    .paiban_slide7{left:6.4*6rem}
+		}
+
+    }
 	.paiban_item{
 		padding-left: .25rem;
 		height: 1.6rem;
@@ -309,9 +334,6 @@
 			top: 50%;
 			margin-top: -4px;
 		}
-	}
-	.paiban_item:last-child .paiban_info{
-		border-bottom: 0;
 	}
 }
 
@@ -389,14 +411,14 @@
 	 ul{
 	 	padding-left: 0.25rem;
 	 	li{
-	 		height: 0.75rem;
+	 		height: 1rem;
 	 		font-size: 0.23rem;
 	 		overflow: hidden;
 	 		border-bottom: 1px solid $font4;
 	 		position: relative;
 	 		.conf-sel1{
 	 			display: block;
-	 			margin: 0.12rem 0;
+	 			margin: 0.19rem 0;
 	 		}
 	 		.conf-sel2{
 	 			display: block;
@@ -547,3 +569,166 @@
 
 
 //------------------finish----------------end
+
+//------------------finishpay----------------start
+.finpay-top{
+	background: #fff;
+	height: 2rem;
+	position: relative;
+	.icon{
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		left: 0.25rem;
+	}
+	.finpay-info{
+		padding-left: 1.45rem;
+		padding-right: 0.25rem;
+		div{
+			overflow: hidden;
+			span{
+				float: left;
+				font-size: 0.25rem;
+				margin-top: 0.7rem;
+    			margin-bottom: 0.2rem;
+			}
+			em{
+				float: right;
+				font-size: 0.23rem;
+				margin-top: 0.7rem;
+    			margin-bottom: 0.2rem;
+			}
+		}
+		p{
+			font-size: 0.20rem;
+			line-height: 0.28rem;
+		}
+	}
+}
+.finpay-list{
+	background:#fff;
+	margin-top:0.15rem;
+	.finpay-listtit{
+		padding: 0 0.25rem;
+		box-sizing: border-box;
+		height: 0.75rem;
+		border-bottom: 1px solid $font4;
+		@extend %display-flex;
+		span{
+			@include flex(1);
+			font-size: 0.25rem;
+			line-height: 0.75rem;
+			text-align: center;
+		}
+	}
+	.finpay-listbody{
+		box-sizing:border-box;
+		padding-left: 0.25rem;
+		margin-bottom: 0.5rem;
+		li{
+			border-bottom: 1px solid $font4;
+			@extend %display-flex;
+			@extend %flex-align-center;
+			padding: 0.15rem 0.25rem 0.15rem 0;
+			span{
+				@include flex(1);
+				font-size: 0.2rem;
+				color: $font2;
+				line-height: 0.23rem;
+				text-align: center;
+			}
+		}
+		li:last-child{
+			border-bottom: 0;
+		}
+	}
+}
+
+
+
+//------------------finish----------------end
+
+//------------------pay----------------start
+.pay-price{
+	background: #fff;
+	height: .75rem;
+	line-height: 0.75rem;
+	text-align: center;
+	color: $red;
+	font-size: 0.27rem;
+}
+.pay-type{
+	background: #fff;
+	margin-top: 0.15rem;
+	padding: 0 0.25rem;
+	height: 0.75rem;
+	line-height: 0.75rem;
+	overflow: hidden;
+	font-size: 0.25rem;
+	span{
+		float: left;
+	}
+	em{
+		float: right;
+		color: $font2;
+	}
+}
+
+
+
+
+//------------------pay----------------end
+
+
+//------------------payinfo----------------start
+.payinfo-name{
+	background: #fff;
+	padding: 0 0.25rem;
+	font-size: 0.25rem;
+	height: 1rem;
+	i{
+		line-height: 1rem;
+		float: left;
+	}
+	span{
+		line-height: 0.6rem;
+	}
+	span,em{
+		display: block;
+		text-align: right;
+	}
+}
+.payinfo-margin{
+	margin-bottom: 1rem;
+}
+.payinfo-button{
+	width: 100%;
+	height: 0.75rem;
+	position:  fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	box-sizing:border-box;
+	padding: 0.15rem 0.25rem;
+	overflow: hidden;
+	em{
+		float: left;
+		line-height: 0.45rem;
+		font-size: 0.23rem;
+		i{
+			color: $red;
+		}
+	}
+	span{
+		display: block;
+		float: right;
+		width: 2rem;
+		height: 0.45rem;
+		line-height: 0.45rem;
+		background: $base-color;
+		text-align: center;
+		color: #fff;
+		font-size: 0.26rem;
+	}
+}
+//------------------payinfo----------------end

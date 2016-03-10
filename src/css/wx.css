@@ -1,9 +1,18 @@
 @import url(reset.css);
-#paiban_table, #paiban_doctor .paiban_item {
+#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .finpay-list .finpay-listbody li, .report_dtitleD, .report_dlistD li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.finpay-list .finpay-listbody li, .report_dlistD li {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
 }
 
 #keshi_searchG {
@@ -75,6 +84,7 @@
   display: table-cell;
   vertical-align: middle;
   line-height: 0.30rem;
+  color: #9E9F9F;
 }
 #keshi_typeG ul li .icon {
   position: absolute;
@@ -85,6 +95,9 @@
 }
 #keshi_typeG ul .active > .icon {
   display: block;
+}
+#keshi_typeG ul .active > p {
+  color: #595757;
 }
 
 #keshi_listG {
@@ -176,7 +189,7 @@
   overflow: hidden;
   background: #fff;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .paiban_timeTitleG .paiban_timeL {
   font-size: 0.23rem;
@@ -220,7 +233,7 @@
   border-bottom: 1px solid #DBDCDC;
   background: #fff;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 #paiban_table span {
   display: block;
@@ -264,6 +277,38 @@
   top: 2.1rem;
   bottom: 0;
   width: 100%;
+  overflow: hidden;
+}
+#paiban_doctor .paiban_scroller {
+  width: 44.8rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide {
+  width: 6.4rem;
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide1 {
+  left: 0;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide2 {
+  left: 6.4rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide3 {
+  left: 12.8rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide4 {
+  left: 19.2rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide5 {
+  left: 25.6rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide6 {
+  left: 32rem;
+}
+#paiban_doctor .paiban_scroller .paiban_Wamp .paiban_slide7 {
+  left: 38.4rem;
 }
 #paiban_doctor .paiban_item {
   padding-left: .25rem;
@@ -324,9 +369,6 @@
   right: 0.1rem;
   top: 50%;
   margin-top: -4px;
-}
-#paiban_doctor .paiban_item:last-child .paiban_info {
-  border-bottom: 0;
 }
 
 .conf-doctor {
@@ -400,7 +442,7 @@
   padding-left: 0.25rem;
 }
 .conf-selname ul li {
-  height: 0.75rem;
+  height: 1rem;
   font-size: 0.23rem;
   overflow: hidden;
   border-bottom: 1px solid #DBDCDC;
@@ -408,7 +450,7 @@
 }
 .conf-selname ul li .conf-sel1 {
   display: block;
-  margin: 0.12rem 0;
+  margin: 0.19rem 0;
 }
 .conf-selname ul li .conf-sel2 {
   display: block;
@@ -555,15 +597,181 @@
   margin-top: 0.15rem;
 }
 
-#paiban_table, #paiban_doctor .paiban_item {
+.finpay-top {
+  background: #fff;
+  height: 2rem;
+  position: relative;
+}
+.finpay-top .icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: 0.25rem;
+}
+.finpay-top .finpay-info {
+  padding-left: 1.45rem;
+  padding-right: 0.25rem;
+}
+.finpay-top .finpay-info div {
+  overflow: hidden;
+}
+.finpay-top .finpay-info div span {
+  float: left;
+  font-size: 0.25rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.finpay-top .finpay-info div em {
+  float: right;
+  font-size: 0.23rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.finpay-top .finpay-info p {
+  font-size: 0.20rem;
+  line-height: 0.28rem;
+}
+
+.finpay-list {
+  background: #fff;
+  margin-top: 0.15rem;
+}
+.finpay-list .finpay-listtit {
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+  height: 0.75rem;
+  border-bottom: 1px solid #DBDCDC;
+}
+.finpay-list .finpay-listtit span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 0.25rem;
+  line-height: 0.75rem;
+  text-align: center;
+}
+.finpay-list .finpay-listbody {
+  box-sizing: border-box;
+  padding-left: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.finpay-list .finpay-listbody li {
+  border-bottom: 1px solid #DBDCDC;
+  padding: 0.15rem 0.25rem 0.15rem 0;
+}
+.finpay-list .finpay-listbody li span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 0.2rem;
+  color: #9E9F9F;
+  line-height: 0.23rem;
+  text-align: center;
+}
+.finpay-list .finpay-listbody li:last-child {
+  border-bottom: 0;
+}
+
+.pay-price {
+  background: #fff;
+  height: .75rem;
+  line-height: 0.75rem;
+  text-align: center;
+  color: #ff375a;
+  font-size: 0.27rem;
+}
+
+.pay-type {
+  background: #fff;
+  margin-top: 0.15rem;
+  padding: 0 0.25rem;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  overflow: hidden;
+  font-size: 0.25rem;
+}
+.pay-type span {
+  float: left;
+}
+.pay-type em {
+  float: right;
+  color: #9E9F9F;
+}
+
+.payinfo-name {
+  background: #fff;
+  padding: 0 0.25rem;
+  font-size: 0.25rem;
+  height: 1rem;
+}
+.payinfo-name i {
+  line-height: 1rem;
+  float: left;
+}
+.payinfo-name span {
+  line-height: 0.6rem;
+}
+.payinfo-name span, .payinfo-name em {
+  display: block;
+  text-align: right;
+}
+
+.payinfo-margin {
+  margin-bottom: 1rem;
+}
+
+.payinfo-button {
+  width: 100%;
+  height: 0.75rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0.15rem 0.25rem;
+  overflow: hidden;
+}
+.payinfo-button em {
+  float: left;
+  line-height: 0.45rem;
+  font-size: 0.23rem;
+}
+.payinfo-button em i {
+  color: #ff375a;
+}
+.payinfo-button span {
+  display: block;
+  float: right;
+  width: 2rem;
+  height: 0.45rem;
+  line-height: 0.45rem;
+  background: #00B1B5;
+  text-align: center;
+  color: #fff;
+  font-size: 0.26rem;
+}
+
+#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .finpay-list .finpay-listbody li, .report_dtitleD, .report_dlistD li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
+.finpay-list .finpay-listbody li, .report_dlistD li {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
 body {
   background: #f7f7f7;
+  color: #595757;
 }
 
 a {
@@ -733,6 +941,9 @@ a {
   font-size: 0.25rem;
   padding-right: 0.24rem;
 }
+.scheduling_jtdayD li:last-child {
+  border-bottom: 0px;
+}
 .scheduling_jtdayD .scheduling_dataD {
   height: 0.76rem;
   line-height: 0.76rem;
@@ -834,6 +1045,21 @@ a {
   margin-top: 0.5rem;
 }
 
+.promptD {
+  position: relative;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  padding-left: 0.55rem;
+  font-size: 0.2rem;
+  color: #9E9F9F;
+}
+.promptD i {
+  position: absolute;
+  top: 50%;
+  left: 0.24rem;
+  margin-top: -5px;
+}
+
 .patientD li {
   height: 0.84rem;
   font-size: 0.25rem;
@@ -843,6 +1069,9 @@ a {
   border-bottom: 1px solid #DBDCDC;
   padding-left: 0.24rem;
   padding-top: 0.08rem;
+}
+.patientD li:last-child {
+  border-bottom: 0px;
 }
 .patientD a {
   display: block;
@@ -884,7 +1113,6 @@ a {
   top: 0px;
   right: 0.24rem;
   text-align: right;
-  margin-right: 0.24rem;
 }
 .chooseD p i {
   vertical-align: middle;
@@ -894,11 +1122,13 @@ a {
 .Pend_payD li {
   height: 1rem;
   font-size: 0.25rem;
-  position: relative;
   background: #fff;
   border-bottom: 1px solid #DBDCDC;
   position: relative;
   padding-left: 0.24rem;
+}
+.Pend_payD li:last-child {
+  border-bottom: 0px;
 }
 .Pend_payD a {
   display: block;
@@ -932,6 +1162,15 @@ a {
   margin-bottom: 0.15rem;
   font-size: 0.25rem;
 }
+.Pend_payD dl dd h5 {
+  color: #595757;
+  margin-top: 0.19rem;
+  line-height: 0.31rem;
+  font-size: 0.25rem;
+}
+.Pend_payD dl dd span {
+  padding-right: 0.15rem;
+}
 .Pend_payD p {
   position: absolute;
   top: 0;
@@ -939,12 +1178,163 @@ a {
   width: 1.9rem;
   text-align: right;
   line-height: 1rem;
-  color: #FF375A;
+  color: #ff375a;
   font-size: 0.23rem;
 }
 .Pend_payD p i {
   vertical-align: middle;
   margin-left: 0.1rem;
+}
+
+.rtitle_detailsD {
+  text-align: center;
+  font-size: 0.23rem;
+  background: #00B1B5;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  color: #fff;
+}
+
+.rdata_detailsD {
+  padding-left: 0.24rem;
+  font-size: 0.23rem;
+  height: 0.73rem;
+  line-height: 0.73rem;
+}
+
+.rlist-detailsD {
+  background: #fff;
+}
+
+.report_dtitleD {
+  height: 0.73rem;
+  line-height: 0.73rem;
+  font-size: 0.25rem;
+  padding: 0 0.24rem;
+}
+.report_dtitleD span {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.report_dlistD li {
+  font-size: 0.2rem;
+  padding: 0.15rem 0.24rem;
+  border-top: 1px solid #DBDCDC;
+  color: #9E9F9F;
+}
+.report_dlistD li span {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  line-height: .26rem;
+}
+
+.own_roomD {
+  font-size: 0.24rem;
+}
+
+.own_aboutD {
+  height: 2.7rem;
+  background: #00B1B5;
+  text-align: center;
+  padding-top: 0.26rem;
+}
+.own_aboutD .own_imgD {
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 0.07rem solid #fff;
+  background: #fff;
+  border-radius: 1.35rem;
+  -moz-border-radius: 1.35rem;
+  -webkit-border-radius: 1.35rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.own_aboutD img {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.own_aboutD p {
+  color: #fff;
+  line-height: 0.38rem;
+  margin-top: 0.08rem;
+  font-size: 0.26rem;
+}
+.own_aboutD p span {
+  font-size: 0.23rem;
+  display: block;
+}
+
+.own_moneyD {
+  position: relative;
+  padding: 0 0.24rem;
+  color: #9E9F9F;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  background: #fff;
+}
+.own_moneyD p {
+  width: 50%;
+  float: left;
+}
+.own_moneyD a {
+  color: #9E9F9F;
+}
+.own_moneyD i {
+  width: 1px;
+  height: 0.24rem;
+  position: absolute;
+  left: 50%;
+  top: 0.18rem;
+  background: #DBDCDC;
+}
+
+.own_listD {
+  margin-top: 0.15rem;
+  padding-left: 0.24rem;
+  background: #fff;
+}
+.own_listD li {
+  height: 0.73rem;
+  background: #fff;
+  border-bottom: 1px solid #DBDCDC;
+  line-height: 0.73rem;
+  font-size: 0.25rem;
+  padding-right: 0.24rem;
+  position: relative;
+  padding-left: 0.75rem;
+}
+.own_listD li span i {
+  position: absolute;
+  right: 0.24rem;
+  top: 50%;
+  left: auto;
+  margin-top: -3px;
+}
+.own_listD li:last-child {
+  border-bottom: 0px;
+}
+.own_listD i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -13px;
+}
+
+.logoD {
+  background: #f7f7f7;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
 }
 
 html {

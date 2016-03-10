@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>待缴费详情</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+	<div class="payinfo-name">
+		<i>就诊人</i><span>张三</span><em>440111111111111</em>
+	</div>
+	<div class="conf-doctor fin-margin">
+		<ul>
+			<li><span>就诊科室</span><em>肿瘤科</em></li>
+			<li><span>就诊医生</span><em>武国强</em></li>
+		</ul>
+	</div>
+	<div class="finpay-list payinfo-margin">
+		<div class="finpay-listtit">
+			<span>项目名称</span>
+			<span>单价</span>
+			<span>数量</span>
+			<span>金额</span>
+		</div>
+		<ul class="finpay-listbody">
+			<li>
+				<span>血清游离三碘甲状原氨酸(FT3)测定(化学发光法)</span>
+				<span>57.00</span>
+				<span>1</span>
+				<span>57.00</span>
+			</li>
+			<li>
+				<span>静脉采血</span>
+				<span>57.00</span>
+				<span>1</span>
+				<span>57.00</span>
+			</li>
+			<li>
+				<span>血清游离甲状腺素(FT4)测定(化学发光法)</span>
+				<span>57.00</span>
+				<span>1</span>
+				<span>57.00</span>
+			</li>
+			<li>
+				<span>一次性使用真空采血管</span>
+				<span>57.00</span>
+				<span>1</span>
+				<span>57.00</span>
+			</li>
+			<li>
+				<span>血清促甲状腺激素测定(化学发光法)</span>
+				<span>57.00</span>
+				<span>1</span>
+				<span>57.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="payinfo-button">
+		<em>待缴费金额：<i>157.96元</i></em>
+		<span>确认支付</span>
+	</div>
+	<script type="text/javascript" src="/static/js/iscroll.js"></script>
+	<script>
+		window.onload = function(){
+
+		}
+	</script>
+</body>
+</html>

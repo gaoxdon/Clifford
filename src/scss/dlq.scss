@@ -1,6 +1,7 @@
 @import 'base';
 body{
 	background:#f7f7f7;
+	color:$font1;
 }
 a{text-decoration:none;}
 .doctor_schedulingD{
@@ -14,7 +15,7 @@ a{text-decoration:none;}
 	position: relative;
 	}
 .scheduling_timgD{
-	width: 6.4rem; 
+	width: 6.4rem;
 	height: 2.3rem; 
 	@include absolute;
 	z-index: 0;
@@ -148,6 +149,9 @@ a{text-decoration:none;}
 		padding-right: 0.24rem;
 		
 	}
+	li:last-child{
+		border-bottom:0px;
+	}
 	.scheduling_dataD{
 		height: 0.76rem;
 		line-height: 0.76rem;
@@ -194,10 +198,10 @@ a{text-decoration:none;}
 	p.on{ padding-right:0.3rem;}
 	span{
 		display: inline-block;
-		color: #ff375a;
+		color: $red;
 		width: 0.78rem;
 		height: 0.34rem;
-		border:1px solid #ff375a;
+		border:1px solid $red;
 		@include border-radius(0.2rem);
 		vertical-align: middle;
 		font-size: 0.2rem;
@@ -245,6 +249,19 @@ a{text-decoration:none;}
 .choose_patientD{
 	
 }
+.promptD{
+	position:relative;
+	height:0.32rem;
+	line-height:0.32rem;
+	padding-left:0.55rem;
+	font-size:0.2rem;
+	color:$font2;
+
+	i{
+		@include absolute(50%,0.24rem);
+			margin-top:-5px;
+	}
+}
 .patientD{
 	li{
 		height: 0.84rem;
@@ -256,6 +273,9 @@ a{text-decoration:none;}
 		padding-left:0.24rem;
 		padding-top:0.08rem;
 
+	}
+	li:last-child{
+		border-bottom:0px;
 	}
 	a{
 		display: block;
@@ -292,7 +312,6 @@ a{text-decoration:none;}
 		top: 0px;
 		right: 0.24rem;
 		text-align:right;
-		margin-right: 0.24rem;
 		i{
 	 	vertical-align: middle;
 	 	margin-left:0.1rem;
@@ -305,12 +324,14 @@ a{text-decoration:none;}
 	li{
 		height: 1rem;
 		font-size: 0.25rem;
-		position:relative;
 		background:#fff;
 		border-bottom:1px solid $font4;
 		position:relative;
 		padding-left:0.24rem;
 
+	}
+	li:last-child{
+		border-bottom:0px;
 	}
 	a{
 		display: block;
@@ -339,6 +360,15 @@ a{text-decoration:none;}
 				margin-bottom: 0.15rem;
 				font-size: 0.25rem;
 			}
+			h5{
+				color:$font1; 
+				margin-top: 0.19rem;
+				line-height: 0.31rem;
+				font-size: 0.25rem;
+			}
+			span{
+				padding-right:0.15rem;
+			}
 
 		}
 	}
@@ -349,11 +379,154 @@ a{text-decoration:none;}
 		width:1.9rem;
 		text-align:right;
 		line-height: 1rem;
-		color: #FF375A;
+		color: $red;
 		font-size: 0.23rem;
 		i{
 	 	vertical-align: middle;
 	 	margin-left:0.1rem;
 	 	}
 	}
+}
+.report_detailsD{}
+.rtitle_detailsD{
+	text-align:center;
+	font-size:0.23rem;
+	background:#00B1B5;
+	height:0.76rem;
+	line-height:0.76rem;
+	color:#fff;
+}
+.rdata_detailsD{
+	padding-left:0.24rem;
+	font-size:0.23rem;
+	height:0.73rem;
+	line-height:0.73rem;
+}
+.rlist-detailsD{
+	background:#fff;
+}
+.report_dtitleD{
+	height:0.73rem; 
+	line-height:0.73rem;
+	font-size:0.25rem;
+	padding:0 0.24rem;
+	@extend %display-flex;
+	span{
+		text-align: center;
+		@include flex;
+	}
+
+}
+.report_dlistD li{
+	font-size:0.2rem;
+	padding: 0.15rem 0.24rem;
+	@extend %display-flex;
+	border-top:1px solid $font4;
+	color:$font2;
+	@extend %flex-align-center;
+	span{
+		text-align: center;
+		@include flex;
+		line-height: .26rem;
+	}
+}
+.own_roomD{
+	font-size:0.24rem;
+}
+.own_aboutD{
+	height:2.7rem;
+	background:#00B1B5;
+	text-align:center;
+	padding-top:0.26rem;
+	.own_imgD{
+		width: 1.35rem;
+		height: 1.35rem;
+		border:0.07rem solid #fff;
+		background:#fff;
+		@include border-radius(1.35rem);
+		overflow: hidden;
+		margin:0 auto;
+	}
+	img{
+		width: 1.35rem;
+		height: 1.35rem;
+	}
+	p{
+		color: #fff;
+		line-height:0.38rem;
+		margin-top: 0.08rem;
+		font-size: 0.26rem;
+		span{
+			font-size: 0.23rem;
+			display: block;
+		}
+	}
+
+}
+.own_moneyD{
+	position:relative;
+	padding:0 0.24rem;
+	color:$font2;
+	height:0.6rem;
+	line-height:0.6rem;
+	text-align:center;
+	background:#fff;
+	p{
+		width:50%;
+		float:left;
+	}
+	a{
+		color:$font2;
+	}
+	i{
+		width: 1px;
+		height: 0.24rem;
+		position:absolute;
+		left: 50%;
+		top: 0.18rem;
+		background:$font4;
+	}
+}
+.own_listD{
+	margin-top:0.15rem;
+	padding-left:0.24rem;
+	background:#fff;
+
+	li{
+		height: 0.73rem;
+		background:#fff;
+		border-bottom:1px solid $font4;
+		line-height: 0.73rem;
+		font-size: 0.25rem;
+		padding-right: 0.24rem;
+		position:relative;
+		padding-left:0.75rem;
+		span{
+			i{
+				position:absolute;
+			    right: 0.24rem;
+			    top: 50%;
+			    left: auto;
+		        margin-top: -3px;	
+			}
+		}
+		
+	}
+	li:last-child{
+		border-bottom:0px;
+	}
+	i{
+		@include absolute(50%,0);
+		margin-top: -13px;	
+	}
+
+
+}
+.logoD{
+	background:#f7f7f7;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	text-align:center;
+	width:100%;
 }

@@ -126,8 +126,68 @@
 
 .icon_jiaofei {
   background-image: url("../slice/icon_jiaofei.png");
-  width: 31px;
-  height: 31px;
+  width: 32px;
+  height: 32px;
+}
+
+.icon_tishi {
+  background-image: url("../slice/icon_tishi.png");
+  width: 10px;
+  height: 10px;
+}
+
+.icon_fabu {
+  background-image: url("../slice/icon_fabu.png");
+  width: 32px;
+  height: 32px;
+}
+
+.icon_nolist {
+  background-image: url("../slice/icon_nolist.png");
+  width: 116px;
+  height: 116px;
+}
+
+.icon_register_record {
+  background-image: url("../slice/icon_register_record.png");
+  width: 26px;
+  height: 26px;
+}
+
+.icon_pay_record {
+  background-image: url("../slice/icon_pay_record.png");
+  width: 26px;
+  height: 26px;
+}
+
+.icon_appointment_record {
+  background-image: url("../slice/icon_appointment_record.png");
+  width: 26px;
+  height: 26px;
+}
+
+.icon_examine_report {
+  background-image: url("../slice/icon_examine_report.png");
+  width: 26px;
+  height: 26px;
+}
+
+.icon_hospital_record {
+  background-image: url("../slice/icon_hospital_record.png");
+  width: 26px;
+  height: 26px;
+}
+
+.icon_collection_record {
+  background-image: url("../slice/icon_collection_record.png");
+  width: 26px;
+  height: 26px;
+}
+
+.icon_logo {
+  background-image: url("../slice/icon_logo.png");
+  width: 80px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=icon.css.map */

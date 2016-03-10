@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>确认支付</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+	<div class="pay-price">7.0元</div>
+
+	<div class="pay-type">
+		<span>业务类型</span><em>门诊费用</em>
+	</div>
+	<div class="conf-you">
+		<div class="conf-youtit"><i class="icon_rmbposition icon icon_rmb"></i><span>支付方式</span></div>
+	</div>
+	<div class="conf-pay">
+		<ul id="confPay">
+			<li class="acitve">
+				<span>就诊卡余额支付</span><em>（剩余¥13）</em>
+				<i class="icon icon_select"></i>
+				<i class="icon icon_noselect"></i>
+			</li>
+			<li>
+				<span>微信支付</span>
+				<i class="icon icon_select"></i>
+				<i class="icon icon_noselect"></i>
+			</li>
+			<li>
+				<span>农行支付</span>
+				<i class="icon icon_select"></i>
+				<i class="icon icon_noselect"></i>
+			</li>
+		</ul>
+	</div>
+	<div class="conf-submit">
+		<a href="finish.html"><span>立即支付</span></a>
+	</div>
+	<script type="text/javascript" src="/static/js/iscroll.js"></script>
+	<script>
+		window.onload = function(){
+			var paylist = document.getElementById("confPay");
+			var payitem = paylist.getElementsByTagName("li");
+
+
+			for(var i = 0;i<payitem.length;i++){
+				payitem[i].addEventListener("click",function(){
+					for(var j = 0;j<payitem.length;j++){
+						payitem[j].className = "";
+					}
+					this.className = "acitve";
+				})
+			}
+		}
+	</script>
+</body>
+</html>
