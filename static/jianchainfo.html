@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>待检测详情</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;width: 100%;overflow: hidden;">
+	<div class="jiancha_body">
+		<div class="payinfo-name">
+			<i>就诊人</i><span>张三</span><em>440111111111111</em>
+		</div>
+		<div class="conf-doctor fin-margin">
+			<ul>
+				<li><span>就诊科室</span><em>肿瘤科</em></li>
+				<li><span>就诊医生</span><em>武国强</em></li>
+			</ul>
+		</div>
+		<div class="conf-doctor fin-margin">
+			<ul>
+				<li><span>检查项目</span><em>B超</em></li>
+			</ul>
+		</div>
+		<div id="openjc" class="conf-doctor fin-margin">
+			<ul>
+				<li><span>预约检查时间</span><em id="jcTime"></em><i id="jcChoice" class="icon icon_greenjj"></i></li>
+			</ul>
+		</div>
+		<a class="jiancha_finish"><span>确认预约</span></a>
+	</div>
+	<div id="jiancha_plane">
+		<div class="paiban_timeTitleG">
+			<span class="paiban_timeL"><i class="icon icon_time"></i><p id="paiban_time">2016-02-23</p></span>
+		</div>
+		<div id="paiban_table">
+			<span data-da="2016-02-23" class="active"><i>23</i><em>一</em></span>
+			<span data-da="2016-02-24"><i>23</i><em>二</em></span>
+			<span data-da="2016-02-25"><i>满</i><em>三</em></span>
+			<span data-da="2016-02-26"><i>23</i><em>四</em></span>
+			<span data-da="2016-02-27"><i>23</i><em>五</em></span>
+			<span data-da="2016-02-28"><i>23</i><em>六</em></span>
+			<span data-da="2016-02-29"><i>23</i><em>日</em></span>
+		</div>
+		<div id="jiancha_list">
+			<div class="jiancha_scroller">
+				<div class="jiancha_wamp jiancha_scroll1">
+					<ul class="jiancha_scroll">
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+					</ul>
+				</div>
+				<div class="jiancha_wamp jiancha_scroll2">
+					<ul class="jiancha_scroll">
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+					</ul>
+				</div>
+				<div class="jiancha_wamp jiancha_scroll3">
+					<ul class="jiancha_scroll">
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+					</ul>
+				</div>
+				<div class="jiancha_wamp jiancha_scroll4">
+					<ul class="jiancha_scroll">
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+					</ul>
+				</div>
+				<div class="jiancha_wamp jiancha_scroll5">
+					<ul class="jiancha_scroll">
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+					</ul>
+				</div>
+				<div class="jiancha_wamp jiancha_scroll6">
+					<ul class="jiancha_scroll">
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+					</ul>
+				</div>
+				<div class="jiancha_wamp jiancha_scroll7">
+					<ul class="jiancha_scroll">
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+						<li data-or="0"><span>08:45</span><em>已约满</em></li>
+						<li data-or="1"><span>08:45</span><div>15/25</div><i class="icon icon_choice"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="jiancha_confirm"><span>确认</span></div>
+	</div>
+	<script type="text/javascript" src="/static/js/iscroll.js"></script>
+	<script>
+		window.onload = function() {
+			var time = document.getElementById("paiban_table");
+			var timelist = time.getElementsByTagName("span");
+			var data = document.getElementById("paiban_time");
+			var wamp = document.querySelectorAll('.jiancha_wamp');
+			var openjc = document.getElementById('openjc');
+			var plane = document.getElementById('jiancha_plane');
+			var confirm = document.getElementById('jiancha_confirm');
+			var jiancha_list = document.getElementById('jiancha_list');
+			var jcTime = document.getElementById('jcTime');
+			var li = jiancha_list.getElementsByTagName('li');
+			var choice = null;
+			var haschoice = null;
+			jiancha_list.addEventListener("tap",function(e){
+				var oTarget = e.tagName || e.target;
+				if(haschoice){
+					haschoice.className = '';
+				}
+				if(oTarget.tagName==="LI"){
+					if(oTarget.getAttribute('data-or')=="1"){
+						oTarget.className = 'active';
+						haschoice = oTarget;
+					}
+				}else{
+					if(oTarget.parentNode.getAttribute('data-or')=="1"){
+						oTarget.parentNode.className = 'active';
+						haschoice = oTarget.parentNode;
+					}
+				}
+			});
+			openjc.addEventListener('touchend', function() {
+				plane.style.display = "block";
+				setTimeout(function(){plane.className = "active";},30)
+			});
+			confirm.addEventListener('touchend', function() {
+				plane.className = "";
+				jcTime.innerHTML = timelist[keshiType.currentPage.pageX].getAttribute("data-da") +"  "+ haschoice.getElementsByTagName('span')[0].innerHTML;
+				document.getElementById('jcChoice').style.display = 'none';
+			});
+			for (var i = 0; i < wamp.length; i++) {
+				new IScroll(wamp[i], {
+					click: true,
+					scrollY: true,
+					momentum: false,
+					snap: true
+				});
+			}
+			var keshiType = new IScroll(jiancha_list, {
+				tap: true,
+				scrollX: true,
+				scrollY: false,
+				momentum: false,
+				snap: true,
+				bounce: false
+			});
+			keshiType.on('scrollEnd', function(){
+				for(k in timelist){
+					if(timelist[k].className == "active")
+					timelist[k].className = "";
+				}
+				data.innerHTML = timelist[keshiType.currentPage.pageX].getAttribute("data-da");
+				timelist[keshiType.currentPage.pageX].className = "active";
+			});
+			for(var i=0;i<timelist.length;i++){
+				(function(j){
+					timelist[j].addEventListener("touchend",function(){
+						for(k in timelist){
+							if(timelist[k].className == "active")
+							timelist[k].className = "";
+						}
+						this.className = "active";
+						data.innerHTML = this.getAttribute("data-da");
+						keshiType.goToPage(j, 0, 500);
+					})
+				})(i)
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 @import 'base';
 
-//------------------keshi----------------start
+//-----------------------------------keshi--------------------start
 #keshi_searchG{
 	padding:0.2rem 0.25rem;
 	background-color: #F7F7F7;
@@ -163,10 +163,10 @@
 		}
 	}
 }
-//------------------keshi----------------end
+//-----------------------------------keshi----------------------end
 
 
-//------------------paiban----------------start
+//-----------------------------------paiban--------------------start
 .paiban_timeTitleG{
 	padding: 0 0.25rem;
 	height: 0.8rem;
@@ -337,17 +337,18 @@
 	}
 }
 
-//------------------paiban----------------end
+//-----------------------------------paiban----------------------end
 
 
 
 
-//------------------confirm----------------start
+//-----------------------------------confirm--------------------start
 .conf-doctor{
 	background: #fff;
 	ul{
 		padding-left: 0.25rem;
 		li{
+			position: relative;
 			font-size: 0.25rem;
 			overflow: hidden;
 			height: 0.75rem;
@@ -403,6 +404,11 @@
 		}
 		span{
 			padding-left: 0.40rem;
+		}
+		em{
+			color: $font2;
+			font-size: 0.2rem;
+			margin-left: 0.2rem;
 		}
 	}
 }
@@ -528,9 +534,9 @@
 	}
 }
 
-//------------------confirm----------------end
+//-----------------------------------confirm----------------------end
 
-//------------------finish----------------end
+//-----------------------------------finish----------------------end
 .fin-top{
 	background: #fff;
 	height: 2rem;
@@ -568,9 +574,9 @@
 }
 
 
-//------------------finish----------------end
+//-----------------------------------finish----------------------end
 
-//------------------finishpay----------------start
+//-----------------------------------finishpay--------------------start
 .finpay-top{
 	background: #fff;
 	height: 2rem;
@@ -646,9 +652,9 @@
 
 
 
-//------------------finish----------------end
+//-----------------------------------finish----------------------end
 
-//------------------pay----------------start
+//-----------------------------------pay--------------------start
 .pay-price{
 	background: #fff;
 	height: .75rem;
@@ -677,10 +683,10 @@
 
 
 
-//------------------pay----------------end
+//-----------------------------------pay----------------------end
 
 
-//------------------payinfo----------------start
+//-----------------------------------payinfo--------------------start
 .payinfo-name{
 	background: #fff;
 	padding: 0 0.25rem;
@@ -731,4 +737,163 @@
 		font-size: 0.26rem;
 	}
 }
-//------------------payinfo----------------end
+//-----------------------------------payinfo----------------------end
+
+
+//-----------------------------------daiyuyue--------------------start
+.Pend_payD dl dd .daijiancha{
+	line-height: 1rem;
+	margin: 0;
+}
+//-----------------------------------daiyuyue----------------------end
+
+//-----------------------------------jianchainfo----------------------start
+.jiancha_body{
+	position:absolute;
+	top:0;left:0;
+	width:100%;
+	height:100%;
+	background: #F7F7F7;
+}
+#jiancha_plane{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	opacity:0;
+	transform: translate(0,60px);
+	-webkit-transform: translate(0,60px);
+	z-index:-1;
+	#jiancha_confirm{
+		position: absolute;
+		bottom:0;
+		left: 0;
+		box-sizing:border-box;
+		width: 100%;
+		height: 1rem;
+		padding: 0.15rem 0.25rem;
+		span{
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			line-height: 0.7rem;
+			background: $base-color;
+			color: #fff;
+			font-size: 0.25rem;
+		}
+	}
+}
+#jiancha_plane.active{
+	z-index:1;
+	opacity:1;
+	transform: translate(0,0);
+	-webkit-transform: translate(0,0);
+}
+#jiancha_list{
+	background:#fff;
+    position: absolute;
+    left: 0;
+    top: 1.95rem;
+    bottom: 1rem;
+    width: 100%;
+    overflow: hidden;
+	.jiancha_scroller{
+		width: 44.8rem;
+		.jiancha_wamp{
+			width: 6.4rem;
+		    top: 0;
+		    position: absolute;
+		    bottom: 0.5rem;
+		    z-index: 1;
+			.jiancha_scroll{
+				padding-left: 0.25rem;
+				box-sizing:border-box;
+				width: 6.4rem;
+				li{
+					height: 0.75rem;
+					font-size: 0.25rem;
+					border-bottom:1px solid $font4;
+					line-height: 0.75rem;
+					position: relative;
+					div{
+						width: .8rem;
+					    height: .35rem;
+					    line-height: .35rem;
+					    font-size: .22rem;
+					    border-radius: .35rem;
+					    color: $base-color;
+					    border: 1px solid $base-color;
+					    text-align: center;
+					    position: absolute;
+					    top: 50%;
+					    margin-top: -.17rem;
+					    right: .6rem;
+					}
+					em{
+						width: .8rem;
+					    height: .35rem;
+					    line-height: .35rem;
+					    font-size: .22rem;
+					    color: $font2;
+					    text-align: center;
+					    position: absolute;
+					    top: 50%;
+					    margin-top: -.17rem;
+					    right: .6rem;
+					}
+					.icon{
+						display: none;
+						position: absolute;
+						right: 0.13rem;
+						top: 50%;
+						margin-top: -8px;
+					}
+				}
+				li:last-child{
+					border-bottom: 0;
+				}
+				.active .icon{
+					display: inline-block;
+				}
+			}
+		}
+		.jiancha_scroll1{left:6.4rem*0}
+		.jiancha_scroll2{left:6.4rem*1}
+		.jiancha_scroll3{left:6.4rem*2}
+		.jiancha_scroll4{left:6.4rem*3}
+		.jiancha_scroll5{left:6.4rem*4}
+		.jiancha_scroll6{left:6.4rem*5}
+		.jiancha_scroll7{left:6.4rem*6}
+	}
+}
+#jcChoice{
+	position: absolute;
+    right: .25rem;
+    top: 50%;
+    margin-top: -6px;
+}
+.jiancha_finish{
+	display: block;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1rem;
+    padding: .15rem .25rem;
+    span{
+    	display: block;
+	    width: 100%;
+	    height: 100%;
+	    text-align: center;
+	    line-height: .7rem;
+	    background: #00B1B5;
+	    color: #fff;
+	    font-size: .25rem;
+    }
+}
+//-----------------------------------jianchainfo----------------------end

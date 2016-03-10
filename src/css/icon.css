@@ -130,4 +130,16 @@
   height: 31px;
 }
 
+.icon_yuyue {
+  background-image: url("../slice/icon-yuyue.png");
+  width: 30px;
+  height: 30px;
+}
+
+.icon_clock {
+  background-image: url("../slice/icon-clock.png");
+  width: 18px;
+  height: 18px;
+}
+
 /*# sourceMappingURL=icon.css.map */

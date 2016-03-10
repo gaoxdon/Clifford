@@ -76,4 +76,9 @@
 .icon_jiaofei{
 	@include background(31px,31px,"../slice/icon_jiaofei.png");
 }
-
+.icon_yuyue{
+	@include background(30px,30px,"../slice/icon-yuyue.png");
+}
+.icon_clock{
+	@include background(18px,18px,"../slice/icon-clock.png");
+}
