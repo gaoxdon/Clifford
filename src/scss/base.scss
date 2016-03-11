@@ -50,8 +50,3 @@ $red:#ff375a;
 	-moz-border-radius: $bormun; 
 	-webkit-border-radius: $bormun; 
 }
-@mixin position($top:0,$right:0){
-    position:absolute;
-    top:$top;
-    right:$left;
-}

@@ -5,115 +5,115 @@
 }
 
 .icon_fanda {
-  background-position: -48px -158px;
+  background-position: -244px -22px;
   width: 15px;
   height: 16px;
 }
 
 .icon_feibinke {
-  background-position: -122px -56px;
+  background-position: 0 -178px;
   width: 26px;
   height: 27px;
 }
 
 .icon_jj {
-  background-position: 0 -185px;
+  background-position: -82px -228px;
   width: 6px;
   height: 11px;
 }
 
 .icon_sanjiao {
-  background-position: -12px -185px;
+  background-position: -185px -176px;
   width: 3px;
   height: 6px;
 }
 
 .icon_data {
-  background-position: -129px -116px;
+  background-position: -244px -44px;
   width: 15px;
   height: 15px;
 }
 
 .icon_time {
-  background-position: -151px -102px;
+  background-position: -119px -222px;
   width: 15px;
   height: 15px;
 }
 
 .icon_person {
-  background-position: 0 -159px;
+  background-position: -196px -122px;
   width: 18px;
   height: 20px;
 }
 
 .icon_choice {
-  background-position: -154px -80px;
+  background-position: -185px -154px;
   width: 22px;
   height: 16px;
 }
 
 .icon_person2 {
-  background-position: -154px -56px;
+  background-position: -56px -228px;
   width: 20px;
   height: 18px;
 }
 
 .icon_greenjj {
-  background-position: -24px -183px;
+  background-position: -32px -178px;
   width: 6px;
   height: 11px;
 }
 
 .icon_rmb {
-  background-position: -103px -122px;
+  background-position: -30px -228px;
   width: 20px;
   height: 20px;
 }
 
 .icon_select {
-  background-position: -178px 0;
+  background-position: -96px -222px;
   width: 16px;
   height: 16px;
 }
 
 .icon_noselect {
-  background-position: -73px -150px;
+  background-position: -244px 0;
   width: 17px;
   height: 16px;
 }
 
 .icon_finish {
-  background-position: -122px 0;
+  background-position: 0 -122px;
   width: 50px;
   height: 50px;
 }
 
 .icon_collect_bigD {
-  background-position: -73px -122px;
+  background-position: 0 -211px;
   width: 24px;
   height: 22px;
 }
 
 .icon_collect_bigonD {
-  background-position: -122px -89px;
+  background-position: -156px -154px;
   width: 24px;
   height: 22px;
 }
 
 .icon_time_bigD {
-  background-position: -178px -22px;
+  background-position: -244px -66px;
   width: 14px;
   height: 14px;
 }
 
 .icon_data_bigD {
-  background-position: -97px -150px;
+  background-position: -220px -122px;
   width: 15px;
   height: 15px;
 }
 
 .icon_next_bigD {
-  background-position: -180px -42px;
+  background-position: -44px -178px;
   width: 6px;
   height: 11px;
 }
@@ -125,27 +125,87 @@
 }
 
 .icon_jiaofei {
-  background-position: 0 -122px;
-  width: 31px;
-  height: 31px;
+  background-position: -56px -122px;
+  width: 32px;
+  height: 32px;
 }
 
 .icon_yuyue {
-  background-position: -37px -122px;
+  background-position: -56px -160px;
   width: 30px;
   height: 30px;
 }
 
 .icon_clock {
-  background-position: -24px -159px;
+  background-position: 0 -239px;
   width: 18px;
   height: 18px;
+}
+
+.icon_tishi {
+  background-position: -24px -254px;
+  width: 10px;
+  height: 10px;
+}
+
+.icon_fabu {
+  background-position: -94px -122px;
+  width: 32px;
+  height: 32px;
+}
+
+.icon_nolist {
+  background-position: -122px 0;
+  width: 116px;
+  height: 116px;
+}
+
+.icon_register_record {
+  background-position: -64px -196px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_pay_record {
+  background-position: -164px -122px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_appointment_record {
+  background-position: -132px -122px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_examine_report {
+  background-position: -32px -196px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_hospital_record {
+  background-position: -92px -160px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_collection_record {
+  background-position: -124px -160px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_logo {
+  background-position: -96px -192px;
+  width: 80px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=icon.css.map */
 
 
-/* /static/images/icon.png?20160310172148 */
+/* /static/images/icon.png?20160311085319 */
 .icon_fanda,
 .icon_feibinke,
 .icon_jj,
@@ -168,12 +228,22 @@
 .icon_no_payD,
 .icon_jiaofei,
 .icon_yuyue,
-.icon_clock{
-background-image: url(/static/images/icon.png?20160310172148);
+.icon_clock,
+.icon_tishi,
+.icon_fabu,
+.icon_nolist,
+.icon_register_record,
+.icon_pay_record,
+.icon_appointment_record,
+.icon_examine_report,
+.icon_hospital_record,
+.icon_collection_record,
+.icon_logo{
+background-image: url(/static/images/icon.png?20160311085319);
 }
 
 
-/* /static/images/icon@2x.png?20160310172148 */
+/* /static/images/icon@2x.png?20160311085319 */
 @media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
 .icon_fanda,
 .icon_feibinke,
@@ -197,79 +267,119 @@ background-image: url(/static/images/icon.png?20160310172148);
 .icon_no_payD,
 .icon_jiaofei,
 .icon_yuyue,
-.icon_clock{
-background-image: url(/static/images/icon@2x.png?20160310172148);
-background-size: 186px auto;
+.icon_clock,
+.icon_tishi,
+.icon_fabu,
+.icon_nolist,
+.icon_register_record,
+.icon_pay_record,
+.icon_appointment_record,
+.icon_examine_report,
+.icon_hospital_record,
+.icon_collection_record,
+.icon_logo{
+background-image: url(/static/images/icon@2x.png?20160311085319);
+background-size: 252px auto;
 }
 .icon_fanda{
-background-position: -119px -106px;
+background-position: -94px -210px;
 }
 .icon_feibinke{
-background-position: -119px -53px;
+background-position: -152px -119px;
 }
 .icon_jj{
-background-position: -172px -31px;
+background-position: -238px -17px;
 }
 .icon_sanjiao{
-background-position: -137px -106px;
+background-position: -144px -172px;
 }
 .icon_data{
-background-position: -93px -142px;
+background-position: -112px -210px;
 }
 .icon_time{
-background-position: -145px -92px;
+background-position: -238px 0;
 }
 .icon_person{
-background-position: -93px -119px;
+background-position: -26px -216px;
 }
 .icon_choice{
-background-position: -67px -143px;
+background-position: -69px -216px;
 }
 .icon_person2{
-background-position: -23px -153px;
+background-position: -46px -216px;
 }
 .icon_greenjj{
-background-position: -172px -17px;
+background-position: -38px -172px;
 }
 .icon_rmb{
-background-position: 0 -153px;
+background-position: -181px -119px;
 }
 .icon_select{
-background-position: -148px -73px;
+background-position: -204px -119px;
 }
 .icon_noselect{
-background-position: -46px -152px;
+background-position: -170px -148px;
 }
 .icon_finish{
-background-position: -119px 0;
+background-position: 0 -119px;
 }
 .icon_collect_bigD{
-background-position: -119px -82px;
+background-position: -144px -148px;
 }
 .icon_collect_bigonD{
-background-position: -67px -119px;
+background-position: 0 -201px;
 }
 .icon_time_bigD{
-background-position: -172px 0;
+background-position: -170px -167px;
 }
 .icon_data_bigD{
-background-position: -113px -125px;
+background-position: -189px -142px;
 }
 .icon_next_bigD{
-background-position: -65px -162px;
+background-position: -29px -172px;
 }
 .icon_no_payD{
 background-position: 0 0;
 }
 .icon_jiaofei{
-background-position: 0 -119px;
+background-position: -88px -119px;
 }
 .icon_yuyue{
-background-position: -34px -119px;
+background-position: -53px -154px;
 }
 .icon_clock{
-background-position: -148px -53px;
+background-position: 0 -225px;
+}
+.icon_tishi{
+background-position: -21px -239px;
+}
+.icon_fabu{
+background-position: -53px -119px;
+}
+.icon_nolist{
+background-position: -119px 0;
+}
+.icon_register_record{
+background-position: -86px -154px;
+}
+.icon_pay_record{
+background-position: -58px -187px;
+}
+.icon_appointment_record{
+background-position: 0 -172px;
+}
+.icon_examine_report{
+background-position: -115px -154px;
+}
+.icon_hospital_record{
+background-position: -123px -119px;
+}
+.icon_collection_record{
+background-position: -29px -187px;
+}
+.icon_logo{
+background-position: -87px -183px;
 } 
 }
 
-.css_stamp{ content:"20160310172148";}
+.css_stamp{ content:"20160311085319";}

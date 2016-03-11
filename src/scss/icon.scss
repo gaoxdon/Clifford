@@ -74,11 +74,41 @@
 	@include background(116px,116px,"../slice/icon_no_payD.png");
 }
 .icon_jiaofei{
-	@include background(31px,31px,"../slice/icon_jiaofei.png");
+	@include background(32px,32px,"../slice/icon_jiaofei.png");
 }
 .icon_yuyue{
 	@include background(30px,30px,"../slice/icon-yuyue.png");
 }
 .icon_clock{
 	@include background(18px,18px,"../slice/icon-clock.png");
+}
+.icon_tishi{
+	@include background(10px,10px,"../slice/icon_tishi.png");
+}
+.icon_fabu{
+	@include background(32px,32px,"../slice/icon_fabu.png");
+}
+.icon_nolist{
+	@include background(116px,116px,"../slice/icon_nolist.png");
+}
+.icon_register_record{
+	@include background(26px,26px,"../slice/icon_register_record.png");
+}
+.icon_pay_record{
+	@include background(26px,26px,"../slice/icon_pay_record.png");
+}
+.icon_appointment_record{
+	@include background(26px,26px,"../slice/icon_appointment_record.png");
+}
+.icon_examine_report{
+	@include background(26px,26px,"../slice/icon_examine_report.png");
+}
+.icon_hospital_record{
+	@include background(26px,26px,"../slice/icon_hospital_record.png");
+}
+.icon_collection_record{
+	@include background(26px,26px,"../slice/icon_collection_record.png");
+}
+.icon_logo{
+	@include background(80px,24px,"../slice/icon_logo.png");
 }
