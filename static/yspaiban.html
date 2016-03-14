@@ -22,7 +22,7 @@
    			<img class="scheduling_timgD" src="/static/images/scheduling_topD.png">
    			<dl class="doctor_aboutD">
    				<dt><img src="/static/images/ysD.jpg"></dt>
-   				<dd><h6>武国强</h6><p>肿瘤科</p><p>副主任医师</p></dd>
+   				<dd><h6>武国强</h6><p class="keshiD">肿瘤科</p><p class="zhicD">副主任医师</p></dd>
    			</dl>
    			<div class="doctor_collectD" onclick="shoucang();return false">
    				<i class="icon icon_collect_bigD"></i><p>收藏</p>
@@ -32,8 +32,8 @@
 	   		
 	   			<div class="scheduling_titleD" >
 	   				<ul >
-	   					<li class="on" id="guahaoD" onclick="guahaob();return false">挂号</li>
-	   					<li id="jieshaoD" onclick="jieshaob();return false">介绍</li>
+	   					<li class="on"  onclick="anniu(0);return false">挂号</li>
+	   					<li onclick="anniu(1);return false">介绍</li>
 	   				</ul>
 	   				<i></i>
 	   			</div>
@@ -79,59 +79,43 @@
    </div>
 </body>
 <script type="text/javascript">
-	var lengths=$(".scheduling_jtdayD li").length;
-	var heights=0.74*lengths+1.24+"rem"
-	$("#wrapper").css("height",heights);
 	var num=0;
-    function guahao(){
-    	$("#guahaoD").addClass("on");
-    	$("#jieshaoD").removeClass("on");
-    }
-     function jieshao(){
-    	$("#jieshaoD").addClass("on");
-    	$("#guahaoD").removeClass("on");
-    }
-    function jieshaob(){
-    	$("#scroller").css("transform ","translate(-6.4rem, 0px) translateZ(0px);");
-    	jieshao();
-    }
-    function guahaob(){
-    	$("#scroller").css("transform ","translate(0px, 0px) translateZ(0px);");
-    	guahao();	
-    }
-    var shc=1
-   function shoucang(){
-	   	if(shc==1){
-	   		$(".doctor_collectD>i").addClass("icon_collect_bigonD");
-	   		$(".doctor_collectD>p").html("已收藏")
-	   		shc=0;
-	   	}else{
-	   		$(".doctor_collectD>i").removeClass("icon_collect_bigonD");
-	   		$(".doctor_collectD>p").html("收藏")
-	   		shc=1;
-	   	}
-   }
-	var myScroll;
-	var daohang;
-	function loaded () {
+	window.onload=function(){
+		function listona(list){
+	    	$('.scheduling_titleD>ul>li').removeClass('on'); 
+	        $('.scheduling_titleD>ul>li').eq(list).addClass('on');
+    	}
 		myScroll = new IScroll('#wrapper', {
-			scrollX: true,
-			scrollY: true,
-			momentum: false,
-			snap: true 
+			click: true,
+            scrollX: true,
+            scrollY: true,
+            momentum: false,
+			snap: true,
+			bounce:false
 		});
 		myScroll.on('scrollEnd', function () {
-			$("#scroller").css("marginLeft ","0");
-			if(this.x!=num){
-				num=this.x;
-				if(num<0){
-					jieshao();
-				}else{
-					guahao();
-				}
+			listona(this.currentPage.pageX);
+			if(this.currentPage.pageX==num){
+				num=20;
+				myScroll.goToPage(this.currentPage.pageX, 0, 500);
+			}else{
+				num=this.currentPage.pageX;
 			}
 		});
 	}
-	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	function anniu(num){myScroll.goToPage(num, 0, 100);}
+    var shc=1
+    function shoucang(){
+	   	if(shc==1){
+	   		$(".doctor_collectD>i").addClass("icon_collect_bigonD");
+	   		$(".doctor_collectD>p").html("已收藏");
+	   		shc=0;
+	   	}else{
+	   		$(".doctor_collectD>i").removeClass("icon_collect_bigonD");
+	   		$(".doctor_collectD>p").html("收藏");
+	   		shc=1;
+	   	}
+    }
+	
 </script>
 </html>

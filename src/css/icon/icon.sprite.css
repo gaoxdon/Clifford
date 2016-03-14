@@ -229,7 +229,11 @@
 /*# sourceMappingURL=icon.css.map */
 
 
+<<<<<<< HEAD
 /* /static/images/icon.png?20160311171452 */
+=======
+/* /static/images/icon.png?20160311173944 */
+>>>>>>> 71b0b6dff3038ebf253871c1ed65090bd1803c88
 .icon_fanda,
 .icon_feibinke,
 .icon_jj,
@@ -262,6 +266,7 @@
 .icon_examine_report,
 .icon_hospital_record,
 .icon_collection_record,
+<<<<<<< HEAD
 .icon_logo,
 .icon_card_cd,
 .icon_card_phone,
@@ -272,6 +277,14 @@ background-image: url(/static/images/icon.png?20160311171452);
 
 
 /* /static/images/icon@2x.png?20160311171452 */
+=======
+.icon_logo{
+background-image: url(/static/images/icon.png?20160311173944);
+}
+
+
+/* /static/images/icon@2x.png?20160311173944 */
+>>>>>>> 71b0b6dff3038ebf253871c1ed65090bd1803c88
 @media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
 .icon_fanda,
 .icon_feibinke,
@@ -305,6 +318,7 @@ background-image: url(/static/images/icon.png?20160311171452);
 .icon_examine_report,
 .icon_hospital_record,
 .icon_collection_record,
+<<<<<<< HEAD
 .icon_logo,
 .icon_card_cd,
 .icon_card_phone,
@@ -312,6 +326,11 @@ background-image: url(/static/images/icon.png?20160311171452);
 .icon_card_person{
 background-image: url(/static/images/icon@2x.png?20160311171452);
 background-size: 260px auto;
+=======
+.icon_logo{
+background-image: url(/static/images/icon@2x.png?20160311173944);
+background-size: 252px auto;
+>>>>>>> 71b0b6dff3038ebf253871c1ed65090bd1803c88
 }
 .icon_fanda{
 background-position: -189px -142px;
@@ -426,4 +445,8 @@ background-position: -170px -148px;
 } 
 }
 
+<<<<<<< HEAD
 .css_stamp{ content:"20160311171452";}
+=======
+.css_stamp{ content:"20160311173944";}
+>>>>>>> 71b0b6dff3038ebf253871c1ed65090bd1803c88
