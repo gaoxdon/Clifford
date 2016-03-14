@@ -112,3 +112,16 @@
 .icon_logo{
 	@include background(80px,24px,"../slice/icon_logo.png");
 }
+
+.icon_card_cd{
+	@include background(18px,16px,"../slice/icon-card-cd.png");
+}
+.icon_card_phone{
+	@include background(12px,22px,"../slice/icon-card-phone.png");
+}
+.icon_card_info{
+	@include background(18px,14px,"../slice/icon-card-info.png");
+}
+.icon_card_person{
+	@include background(16px,18px,"../slice/icon-card-person.png");
+}

@@ -1,5 +1,5 @@
 @import url(reset.css);
-#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .finpay-list .finpay-listbody li, .report_dtitleD, .report_dlistD li {
+#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .finpay-list .finpay-listbody li, .cardBotton, .report_dtitleD, .report_dlistD li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,6 +64,7 @@
   font-size: 0.26rem;
   width: 1.75rem;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   position: absolute;
   top: 0.9rem;
   left: 0;
@@ -104,6 +105,7 @@
   font-size: 0.26rem;
   width: 4.65rem;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   position: absolute;
   right: 0;
   top: 0.9rem;
@@ -131,6 +133,7 @@
 }
 #keshi_listG .listG_ul .listG_li .listG_font {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   float: right;
   width: 3.65rem;
   border-bottom: 1px solid #DBDCDC;
@@ -151,6 +154,7 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 0.9rem 0.25rem 0;
   position: absolute;
   top: 0;
@@ -318,6 +322,7 @@
 }
 #paiban_doctor .paiban_item img {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 0.12rem 0;
   display: inline-block;
   height: 100%;
@@ -325,6 +330,7 @@
 #paiban_doctor .paiban_item .paiban_info {
   display: inline-block;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 0.12rem 0;
   margin-left: 0.2rem;
   -webkit-box-flex: 1;
@@ -341,6 +347,12 @@
   font-size: 0.23rem;
   margin-bottom: 0.15rem;
   color: #9E9F9F;
+  width: 3.2rem;
+  line-height: 0.25rem;
+  height: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #paiban_doctor .paiban_item .paiban_info p {
   height: 0.6rem;
@@ -645,10 +657,13 @@
 .finpay-list .finpay-listtit {
   padding: 0 0.25rem;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   height: 0.75rem;
   border-bottom: 1px solid #DBDCDC;
+  font-size: 0.25rem;
 }
 .finpay-list .finpay-listtit span {
+  display: block;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -667,6 +682,7 @@
   padding: 0.15rem 0.25rem 0.15rem 0;
 }
 .finpay-list .finpay-listbody li span {
+  display: block;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -918,6 +934,7 @@
   bottom: 0;
   left: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   width: 100%;
   height: 1rem;
   padding: .15rem .25rem;
@@ -933,7 +950,119 @@
   font-size: .25rem;
 }
 
-#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .finpay-list .finpay-listbody li, .report_dtitleD, .report_dlistD li {
+.cardBotton {
+  padding: 0 0.12rem;
+  margin-top: 0.25rem;
+}
+.cardBotton span {
+  box-sizing: box-sizing;
+  padding: 0 0.12rem;
+  height: 0.60rem;
+  line-height: 0.60rem;
+  font-size: 0.26rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.cardBotton span a {
+  display: block;
+  color: #fff;
+  background: #00B1B5;
+}
+
+.bindcard {
+  padding: 0 0.25rem;
+}
+.bindcard .bindform span {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0.15rem 0 0.15rem 30px;
+  display: block;
+  width: 100%;
+  margin-top: 0.15rem;
+  background: #fff;
+  font-size: 0.25rem;
+  height: 0.75rem;
+  position: relative;
+}
+.bindcard .bindform span input {
+  display: block;
+  height: 0.45rem;
+  width: 4rem;
+  border: none;
+  outline: medium;
+  background: transparent;
+  text-indent: 0.10rem;
+  line-height: 0.25rem;
+}
+.bindcard .bindform span .icon {
+  position: absolute;
+  top: 50%;
+}
+.bindcard .bindform span .icon_card_person {
+  left: 0.15rem;
+  margin-top: -9px;
+}
+.bindcard .bindform span .icon_card_info {
+  left: 0.15rem;
+  margin-top: -7px;
+}
+.bindcard .bindform span .icon_card_phone {
+  left: 0.20rem;
+  margin-top: -11px;
+}
+.bindcard .bindform span .icon_card_cd {
+  left: 0.15rem;
+  margin-top: -8px;
+}
+.bindcard .bindtips {
+  padding-left: 14px;
+  position: relative;
+  margin-top: 0.05rem;
+}
+.bindcard .bindtips p {
+  font-size: 0.2rem;
+  color: #9E9F9F;
+  line-height: 0.28rem;
+}
+.bindcard .bindtips .icon {
+  position: absolute;
+  top: 0.05rem;
+  left: 0;
+}
+.bindcard .bindconfirm {
+  height: 0.65rem;
+  font-size: 0.26rem;
+  text-align: center;
+  background: #00B1B5;
+  margin-top: 0.25rem;
+}
+.bindcard .bindconfirm a {
+  line-height: 0.65rem;
+  font-size: 0.26rem;
+  color: #fff;
+}
+
+#bindhint {
+  position: absolute;
+  top: 1.5rem;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.23rem;
+  color: #fff;
+  margin-top: 0.15rem;
+}
+#bindhint span {
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0.15rem 0.25rem;
+  border-radius: 6px;
+}
+
+#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .finpay-list .finpay-listbody li, .cardBotton, .report_dtitleD, .report_dlistD li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

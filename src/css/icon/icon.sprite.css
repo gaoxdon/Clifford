@@ -5,7 +5,7 @@
 }
 
 .icon_fanda {
-  background-position: -244px -22px;
+  background-position: -222px -122px;
   width: 15px;
   height: 16px;
 }
@@ -17,43 +17,43 @@
 }
 
 .icon_jj {
-  background-position: -82px -228px;
+  background-position: -44px -178px;
   width: 6px;
   height: 11px;
 }
 
 .icon_sanjiao {
-  background-position: -185px -176px;
+  background-position: -212px -148px;
   width: 3px;
   height: 6px;
 }
 
 .icon_data {
-  background-position: -244px -44px;
+  background-position: -244px -66px;
   width: 15px;
   height: 15px;
 }
 
 .icon_time {
-  background-position: -119px -222px;
+  background-position: -182px -182px;
   width: 15px;
   height: 15px;
 }
 
 .icon_person {
-  background-position: -196px -122px;
+  background-position: -47px -228px;
   width: 18px;
   height: 20px;
 }
 
 .icon_choice {
-  background-position: -185px -154px;
+  background-position: -118px -222px;
   width: 22px;
   height: 16px;
 }
 
 .icon_person2 {
-  background-position: -56px -228px;
+  background-position: -186px -154px;
   width: 20px;
   height: 18px;
 }
@@ -65,19 +65,19 @@
 }
 
 .icon_rmb {
-  background-position: -30px -228px;
+  background-position: -196px -122px;
   width: 20px;
   height: 20px;
 }
 
 .icon_select {
-  background-position: -96px -222px;
+  background-position: -244px -22px;
   width: 16px;
   height: 16px;
 }
 
 .icon_noselect {
-  background-position: -244px 0;
+  background-position: -244px -44px;
   width: 17px;
   height: 16px;
 }
@@ -89,43 +89,43 @@
 }
 
 .icon_collect_bigD {
-  background-position: 0 -211px;
-  width: 24px;
-  height: 22px;
-}
-
-.icon_collect_bigonD {
   background-position: -156px -154px;
   width: 24px;
   height: 22px;
 }
 
+.icon_collect_bigonD {
+  background-position: -18px -228px;
+  width: 24px;
+  height: 22px;
+}
+
 .icon_time_bigD {
-  background-position: -244px -66px;
+  background-position: -21px -255px;
   width: 14px;
   height: 14px;
 }
 
 .icon_data_bigD {
-  background-position: -220px -122px;
+  background-position: 0 -255px;
   width: 15px;
   height: 15px;
 }
 
 .icon_next_bigD {
-  background-position: -44px -178px;
+  background-position: -18px -211px;
   width: 6px;
   height: 11px;
 }
 
 .icon_no_payD {
-  background-position: 0 0;
+  background-position: -122px 0;
   width: 116px;
   height: 116px;
 }
 
 .icon_jiaofei {
-  background-position: -56px -122px;
+  background-position: -94px -122px;
   width: 32px;
   height: 32px;
 }
@@ -137,61 +137,61 @@
 }
 
 .icon_clock {
-  background-position: 0 -239px;
+  background-position: -71px -228px;
   width: 18px;
   height: 18px;
 }
 
 .icon_tishi {
-  background-position: -24px -254px;
+  background-position: 0 -239px;
   width: 10px;
   height: 10px;
 }
 
 .icon_fabu {
-  background-position: -94px -122px;
+  background-position: -56px -122px;
   width: 32px;
   height: 32px;
 }
 
 .icon_nolist {
-  background-position: -122px 0;
+  background-position: 0 0;
   width: 116px;
   height: 116px;
 }
 
 .icon_register_record {
-  background-position: -64px -196px;
-  width: 26px;
-  height: 26px;
-}
-
-.icon_pay_record {
-  background-position: -164px -122px;
-  width: 26px;
-  height: 26px;
-}
-
-.icon_appointment_record {
-  background-position: -132px -122px;
-  width: 26px;
-  height: 26px;
-}
-
-.icon_examine_report {
-  background-position: -32px -196px;
-  width: 26px;
-  height: 26px;
-}
-
-.icon_hospital_record {
   background-position: -92px -160px;
   width: 26px;
   height: 26px;
 }
 
-.icon_collection_record {
+.icon_pay_record {
+  background-position: -64px -196px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_appointment_record {
+  background-position: -164px -122px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_examine_report {
+  background-position: -132px -122px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_hospital_record {
   background-position: -124px -160px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon_collection_record {
+  background-position: -32px -196px;
   width: 26px;
   height: 26px;
 }
@@ -202,10 +202,34 @@
   height: 24px;
 }
 
+.icon_card_cd {
+  background-position: -244px 0;
+  width: 18px;
+  height: 16px;
+}
+
+.icon_card_phone {
+  background-position: 0 -211px;
+  width: 12px;
+  height: 22px;
+}
+
+.icon_card_info {
+  background-position: -41px -255px;
+  width: 18px;
+  height: 14px;
+}
+
+.icon_card_person {
+  background-position: -96px -222px;
+  width: 16px;
+  height: 18px;
+}
+
 /*# sourceMappingURL=icon.css.map */
 
 
-/* /static/images/icon.png?20160311085319 */
+/* /static/images/icon.png?20160311171452 */
 .icon_fanda,
 .icon_feibinke,
 .icon_jj,
@@ -238,12 +262,16 @@
 .icon_examine_report,
 .icon_hospital_record,
 .icon_collection_record,
-.icon_logo{
-background-image: url(/static/images/icon.png?20160311085319);
+.icon_logo,
+.icon_card_cd,
+.icon_card_phone,
+.icon_card_info,
+.icon_card_person{
+background-image: url(/static/images/icon.png?20160311171452);
 }
 
 
-/* /static/images/icon@2x.png?20160311085319 */
+/* /static/images/icon@2x.png?20160311171452 */
 @media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
 .icon_fanda,
 .icon_feibinke,
@@ -277,69 +305,73 @@ background-image: url(/static/images/icon.png?20160311085319);
 .icon_examine_report,
 .icon_hospital_record,
 .icon_collection_record,
-.icon_logo{
-background-image: url(/static/images/icon@2x.png?20160311085319);
-background-size: 252px auto;
+.icon_logo,
+.icon_card_cd,
+.icon_card_phone,
+.icon_card_info,
+.icon_card_person{
+background-image: url(/static/images/icon@2x.png?20160311171452);
+background-size: 260px auto;
 }
 .icon_fanda{
-background-position: -94px -210px;
+background-position: -189px -142px;
 }
 .icon_feibinke{
 background-position: -152px -119px;
 }
 .icon_jj{
-background-position: -238px -17px;
+background-position: -15px -201px;
 }
 .icon_sanjiao{
 background-position: -144px -172px;
 }
 .icon_data{
-background-position: -112px -210px;
+background-position: 0 -240px;
 }
 .icon_time{
-background-position: -238px 0;
+background-position: -238px -38px;
 }
 .icon_person{
-background-position: -26px -216px;
+background-position: -41px -216px;
 }
 .icon_choice{
-background-position: -69px -216px;
+background-position: -238px 0;
 }
 .icon_person2{
-background-position: -46px -216px;
+background-position: -61px -216px;
 }
 .icon_greenjj{
-background-position: -38px -172px;
+background-position: -29px -172px;
 }
 .icon_rmb{
 background-position: -181px -119px;
 }
 .icon_select{
-background-position: -204px -119px;
+background-position: -238px -19px;
 }
 .icon_noselect{
-background-position: -170px -148px;
+background-position: -108px -210px;
 }
 .icon_finish{
 background-position: 0 -119px;
 }
 .icon_collect_bigD{
-background-position: -144px -148px;
+background-position: -15px -216px;
 }
 .icon_collect_bigonD{
-background-position: 0 -201px;
+background-position: -144px -148px;
 }
 .icon_time_bigD{
-background-position: -170px -167px;
+background-position: -18px -240px;
 }
 .icon_data_bigD{
-background-position: -189px -142px;
+background-position: -170px -169px;
 }
 .icon_next_bigD{
-background-position: -29px -172px;
+background-position: -39px -172px;
 }
 .icon_no_payD{
-background-position: 0 0;
+background-position: -119px 0;
 }
 .icon_jiaofei{
 background-position: -88px -119px;
@@ -348,38 +380,50 @@ background-position: -88px -119px;
 background-position: -53px -154px;
 }
 .icon_clock{
-background-position: 0 -225px;
+background-position: -87px -210px;
 }
 .icon_tishi{
-background-position: -21px -239px;
+background-position: 0 -226px;
 }
 .icon_fabu{
 background-position: -53px -119px;
 }
 .icon_nolist{
-background-position: -119px 0;
+background-position: 0 0;
 }
 .icon_register_record{
 background-position: -86px -154px;
 }
 .icon_pay_record{
-background-position: -58px -187px;
+background-position: -29px -187px;
 }
 .icon_appointment_record{
-background-position: 0 -172px;
+background-position: -58px -187px;
 }
 .icon_examine_report{
-background-position: -115px -154px;
-}
-.icon_hospital_record{
 background-position: -123px -119px;
 }
+.icon_hospital_record{
+background-position: -115px -154px;
+}
 .icon_collection_record{
-background-position: -29px -187px;
+background-position: 0 -172px;
 }
 .icon_logo{
 background-position: -87px -183px;
+}
+.icon_card_cd{
+background-position: -204px -119px;
+}
+.icon_card_phone{
+background-position: 0 -201px;
+}
+.icon_card_info{
+background-position: -41px -239px;
+}
+.icon_card_person{
+background-position: -170px -148px;
 } 
 }
 
-.css_stamp{ content:"20160311085319";}
+.css_stamp{ content:"20160311171452";}

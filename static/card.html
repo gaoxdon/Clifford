@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="/static/css/wx.css"/>
     <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
-    <title></title>
+    <title>就诊卡</title>
     <script>
         var html = document.querySelector("html");
         var rem,oW = html.offsetWidth;
@@ -13,18 +13,18 @@
         html.style.fontSize = rem + "px";
     </script>
 </head>
-<body>
-    <div></div>
-	<ul class="itemlist">
-		<li><a>肾病科 肺病科</a></li>
-		<li><a>肾病科 肺病科</a></li>
-		<li><a>肾病科 肺病科</a></li>
-		<li><a>肾病科 肺病科</a></li>
-	</ul>
-	<i class="icon icon_collect_bigonD"></i>
-	<i class="icon icon_switch-on"></i>
-	<i class="icon icon_tip-error"></i>
-	<i class="icon icon_tip-ok"></i>
-	<i class="icon icon_tip-warn"></i>
+<body style="background: #F7F7F7;">
+	<div class="conf-doctor">
+		<ul>
+			<li><span>姓名</span><em>张三</em></li>
+			<li><span>就诊卡号</span><em>440111111111111</em></li>
+			<li><span>证件号</span><em>4*************8</em></li>
+			<li><span>手机</span><em>1555555555</em></li>
+		</ul>
+	</div>
+	<div class="cardBotton">
+		<span><a>解除绑定</a></span>
+		<span><a>设为默认就诊人</a></span>
+	</div>
 </body>
 </html>

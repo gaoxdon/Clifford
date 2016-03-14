@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>就诊卡</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+	<div class="bindcard">
+        <div class="bindform">
+            <span><i class="icon icon_card_person"></i><input id="BName" type="text" placeholder="姓名"></span>
+            <span><i class="icon icon_card_info"></i><input id="BNum" type="text" placeholder="身份证号"></span>
+            <span><i class="icon icon_card_phone"></i><input id="BPhone" type="text" placeholder="手机"></span>
+            <span><i class="icon icon_card_cd"></i><input id="BCard" type="text" placeholder="就诊卡号"></span>
+        </div>
+        <div class="bindtips"><i class="icon icon_tishi"></i><p>我院实行实名制就诊，请您务必提供真实准确的就诊人信息进行注册绑定。</p></div>
+        <div class="bindconfirm" id="bindsubmit"><a>确认绑定</a></div>
+    </div>
+    <div id="bindhint"><span>请输入正确的就诊卡号</span></div>
+    <script type="text/javascript" src="/static/js/zepto.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            var name = document.getElementById('BName'),
+                num = document.getElementById('BNum'),
+                phone = document.getElementById('BPhone'),
+                card = document.getElementById('BCard');
+            var button = document.getElementById('bindsubmit');
+            var bindhint = document.getElementById('bindhint');
+            button.addEventListener('click',submit);
+            function checkname(){
+                if(name.value.length!=0&&name.value.match(/^[\u4e00-\u9fa5]+$/)){
+                    return true;
+                }
+                else{
+                    hins("请输入正确的名字");
+                    name.focus();
+                    return false;
+                }
+            };
+            function checknum(){
+                if(num.value.match(/^\d{15}$/)||num.value.match(/^\d{18}$/)){
+                    return true;
+                }
+                else{
+                    hins("请输入正确的身份证号");
+                    num.focus();
+                    return false;
+                }
+            };
+            function checkphone(){
+                var partten = /^1[3,5,8]\d{9}$/;
+                if(partten.test(phone.value)){
+                    return true;
+                }
+                else{
+                    hins("请输入正确的手机");
+                    phone.focus();
+                    return false;
+                }
+            };
+            function checkcard(){
+                var partten = /^\d{10}$/;
+                if(partten.test(card.value)){
+                    return true;
+                }
+                else{
+                    hins("请输入正确的就诊卡号");
+                    card.focus();
+                    return false;
+                }
+            }
+            function submit(){
+                checkname()&&checknum()&&checkphone()&&checkcard()&&hins("绑定成功！");
+            }
+            function hins(str){
+                bindhint.innerHTML = "<span>"+ str +"</span>";
+                $("#bindhint").animate({opacity:1},400,function(){
+                    setTimeout(function(){
+                        $("#bindhint").animate({opacity:0},300);
+                    },600);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

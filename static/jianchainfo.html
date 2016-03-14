@@ -126,7 +126,7 @@
 			var li = jiancha_list.getElementsByTagName('li');
 			var choice = null;
 			var haschoice = null;
-			jiancha_list.addEventListener("tap",function(e){
+			jiancha_list.addEventListener("click",function(e){
 				var oTarget = e.tagName || e.target;
 				if(haschoice){
 					haschoice.className = '';
@@ -143,11 +143,11 @@
 					}
 				}
 			});
-			openjc.addEventListener('touchend', function() {
+			openjc.addEventListener('click', function() {
 				plane.style.display = "block";
 				setTimeout(function(){plane.className = "active";},30)
 			});
-			confirm.addEventListener('touchend', function() {
+			confirm.addEventListener('click', function() {
 				plane.className = "";
 				jcTime.innerHTML = timelist[keshiType.currentPage.pageX].getAttribute("data-da") +"  "+ haschoice.getElementsByTagName('span')[0].innerHTML;
 				document.getElementById('jcChoice').style.display = 'none';
