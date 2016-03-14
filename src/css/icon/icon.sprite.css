@@ -205,7 +205,7 @@
 /*# sourceMappingURL=icon.css.map */
 
 
-/* /static/images/icon.png?20160311085319 */
+/* /static/images/icon.png?20160311173944 */
 .icon_fanda,
 .icon_feibinke,
 .icon_jj,
@@ -239,11 +239,11 @@
 .icon_hospital_record,
 .icon_collection_record,
 .icon_logo{
-background-image: url(/static/images/icon.png?20160311085319);
+background-image: url(/static/images/icon.png?20160311173944);
 }
 
 
-/* /static/images/icon@2x.png?20160311085319 */
+/* /static/images/icon@2x.png?20160311173944 */
 @media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
 .icon_fanda,
 .icon_feibinke,
@@ -278,7 +278,7 @@ background-image: url(/static/images/icon.png?20160311085319);
 .icon_hospital_record,
 .icon_collection_record,
 .icon_logo{
-background-image: url(/static/images/icon@2x.png?20160311085319);
+background-image: url(/static/images/icon@2x.png?20160311173944);
 background-size: 252px auto;
 }
 .icon_fanda{
@@ -382,4 +382,4 @@ background-position: -87px -183px;
 } 
 }
 
-.css_stamp{ content:"20160311085319";}
+.css_stamp{ content:"20160311173944";}

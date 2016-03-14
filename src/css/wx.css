@@ -1002,7 +1002,7 @@ a {
   height: 100%;
 }
 .doctor_aboutD dd {
-  width: 2.5rem;
+  width: 3rem;
   position: absolute;
   top: 0;
   left: 1.75rem;
@@ -1019,6 +1019,20 @@ a {
   line-height: 0.3rem;
   text-align: left;
 }
+.doctor_aboutD .keshiD {
+  height: 0.3rem;
+  overflow: hidden;
+  /*white-space: nowrap;
+  text-overflow: ellipsis;*/
+}
+.doctor_aboutD .zhicD {
+  height: 0.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
 .doctor_collectD {
   position: absolute;
@@ -1026,7 +1040,7 @@ a {
   left: 5.52rem;
   z-index: 4;
   text-align: center;
-  width: 0.6rem;
+  width: 0.9rem;
 }
 .doctor_collectD p {
   color: #595757;
@@ -1107,6 +1121,9 @@ a {
 
 .scheduling_jtdayD {
   width: 6.4rem;
+}
+.scheduling_jtdayD a {
+  display: block;
 }
 .scheduling_jtdayD ul {
   padding-left: 0.24rem;
@@ -1413,6 +1430,7 @@ a {
   -ms-flex: 1;
   flex: 1;
   line-height: .26rem;
+  display: block;
 }
 
 .own_roomD {
@@ -1509,12 +1527,16 @@ a {
 }
 
 .logoD {
-  background: #f7f7f7;
   position: fixed;
   left: 0px;
   bottom: 0px;
   text-align: center;
   width: 100%;
+  padding-bottom: 0.24rem;
+}
+.logoD i {
+  display: block;
+  margin: 0 auto;
 }
 
 html {
