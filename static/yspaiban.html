@@ -32,10 +32,12 @@
 	   		
 	   			<div class="scheduling_titleD" >
 	   				<ul >
-	   					<li class="on"  onclick="anniu(0);return false">挂号</li>
-	   					<li onclick="anniu(1);return false">介绍</li>
+	   					<li class="on"  onclick="anniu(0);return false">预约</li>
+	   					<li onclick="anniu(1);return false">排班</li>
+	   					<li onclick="anniu(2);return false">介绍</li>
 	   				</ul>
 	   				<i></i>
+	   				<b></b>
 	   			</div>
 	   			<div id="wrapper">
 		   			<div id="scroller">
@@ -62,8 +64,28 @@
 			   					<li class="on">
 			   						<b>15:45</b><p class="on">已约满<i></i></p>
 			   					</li>
-			   					
+			   					<li class="on">
+			   						<b>15:45</b><p class="on">已约满<i></i></p>
+			   					</li>
+			   					<li class="on">
+			   						<b>15:45</b><p class="on">已约满<i></i></p>
+			   					</li>
+			   					<li class="on">
+			   						<b>15:45</b><p class="on">已约满<i></i></p>
+			   					</li>
+			   					<li class="on">
+			   						<b>15:45</b><p class="on">已约满<i></i></p>
+			   					</li>
+			   					<li class="on">
+			   						<b>15:45</b><p class="on">已约满<i></i></p>
+			   					</li>
+			   					<li class="on">
+			   						<b>15:45</b><p class="on">已约满<i></i></p>
+			   					</li>
 			   				</ul>
+			   			</div>
+			   			<div class="paiban_jtdayD">
+			   				111
 			   			</div>
 			   			<div class="doctor_jtaboutD">
 			   				<div class="doctor_goodD">
@@ -79,7 +101,7 @@
    </div>
 </body>
 <script type="text/javascript">
-	var num=0;
+	//var num=0;
 	window.onload=function(){
 		function listona(list){
 	    	$('.scheduling_titleD>ul>li').removeClass('on'); 
@@ -95,12 +117,12 @@
 		});
 		myScroll.on('scrollEnd', function () {
 			listona(this.currentPage.pageX);
-			if(this.currentPage.pageX==num){
-				num=20;
-				myScroll.goToPage(this.currentPage.pageX, 0, 500);
-			}else{
-				num=this.currentPage.pageX;
-			}
+			// if(this.currentPage.pageX==num){
+			// 	num=20;
+			// 	myScroll.goToPage(this.currentPage.pageX, 0, 500);
+			// }else{
+			// 	num=this.currentPage.pageX;
+			// }
 		});
 	}
 	function anniu(num){myScroll.goToPage(num, 0, 100);}
