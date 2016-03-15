@@ -10,12 +10,6 @@
   height: 16px;
 }
 
-.icon_feibinke {
-  background-image: url("../slice/feibinke.png");
-  width: 26px;
-  height: 27px;
-}
-
 .icon_jj {
   background-image: url("../slice/jj.png");
   width: 6px;
@@ -224,6 +218,246 @@
   background-image: url("../slice/icon-card-person.png");
   width: 16px;
   height: 18px;
+}
+
+.icon_weibinke {
+  background-image: url("../slice/weibinke.png");
+  width: 27px;
+  height: 27px;
+}
+
+.icon_zhongliuke {
+  background-image: url("../slice/zhongliuke.png");
+  width: 27px;
+  height: 27px;
+}
+
+.icon_shenbinke {
+  background-image: url("../slice/shenbinke.png");
+  width: 25px;
+  height: 27px;
+}
+
+.icon_feibinke {
+  background-image: url("../slice/feibinke.png");
+  width: 26px;
+  height: 27px;
+}
+
+.icon_neifenmike {
+  background-image: url("../slice/neifenmike.png");
+  width: 19px;
+  height: 28px;
+}
+
+.icon_naobinke {
+  background-image: url("../slice/naobinke.png");
+  width: 28px;
+  height: 26px;
+}
+
+.icon_xinbinke {
+  background-image: url("../slice/xinbinke.png");
+  width: 25px;
+  height: 27px;
+}
+
+.icon_shenzhibinke {
+  background-image: url("../slice/shenzhibinke.png");
+  width: 25px;
+  height: 27px;
+}
+
+.icon_tezhenshi {
+  background-image: url("../slice/tezhenshi.png");
+  width: 29px;
+  height: 25px;
+}
+
+.icon_fuke {
+  background-image: url("../slice/fuke.png");
+  width: 27px;
+  height: 27px;
+}
+
+.icon_canke {
+  background-image: url("../slice/canke.png");
+  width: 23px;
+  height: 27px;
+}
+
+.icon_erke {
+  background-image: url("../slice/erke.png");
+  width: 31px;
+  height: 26px;
+}
+
+.icon_erbaoke {
+  background-image: url("../slice/erbaoke.png");
+  width: 20px;
+  height: 29px;
+}
+
+.icon_mazuike {
+  background-image: url("../slice/mazuike.png");
+  width: 26px;
+  height: 26px;
+}
+
+.icon_naowaike {
+  background-image: url("../slice/naowaike.png");
+  width: 23px;
+  height: 27px;
+}
+
+.icon_kouqiangke {
+  background-image: url("../slice/kouqiangke.png");
+  width: 27px;
+  height: 28px;
+}
+
+.icon_erbihouke {
+  background-image: url("../slice/erbihouke.png");
+  width: 26px;
+  height: 29px;
+}
+
+.icon_miniaoke {
+  background-image: url("../slice/miniaoke.png");
+  width: 27px;
+  height: 27px;
+}
+
+.icon_gangchangke {
+  background-image: url("../slice/gangchangke.png");
+  width: 27px;
+  height: 29px;
+}
+
+.icon_xiongwaike {
+  background-image: url("../slice/xiongwaike.png");
+  width: 29px;
+  height: 25px;
+}
+
+.icon_yanke {
+  background-image: url("../slice/yanke.png");
+  width: 30px;
+  height: 17px;
+}
+
+.icon_puwaike {
+  background-image: url("../slice/puwaike.png");
+  width: 29px;
+  height: 28px;
+}
+
+.icon_gushangke {
+  background-image: url("../slice/gushangke.png");
+  width: 20px;
+  height: 29px;
+}
+
+.icon_pifuke {
+  background-image: url("../slice/pifuke.png");
+  width: 29px;
+  height: 25px;
+}
+
+.icon_tijianke {
+  background-image: url("../slice/tijianke.png");
+  width: 29px;
+  height: 25px;
+}
+
+.icon_ziranyixue {
+  background-image: url("../slice/ziranyixue.png");
+  width: 30px;
+  height: 20px;
+}
+
+.icon_sanyangke {
+  background-image: url("../slice/sanyangke.png");
+  width: 30px;
+  height: 20px;
+}
+
+.icon_ziweibinke {
+  background-image: url("../slice/ziweibinke.png");
+  width: 19px;
+  height: 28px;
+}
+
+.icon_zhenjiuke {
+  background-image: url("../slice/zhenjiuke.png");
+  width: 25px;
+  height: 29px;
+}
+
+.icon_yingyangke {
+  background-image: url("../slice/yingyangke.png");
+  width: 25px;
+  height: 28px;
+}
+
+.icon_tuinake {
+  background-image: url("../slice/tuinake.png");
+  width: 29px;
+  height: 25px;
+}
+
+.icon_reliaoke {
+  background-image: url("../slice/reliaoke.png");
+  width: 29px;
+  height: 25px;
+}
+
+.icon_kanfuke {
+  background-image: url("../slice/kanfuke.png");
+  width: 23px;
+  height: 28px;
+}
+
+.icon_jizhenke {
+  background-image: url("../slice/jizhenke.png");
+  width: 27px;
+  height: 25px;
+}
+
+.icon_ICU {
+  background-image: url("../slice/ICU.png");
+  width: 28px;
+  height: 28px;
+}
+
+.icon_yingxiangke {
+  background-image: url("../slice/yingxiangk.png");
+  width: 24px;
+  height: 27px;
+}
+
+.icon_chaoshenke {
+  background-image: url("../slice/chaoshenke.png");
+  width: 29px;
+  height: 23px;
+}
+
+.icon_jianchake {
+  background-image: url("../slice/jianchake.png");
+  width: 29px;
+  height: 19px;
+}
+
+.icon_jianyanke {
+  background-image: url("../slice/jianyanke.png");
+  width: 25px;
+  height: 29px;
+}
+
+.icon_xibao {
+  background-image: url("../slice/xibao.png");
+  width: 28px;
+  height: 29px;
 }
 
 /*# sourceMappingURL=icon.css.map */

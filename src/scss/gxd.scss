@@ -108,11 +108,207 @@
 				width: 1rem;
 				height: 0.9rem;
 				position: relative;
+				.icon_weibinke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -13px;
+				}
+				.icon_zhongliuke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -13px;
+				}
+				.icon_shenbinke{
+					@include absolute(50%,50%);
+					margin-top: -12px;
+					margin-left: -13px;
+				}
 				.icon_feibinke{
 					@include absolute(50%,50%);
 					margin-top: -13px;
 					margin-left: -13px;
 				}
+				.icon_neifenmike{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -9px;
+				}
+				.icon_naobinke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -14px;
+				}
+				.icon_xinbinke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -12px;
+				}
+				.icon_shenzhibinke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -12px;
+				}
+				.icon_tezhenshi{
+					@include absolute(50%,50%);
+					margin-top: -12px;
+					margin-left: -14px;
+				}
+				.icon_fuke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -13px;
+				}
+				.icon_canke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -11px;
+				}
+				.icon_erke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -15px;
+				}
+				.icon_erbaoke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -10px;
+				}
+				.icon_mazuike{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -13px;
+				}
+				.icon_naowaike{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -11px;
+				}
+				.icon_kouqiangke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -13px;
+				}
+				.icon_erbihouke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -13px;
+				}
+				.icon_miniaoke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -13px;
+				}
+				.icon_gangchangke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -13px;
+				}
+				.icon_xiongwaike{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -14px;
+				}
+				.icon_yanke{
+					@include absolute(50%,50%);
+					margin-top: -8px;
+					margin-left: -15px;
+				}
+				.icon_puwaike{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -14px;
+				}
+				.icon_gushangke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -10px;
+				}
+				.icon_pifuke{
+					@include absolute(50%,50%);
+					margin-top: -15px;
+					margin-left: -14px;
+				}
+				.icon_tijianke{
+					@include absolute(50%,50%);
+					margin-top: -12px;
+					margin-left: -14px;
+				}
+				.icon_ziranyixue{
+					@include absolute(50%,50%);
+					margin-top: -10px;
+					margin-left: -15px;
+				}
+				.icon_sanyangke{
+					@include absolute(50%,50%);
+					margin-top: -10px;
+					margin-left: -15px;
+				}
+				.icon_ziweibinke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -9px;
+				}
+				.icon_zhenjiuke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -12px;
+				}
+				.icon_yingyangke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -12px;
+				}
+				.icon_tuinake{
+					@include absolute(50%,50%);
+					margin-top: -12px;
+					margin-left: -14px;
+				}
+				.icon_reliaoke{
+					@include absolute(50%,50%);
+					margin-top: -12px;
+					margin-left: -14px;
+				}
+				.icon_kanfuke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -11px;
+				}
+				.icon_jizhenke{
+					@include absolute(50%,50%);
+					margin-top: -12px;
+					margin-left: -13px;
+				}
+				.icon_ICU{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -14px;
+				}
+				.icon_yingxiangke{
+					@include absolute(50%,50%);
+					margin-top: -13px;
+					margin-left: -12px;
+				}
+				.icon_chaoshenke{
+					@include absolute(50%,50%);
+					margin-top: -11px;
+					margin-left: -14px;
+				}
+				.icon_jianchake{
+					@include absolute(50%,50%);
+					margin-top: -9px;
+					margin-left: -14px;
+				}
+				.icon_jianyanke{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -12px;
+				}
+				.icon_xibao{
+					@include absolute(50%,50%);
+					margin-top: -14px;
+					margin-left: -14px;
+				}
+
 			}
 			.listG_font{
 				box-sizing: border-box;
@@ -165,6 +361,11 @@
 			@include absolute(50%,0);
 			margin-top: -7px;
 		}
+	}
+	p{
+		text-align: center;
+    	font-size: 0.25rem;
+    	line-height: 0.7rem;
 	}
 }
 //-----------------------------------keshi----------------------end
@@ -288,11 +489,9 @@
 		position: relative;
 		background: #fff;
 		img{
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			padding: 0.12rem 0;
 			display: inline-block;
-			height: 100%;
+			height: 1.36rem;
+    		margin-top: 0.12rem;
 		}
 		.paiban_info{
 			display: inline-block;
@@ -648,16 +847,18 @@
 		margin-bottom: 0.5rem;
 		li{
 			border-bottom: 1px solid $font4;
-			@extend %display-flex;
-			@extend %flex-align-center;
 			padding: 0.15rem 0.25rem 0.15rem 0;
+			box-sizing: border-box;
+			width: 100%;
+			display: table;
 			span{
-				display: block;
-				@include flex(1);
+				width: 25%;
 				font-size: 0.2rem;
 				color: $font2;
 				line-height: 0.23rem;
 				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
 			}
 		}
 		li:last-child{

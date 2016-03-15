@@ -79,7 +79,7 @@ a{text-decoration:none;}
 
 }
 .scheduling_timeD{
-	position:relative;
+
 	width:6.4rem;
 
 }
@@ -93,13 +93,13 @@ a{text-decoration:none;}
 	ul{
 
 	}
-	li{ width:50%; 
+	li{ width:33.3%; 
 		float:left;
 		text-align: center;
 		font-size:0.25rem;
 		display: block;
-		height: 0.57rem;
-		border-bottom:3px solid #fff;
+		height: 0.56rem;
+		border-bottom:2px solid #fff;
 		color:$font2; 
 		cursor: pointer;
 		&.on{
@@ -109,48 +109,44 @@ a{text-decoration:none;}
 	}
 	i{
 		
-		@include absolute(0.2rem,3.2rem);
+		@include absolute(0.2rem,2.15rem);
 		background:$font4;
 		width: 1px;
 		height: 0.24rem;
 	}
-
+	b{
+		
+		@include absolute(0.2rem,4.23rem);
+		background:$font4;
+		width: 1px;
+		height: 0.24rem;
+	}
 }
 
 #wrapper {
-	@include absolute(0.6rem,0);
-	z-index: 1;
-	width: 6.4rem;
-	height:5.7rem;
-	overflow: hidden;
-
+	// @include absolute(0.6rem,0);
+	// z-index: 1;
+	// width: 6.4rem;
+	// height:5.7rem;
+	// overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 2.9rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 #scroller{
-	@include absolute(0,0);
-	z-index: 1;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	width: 12.80rem;
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-text-size-adjust: none;
-	-moz-text-size-adjust: none;
-	-ms-text-size-adjust: none;
-	-o-text-size-adjust: none;
-	text-size-adjust: none;
+	width: 6.4*3rem;
 }
 .scheduling_jtdayD{
+	@include absolute(0,0);
 	width:6.4rem;
 	a{
 			display: block;
+			overflow: hidden;
+    		width: 100%;
 		}
 	ul{
 		padding-left: 0.24rem;
@@ -231,15 +227,23 @@ a{text-decoration:none;}
 		vertical-align: middle;
 	}
 }
+.paiban_jtdayD{
+	padding-left: 0.24rem;
+	line-height:0.34rem;
+	background:#fff;
+	font-size:0.2rem;
+	width:6.16rem;
+	@include absolute(0rem,6.4rem);
+	margin-top: 0.15rem;
+}
 .doctor_jtaboutD{ 
 	padding-left: 0.24rem;
 	line-height:0.34rem;
 	background:#fff;
 	font-size:0.2rem;
-	margin-top:0.15rem;
 	width:6.16rem;
-	@include absolute(0rem,6.4rem);
-
+	@include absolute(0rem,6.4rem*2);
+	margin-top: 0.15rem;
 }
 .doctor_goodD{
 	border-bottom:1px solid $font4;
@@ -362,13 +366,26 @@ a{text-decoration:none;}
 				@include absolute(50%,0);
 				margin-top: -15px;	
 			}
+			b{
+				display: block;
+				border-radius:50%;
+				border:1px solid $red;
+				width: 40px;
+				height: 40px;
+				text-align:center;
+				line-height: 40px;
+				font-size: 12px;
+				color: $red;
+				@include absolute(50%,0);
+				margin-top: -20px;	
+			}
 			
 		}
 		dd{
 			width:3.46rem;
 			position:absolute;
 			top: 0;
-			right: 0;
+			right: -10px;
 			color:$font2; 
 			font-size: 0.23rem;
 			h6{
