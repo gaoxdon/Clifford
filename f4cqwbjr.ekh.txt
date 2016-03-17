@@ -1,0 +1,61 @@
+﻿Merge branch 'master' of https://github.com/dengleqing/clifford
+
+# Conflicts:
+#	src/css/icon.css
+#	src/css/icon.css.map
+#	src/css/icon/icon.sprite.css
+#	src/css/wx.css
+#	src/css/wx.css.map
+#	src/scss/icon.scss
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   .sass-cache/b1be6c581a6c009fc19e2374ba780bd0ae226bf3/dlq.scssc
+#	modified:   .sass-cache/b1be6c581a6c009fc19e2374ba780bd0ae226bf3/gxd.scssc
+#	modified:   .sass-cache/b1be6c581a6c009fc19e2374ba780bd0ae226bf3/icon.scssc
+#	modified:   src/css/icon.css
+#	modified:   src/css/icon.css.map
+#	modified:   src/css/icon/icon.sprite.css
+#	modified:   src/css/wx.css
+#	modified:   src/css/wx.css.map
+#	modified:   src/scss/dlq.scss
+#	modified:   src/scss/icon.scss
+#	new file:   src/slice/ico_tel.png
+#	new file:   src/slice/ico_tel@2x.png
+#	new file:   src/slice/icon_amD.png
+#	new file:   src/slice/icon_amD@2x.png
+#	modified:   src/slice/icon_appointment_record.png
+#	modified:   src/slice/icon_appointment_record@2x.png
+#	modified:   src/slice/icon_collection_record.png
+#	modified:   src/slice/icon_collection_record@2x.png
+#	modified:   src/slice/icon_examine_report.png
+#	modified:   src/slice/icon_examine_report@2x.png
+#	modified:   src/slice/icon_hospital_record.png
+#	modified:   src/slice/icon_hospital_record@2x.png
+#	modified:   src/slice/icon_pay_record.png
+#	modified:   src/slice/icon_pay_record@2x.png
+#	new file:   src/slice/icon_pmD.png
+#	new file:   src/slice/icon_pmD@2x.png
+#	modified:   src/slice/icon_register_record.png
+#	modified:   src/slice/icon_register_record@2x.png
+#	new file:   src/slice/icon_yishen.png
+#	new file:   src/slice/icon_yishen@2x.png
+#	modified:   static/grzhongxin.html
+#	new file:   static/noyspaiban.html
+#	modified:   static/yspaiban.html
+#	deleted:    wm0s03c2.52i.txt
+#
+
