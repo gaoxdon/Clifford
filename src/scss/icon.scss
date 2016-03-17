@@ -243,3 +243,16 @@
 .icon_xibao{
 	@include background(28px,29px,"../slice/xibao.png");
 }
+.icon_yishen{
+	@include background(16px,19px,"../slice/icon_yishen.png");
+}
+.icon_amD{
+	@include background(40px,15px,"../slice/icon_amD.png");
+}
+.icon_pmD{
+	@include background(40px,15px,"../slice/icon_pmD.png");
+}
+.ico_tel{
+	@include background(17px,12px,"../slice/ico_tel.png");
+}
+

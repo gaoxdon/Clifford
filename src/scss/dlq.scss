@@ -140,6 +140,9 @@ a{text-decoration:none;}
 #scroller{
 	width: 6.4*3rem;
 }
+#noscroller{
+	width: 6.4*2rem;
+}
 .scheduling_jtdayD{
 	@include absolute(0,0);
 	width:6.4rem;
@@ -208,7 +211,9 @@ a{text-decoration:none;}
 		float:right;
 		color:$font2;
 	}
-	p.on{ padding-right:0.3rem;}
+	p.on{ 
+		//padding-right:0.3rem;
+	}
 	span{
 		display: inline-block;
 		color: $red;
@@ -228,14 +233,123 @@ a{text-decoration:none;}
 	}
 }
 .paiban_jtdayD{
-	padding-left: 0.24rem;
+	//padding-left: 0.24rem;
 	line-height:0.34rem;
 	background:#fff;
 	font-size:0.2rem;
-	width:6.16rem;
+	width:6.4rem;
 	@include absolute(0rem,6.4rem);
 	margin-top: 0.15rem;
+	.paiban_titD{
+		
+		font-size:0.26rem;
+		padding:0.24rem;
+		@extend %display-flex;
+		span{
+			text-align: center;
+			@include flex;
+			display: block;
+			color: $font2;
+		}
+
+	}
+	ul{
+		padding-bottom:0.24rem;
+	}
+	li{
+		
+		padding:0 0.24rem;
+		@extend %display-flex;
+		@extend %flex-align-center;
+		a{
+			text-align: center;
+			@include flex;
+			display: block;
+			color: $font2;
+			//width: 18px;
+    		height: 19px;
+		}
+
+	}
+	li.other{
+		height: 31px;
+		position:relative;
+		margin-top: 0.1rem;
+		margin-bottom: 0.1rem;
+		.amD{
+			@include absolute(0,0);
+			width: 40px;
+			height:15px;
+
+		}
+		.pmD{
+			position:absolute;
+			right: 0;
+			bottom:0;
+			width: 40px;
+			height:15px;
+
+		}
+		i{
+			@include absolute(0,0);
+			z-index: 1;
+		}
+		b{ 
+			text-align:center;
+			line-height: 15px;
+			@include absolute(0,0);
+			width: 40px;
+			z-index:5;
+			font-size: 12px;
+			color: #fff;
+		}
+		span{
+			width: 100%;
+			height: 1px;
+			@include absolute(15px,0);
+			background:$base-color;
+		}
+	}
+	.telD{
+		background:#f7f7f7;
+		p{
+			height: 0.8rem;
+			line-height: 0.8rem;
+			font-size: 0.23rem;
+			color: $font2;
+			text-align: center;
+		}
+		a{
+			display: block;
+			width: 2.6rem;
+			height: 0.5rem;
+			//line-height: 0.5rem;
+			margin: 0 auto;
+			position:relative;
+			background:#595757;
+			color: #fff;
+			//padding-left:0.24rem;
+			font-size: 0.23rem;
+			@include border-radius(0.06rem);
+			text-align: center;
+			i{
+				//@include absolute(50%,0.24rem);
+				margin-top: -6px;	
+				margin-right: 0.1rem;
+				position:relative;
+				vertical-align:top;
+				top: 50%;
+				
+
+			}
+			span{
+				line-height: 0.5rem;
+				display: inline-block;
+			}
+		}
+	}
 }
+
 .doctor_jtaboutD{ 
 	padding-left: 0.24rem;
 	line-height:0.34rem;
@@ -256,6 +370,22 @@ a{text-decoration:none;}
 	padding-bottom:0.15rem;
 	padding-right: 0.24rem;
 }
+//no
+.noscheduling_titleD {
+	li{
+	width:50%;
+	}
+	i{
+		left: 50%;
+	}
+}
+.nopaiban_jtdayD{
+	@include absolute(0,0);
+}
+.nodoctor_jtaboutD{
+	@include absolute(0,6.4rem);
+}
+
 .no_payD{
 	text-align:center;
 	i{
@@ -448,6 +578,7 @@ a{text-decoration:none;}
 	span{
 		text-align: center;
 		@include flex;
+		display: block;
 	}
 
 }
@@ -469,10 +600,10 @@ a{text-decoration:none;}
 	font-size:0.24rem;
 }
 .own_aboutD{
-	height:2.7rem;
+	height:2.6rem;
 	background:#00B1B5;
 	text-align:center;
-	padding-top:0.26rem;
+	padding-top:0.36rem;
 	.own_imgD{
 		width: 1.35rem;
 		height: 1.35rem;
@@ -494,6 +625,7 @@ a{text-decoration:none;}
 		span{
 			font-size: 0.23rem;
 			display: block;
+			
 		}
 	}
 
@@ -554,9 +686,37 @@ a{text-decoration:none;}
 		@include absolute(50%,0);
 		margin-top: -13px;	
 	}
-
+	a{ 
+		display:block;
+	}
 
 }
+.gezx_shcD{
+		height: 0.73rem;
+		background:#fff;
+		line-height: 0.73rem;
+		font-size: 0.25rem;
+		padding-right: 0.24rem;
+		position:relative;
+		padding-left:0.99rem;
+		margin-top: 0.15rem;
+		span{
+			i{
+				position:absolute;
+			    right: 0.24rem;
+			    top: 50%;
+			    left: auto;
+		        margin-top: -3px;	
+			}
+		}
+		i{
+		@include absolute(50%,0.24rem);
+		margin-top: -13px;	
+		}
+		a{ 
+		display:block;
+		}
+	}
 .logoD{
 	
 	position:fixed;

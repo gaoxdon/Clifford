@@ -1,12 +1,12 @@
 @import url(reset.css);
-#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .cardBotton, .report_dtitleD, .report_dlistD li {
+#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .cardBotton, .paiban_jtdayD .paiban_titD, .paiban_jtdayD li, .report_dtitleD, .report_dlistD li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.report_dlistD li {
+.paiban_jtdayD li, .report_dlistD li {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -ms-flex-align: center;
@@ -1339,14 +1339,14 @@
   border-radius: 6px;
 }
 
-#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .cardBotton, .report_dtitleD, .report_dlistD li {
+#paiban_table, #paiban_doctor .paiban_item, .finpay-list .finpay-listtit, .cardBotton, .paiban_jtdayD .paiban_titD, .paiban_jtdayD li, .report_dtitleD, .report_dlistD li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.report_dlistD li {
+.paiban_jtdayD li, .report_dlistD li {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -ms-flex-align: center;
@@ -1511,6 +1511,10 @@ a {
   width: 19.2rem;
 }
 
+#noscroller {
+  width: 12.8rem;
+}
+
 .scheduling_jtdayD {
   position: absolute;
   top: 0;
@@ -1581,9 +1585,6 @@ a {
   float: right;
   color: #9E9F9F;
 }
-.scheduling_jtdayD p.on {
-  padding-right: 0.3rem;
-}
 .scheduling_jtdayD span {
   display: inline-block;
   color: #ff375a;
@@ -1604,15 +1605,123 @@ a {
 }
 
 .paiban_jtdayD {
-  padding-left: 0.24rem;
   line-height: 0.34rem;
   background: #fff;
   font-size: 0.2rem;
-  width: 6.16rem;
+  width: 6.4rem;
   position: absolute;
   top: 0rem;
   left: 6.4rem;
   margin-top: 0.15rem;
+}
+.paiban_jtdayD .paiban_titD {
+  font-size: 0.26rem;
+  padding: 0.24rem;
+}
+.paiban_jtdayD .paiban_titD span {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  color: #9E9F9F;
+}
+.paiban_jtdayD ul {
+  padding-bottom: 0.24rem;
+}
+.paiban_jtdayD li {
+  padding: 0 0.24rem;
+}
+.paiban_jtdayD li a {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  color: #9E9F9F;
+  height: 19px;
+}
+.paiban_jtdayD li.other {
+  height: 31px;
+  position: relative;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.paiban_jtdayD li.other .amD {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 15px;
+}
+.paiban_jtdayD li.other .pmD {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 15px;
+}
+.paiban_jtdayD li.other i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.paiban_jtdayD li.other b {
+  text-align: center;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  z-index: 5;
+  font-size: 12px;
+  color: #fff;
+}
+.paiban_jtdayD li.other span {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background: #00B1B5;
+}
+.paiban_jtdayD .telD {
+  background: #f7f7f7;
+}
+.paiban_jtdayD .telD p {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.23rem;
+  color: #9E9F9F;
+  text-align: center;
+}
+.paiban_jtdayD .telD a {
+  display: block;
+  width: 2.6rem;
+  height: 0.5rem;
+  margin: 0 auto;
+  position: relative;
+  background: #595757;
+  color: #fff;
+  font-size: 0.23rem;
+  border-radius: 0.06rem;
+  -moz-border-radius: 0.06rem;
+  -webkit-border-radius: 0.06rem;
+  text-align: center;
+}
+.paiban_jtdayD .telD a i {
+  margin-top: -6px;
+  margin-right: 0.1rem;
+  position: relative;
+  vertical-align: top;
+  top: 50%;
+}
+.paiban_jtdayD .telD a span {
+  line-height: 0.5rem;
+  display: inline-block;
 }
 
 .doctor_jtaboutD {
@@ -1638,6 +1747,25 @@ a {
 .doctor_profilesD {
   padding-bottom: 0.15rem;
   padding-right: 0.24rem;
+}
+
+.noscheduling_titleD li {
+  width: 50%;
+}
+.noscheduling_titleD i {
+  left: 50%;
+}
+
+.nopaiban_jtdayD {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nodoctor_jtaboutD {
+  position: absolute;
+  top: 0;
+  left: 6.4rem;
 }
 
 .no_payD {
@@ -1839,6 +1967,7 @@ a {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  display: block;
 }
 
 .report_dlistD li {
@@ -1862,10 +1991,10 @@ a {
 }
 
 .own_aboutD {
-  height: 2.7rem;
+  height: 2.6rem;
   background: #00B1B5;
   text-align: center;
-  padding-top: 0.26rem;
+  padding-top: 0.36rem;
 }
 .own_aboutD .own_imgD {
   width: 1.35rem;
@@ -1948,6 +2077,36 @@ a {
   top: 50%;
   left: 0;
   margin-top: -13px;
+}
+.own_listD a {
+  display: block;
+}
+
+.gezx_shcD {
+  height: 0.73rem;
+  background: #fff;
+  line-height: 0.73rem;
+  font-size: 0.25rem;
+  padding-right: 0.24rem;
+  position: relative;
+  padding-left: 0.99rem;
+  margin-top: 0.15rem;
+}
+.gezx_shcD span i {
+  position: absolute;
+  right: 0.24rem;
+  top: 50%;
+  left: auto;
+  margin-top: -3px;
+}
+.gezx_shcD i {
+  position: absolute;
+  top: 50%;
+  left: 0.24rem;
+  margin-top: -13px;
+}
+.gezx_shcD a {
+  display: block;
 }
 
 .logoD {

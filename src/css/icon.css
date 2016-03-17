@@ -460,4 +460,28 @@
   height: 29px;
 }
 
+.icon_yishen {
+  background-image: url("../slice/icon_yishen.png");
+  width: 16px;
+  height: 19px;
+}
+
+.icon_amD {
+  background-image: url("../slice/icon_amD.png");
+  width: 40px;
+  height: 15px;
+}
+
+.icon_pmD {
+  background-image: url("../slice/icon_pmD.png");
+  width: 40px;
+  height: 15px;
+}
+
+.ico_tel {
+  background-image: url("../slice/ico_tel.png");
+  width: 17px;
+  height: 12px;
+}
+
 /*# sourceMappingURL=icon.css.map */
