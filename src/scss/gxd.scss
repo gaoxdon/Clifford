@@ -614,7 +614,7 @@
 			margin-top: -9px;
 		}
 		span{
-			padding-left: 0.40rem;
+			padding-left: 0.50rem;
 		}
 		em{
 			color: $font2;
@@ -744,7 +744,46 @@
 		text-align: center;
 	}
 }
-
+#conf_charge{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	.conf_charge_plane{
+		position:relative;
+		padding-top:0.7rem;
+		padding-bottom:0.3rem;
+		width: 5.6rem;
+		margin: 3rem auto 0;
+		background:#fff;
+		border-radius:5px;
+		p{
+			font-size: 0.26rem;
+			line-height: 0.30rem;
+			text-align: center;
+		}
+		a{
+			display: block;
+			width: 4.8rem;
+			height: 0.6rem;
+			line-height: 0.6rem;
+			color: #fff;
+			margin: 0.5rem auto 0;
+			font-size: 0.26rem;
+			text-align: center;
+			border-radius:5px;
+			background:$base-color;
+		}
+		.icon{
+			position:absolute;
+			top: 0.15rem;
+			right: 0.15rem;
+		}
+	}
+}
 //-----------------------------------confirm----------------------end
 
 //-----------------------------------finish----------------------end
@@ -1235,3 +1274,86 @@
 
 
 //-----------------------------------bindcard----------------------end
+
+
+//-----------------------------------recharge----------------------start
+.charge_name{
+	background:#fff;
+	height:1rem;
+	padding:0 0.25rem;
+	span{
+		font-size: 0.26rem;
+		line-height: 0.5rem;
+		float: left;
+	}
+	em{
+		font-size: 0.26rem;
+		text-align: right;
+		line-height: 1rem;
+		float: right;
+	}
+}
+.charge_plane{
+	padding:0 0.12rem;
+	h5{
+		font-size: 0.23rem;
+		padding-left: 0.12rem;
+		margin:0.25rem 0;
+		color: $font3;
+	}
+}
+#charge_money{
+	overflow:hidden;
+	span{
+		box-sizing:border-box;
+		padding:0 0.12rem;
+		margin-bottom: 0.25rem;
+		width: 33.33%;
+		float: left;
+		height: 0.9rem;
+		p{
+			background:#fff;
+			display: block;
+			border-radius:5px;
+			border:1px solid $font4;
+			line-height: 0.9rem;
+			font-size: 0.26rem;
+			text-align: center;
+		}
+	}
+	.charge_other{
+		width: 100%;
+		float: left;
+		height: 0.6rem;
+		box-sizing:border-box;
+		padding:0 0.12rem;
+		font-size: 0.23rem;
+		input{
+			width: 100%;
+			box-sizing:border-box;
+			background:#fff;
+			height: 0.6rem;
+			padding: 0;
+			line-height: 0.6rem;
+			text-align: center;
+			color: $font2;
+			border-radius: 5px;
+			border:1px solid $font4;
+			display: block;
+		}
+	}
+}
+#charge_pay{
+	padding:0.24rem;
+	margin-top: 0.9rem;
+	a{
+		display: block;
+		height: 0.6rem;
+		line-height: 0.6rem;
+		text-align: center;
+		background: $base-color;
+		color: #fff;
+		font-size: 0.25rem;
+	}
+}
+//-----------------------------------recharge----------------------end

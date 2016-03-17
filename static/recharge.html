@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>就诊卡充值</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+	<div class="charge_name">
+		<span><p>4401000011185365</p><h5>张三</h5></span>
+		<em>余额：0.08元</em>
+	</div>
+	<div class="charge_plane">
+		<h5>充值金额</h5>
+		<div id="charge_money">
+			<span><p>30元</p></span>
+			<span><p>50元</p></span>
+			<span><p>100元</p></span>
+			<span><p>300元</p></span>
+			<span><p>500元</p></span>
+			<span><p>其他金额</p></span>
+			<div class="charge_other"><input type="text" placeholder="请输入充值金额"></div>
+		</div>
+	</div>
+	<div id="charge_pay"><a>确认充值</a></div>
+	<script>
+		window.onload = function(){
+
+		}
+	</script>
+</body>
+</html>

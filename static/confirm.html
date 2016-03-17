@@ -67,6 +67,13 @@
 	<div class="conf-submit">
 		<a href="finish.html"><span>确认挂号</span></a>
 	</div>
+	<div id="conf_charge">
+		<div class="conf_charge_plane">
+			<i id="charge_cancle" class="icon icon_cancle"></i>
+			<p>您的就诊卡（44401000011185365）<br>余额不足，请充值</p>
+			<a href="">充值</a>
+		</div>
+	</div>
 	<script>
 		window.onload = function(){
 			var paylist = document.getElementById("confPay");
@@ -91,6 +98,12 @@
 					this.className = "acitve";
 				})
 			}
+
+			var chargePlane = document.getElementById("conf_charge");
+			var charge_cancle = document.getElementById("charge_cancle");
+			charge_cancle.addEventListener("click",function(){
+				chargePlane.style.display = "none";
+			})
 		}
 	</script>
 </body>

@@ -460,4 +460,10 @@
   height: 29px;
 }
 
+.icon_cancle {
+  background-image: url("../slice/icon_cancle.png");
+  width: 19px;
+  height: 19px;
+}
+
 /*# sourceMappingURL=icon.css.map */
