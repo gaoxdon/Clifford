@@ -1321,13 +1321,16 @@
 			text-align: center;
 		}
 	}
+	.active p{
+		border:1px solid $base-color;
+		color: $base-color;
+	}
 	.charge_other{
 		width: 100%;
 		float: left;
 		height: 0.6rem;
 		box-sizing:border-box;
 		padding:0 0.12rem;
-		font-size: 0.23rem;
 		input{
 			width: 100%;
 			box-sizing:border-box;
@@ -1337,9 +1340,11 @@
 			line-height: 0.6rem;
 			text-align: center;
 			color: $font2;
+			font-size: 0.26rem;
 			border-radius: 5px;
 			border:1px solid $font4;
 			display: block;
+			 -webkit-appearance: none;
 		}
 	}
 }

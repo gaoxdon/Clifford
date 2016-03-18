@@ -21,19 +21,51 @@
 	<div class="charge_plane">
 		<h5>充值金额</h5>
 		<div id="charge_money">
-			<span><p>30元</p></span>
+			<span class="active"><p>30元</p></span>
 			<span><p>50元</p></span>
 			<span><p>100元</p></span>
 			<span><p>300元</p></span>
 			<span><p>500元</p></span>
 			<span><p>其他金额</p></span>
-			<div class="charge_other"><input type="text" placeholder="请输入充值金额"></div>
+			<div class="charge_other"><input id="inputMoney" type="number" placeholder="请输入充值金额"></div>
 		</div>
 	</div>
 	<div id="charge_pay"><a>确认充值</a></div>
 	<script>
-		window.onload = function(){
-
+		window.onload = function() {
+			var charge = document.getElementById('charge_money');
+			var money = charge.getElementsByTagName('span');
+			var inputMoney = document.getElementById('inputMoney');
+			for (var i = 0; i < money.length; i++) {
+				if (i != money.length - 1) {
+					money[i].addEventListener('touchend', function() {
+						for (var j = 0; j < money.length; j++) {
+							if (money[j].className == "active") {
+								money[j].className = "";
+							}
+						}
+						this.className = "active";
+					})
+				} else {
+					money[i].addEventListener('touchend', function() {
+						for (var j = 0; j < money.length; j++) {
+							if (money[j].className == "active") {
+								money[j].className = "";
+							}
+						}
+						this.className = "active";
+						inputMoney.focus();
+					})
+				}
+			}
+			inputMoney.addEventListener('focus', function() {
+				for (var j = 0; j < money.length; j++) {
+					if (money[j].className == "active") {
+						money[j].className = "";
+					}
+				}
+				money[5].className = "active";
+			})
 		}
 	</script>
 </body>

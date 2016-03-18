@@ -1427,13 +1427,16 @@
   font-size: 0.26rem;
   text-align: center;
 }
+#charge_money .active p {
+  border: 1px solid #00B1B5;
+  color: #00B1B5;
+}
 #charge_money .charge_other {
   width: 100%;
   float: left;
   height: 0.6rem;
   box-sizing: border-box;
   padding: 0 0.12rem;
-  font-size: 0.23rem;
 }
 #charge_money .charge_other input {
   width: 100%;
@@ -1444,9 +1447,11 @@
   line-height: 0.6rem;
   text-align: center;
   color: #9E9F9F;
+  font-size: 0.26rem;
   border-radius: 5px;
   border: 1px solid #DBDCDC;
   display: block;
+  -webkit-appearance: none;
 }
 
 #charge_pay {
