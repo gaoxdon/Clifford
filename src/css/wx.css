@@ -1892,6 +1892,16 @@ a {
   left: 6.4rem;
 }
 
+.onescheduling_titleD li {
+  width: 100%;
+}
+
+.onedoctor_jtaboutD {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
 .no_payD {
   text-align: center;
 }
