@@ -613,34 +613,40 @@ a{text-decoration:none;}
 	font-size:0.24rem;
 }
 .own_aboutD{
-	height:2.6rem;
+	height:1rem;
 	background:#00B1B5;
-	text-align:center;
-	padding-top:0.36rem;
-	.own_imgD{
-		width: 1.35rem;
-		height: 1.35rem;
-		border:0.07rem solid #fff;
-		background:#fff;
-		@include border-radius(1.35rem);
-		overflow: hidden;
-		margin:0 auto;
-	}
-	img{
-		width: 1.35rem;
-		height: 1.35rem;
-	}
-	p{
-		color: #fff;
-		line-height:0.38rem;
-		margin-top: 0.08rem;
-		font-size: 0.26rem;
-		span{
-			font-size: 0.23rem;
-			display: block;
+	position:relative;
+	a{ display:block; height:1rem;}
+	.own_leftD{
+		padding-top:0.2rem;
+		@include absolute(0,0);
+		height: 0.8rem;
+		i{
+			@include absolute(50%,0.24rem);
+			margin-top: -15px;
+			right: auto;
+
 			
 		}
+		p{
+			color: #fff;
+			font-size: 0.25rem;
+			padding-left:1rem;
+			span{
+				margin-top: 0.12rem;
+				font-size: 0.25rem;
+				display: block;
+				
+			}
+		}
 	}
+	i{
+		position:absolute;
+		right: 0.24rem;
+		top: 50%;
+		margin-top:-3px;
+	}
+	
 
 }
 .own_moneyD{
