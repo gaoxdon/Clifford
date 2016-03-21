@@ -36,6 +36,7 @@
 			var charge = document.getElementById('charge_money');
 			var money = charge.getElementsByTagName('span');
 			var inputMoney = document.getElementById('inputMoney');
+			var charge_pay = document.getElementById('charge_pay');
 			for (var i = 0; i < money.length; i++) {
 				if (i != money.length - 1) {
 					money[i].addEventListener('touchend', function() {
@@ -65,7 +66,11 @@
 					}
 				}
 				money[5].className = "active";
-			})
+			});
+			console.log(addEventListener);
+			charge_pay.addEventListener("click",function(){
+				
+			});
 		}
 	</script>
 </body>
