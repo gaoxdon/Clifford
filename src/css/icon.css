@@ -490,4 +490,16 @@
   height: 12px;
 }
 
+.icon_grzx {
+  background-image: url("../slice/icon_grzx.png");
+  width: 25px;
+  height: 30px;
+}
+
+.icon_white {
+  background-image: url("../slice/icon_white.png");
+  width: 6px;
+  height: 10px;
+}
+
 /*# sourceMappingURL=icon.css.map */
