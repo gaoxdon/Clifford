@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>就诊卡</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+	<div class="grcard_list">
+		<a href="">
+			<h5>张三</h5>
+			<p>4401111111111111111</p>
+			<span>默认</span>
+			<i class="icon icon_jj"></i>
+		</a>
+		<a href="">
+			<h5>李四</h5>
+			<p>4402222222222222222</p>
+			<i></i>
+			<i class="icon icon_jj"></i>
+		</a>
+	</div>
+	<a class="conf-add" onclick="hins('绑定就诊人已满')">
+		<div class="conf-addline">
+			<i class="conf-iconL icon icon_person2"></i>
+			<span>添加就诊人</span>
+			<em>还可以绑定4人</em>
+			<i class="conf-iconR icon icon_jj"></i>
+		</div>
+	</a>
+	<div id="bindhint"><span></span></div>
+	<script type="text/javascript" src="/static/js/zepto.min.js"></script>
+	<script type="text/javascript">
+		var bindhint = document.getElementById('bindhint');
+		function hins(str){
+            bindhint.innerHTML = "<span>"+ str +"</span>";
+            $("#bindhint").animate({opacity:1},400,function(){
+                setTimeout(function(){
+                    $("#bindhint").animate({opacity:0},300);
+                },600);
+            });
+        }
+	</script>
+</body>
+</html>
