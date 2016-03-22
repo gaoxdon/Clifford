@@ -2134,11 +2134,10 @@ a {
   height: 1rem;
 }
 .own_aboutD .own_leftD {
-  padding-top: 0.2rem;
   position: absolute;
   top: 0;
   left: 0;
-  height: 0.8rem;
+  height: 1rem;
 }
 .own_aboutD .own_leftD i {
   position: absolute;
@@ -2148,14 +2147,12 @@ a {
   right: auto;
 }
 .own_aboutD .own_leftD p {
+  height: 1rem;
+  vertical-align: middle;
+  display: table-cell;
   color: #fff;
   font-size: 0.25rem;
   padding-left: 1rem;
-}
-.own_aboutD .own_leftD p span {
-  margin-top: 0.12rem;
-  font-size: 0.25rem;
-  display: block;
 }
 .own_aboutD i {
   position: absolute;

@@ -618,26 +618,23 @@ a{text-decoration:none;}
 	position:relative;
 	a{ display:block; height:1rem;}
 	.own_leftD{
-		padding-top:0.2rem;
+		
 		@include absolute(0,0);
-		height: 0.8rem;
+		height: 1rem;
 		i{
 			@include absolute(50%,0.24rem);
 			margin-top: -15px;
 			right: auto;
-
 			
 		}
 		p{
+			height: 1rem;
+		    vertical-align: middle;
+		    display:table-cell;
 			color: #fff;
 			font-size: 0.25rem;
 			padding-left:1rem;
-			span{
-				margin-top: 0.12rem;
-				font-size: 0.25rem;
-				display: block;
-				
-			}
+			
 		}
 	}
 	i{
