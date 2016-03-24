@@ -30,7 +30,18 @@
 			<div class="charge_other"><input id="inputMoney" type="number" placeholder="请输入充值金额"></div>
 		</div>
 	</div>
-	<div id="charge_pay"><a>确认充值</a></div>
+	<div id="charge_pay"><a>确认充值</a>
+		<div id="loading" class="loading-panel">
+		    <div class="point"><div class="inner"></div></div>
+		    <div class="point"><div class="inner"></div></div>
+		    <div class="point"><div class="inner"></div></div>
+		    <div class="point"><div class="inner"></div></div>
+		    <div class="point"><div class="inner"></div></div>
+		    <div class="point"><div class="inner"></div></div>
+		    <div class="point"><div class="inner"></div></div>
+		    <div class="point"><div class="inner"></div></div>
+		</div>
+	</div>
 	<script>
 		window.onload = function() {
 			var charge = document.getElementById('charge_money');
@@ -48,7 +59,8 @@
 						this.className = "active";
 					})
 				} else {
-					money[i].addEventListener('touchend', function() {
+					money[i].addEventListener('touchend', function(e) {
+						e.preventDefault();
 						for (var j = 0; j < money.length; j++) {
 							if (money[j].className == "active") {
 								money[j].className = "";

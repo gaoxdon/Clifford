@@ -549,6 +549,18 @@ a{text-decoration:none;}
 
 		}
 	}
+	.ready dt b{
+		border-color:#22ab38;
+		color: #22ab38;
+	}
+	.notready dt b{
+		border-color:#ff375a;
+		color: #ff375a;
+	}
+	.cancelready dt b{
+		border-color:#f6c500;
+		color: #f6c500;
+	}
 	p{
 		position:absolute;
 		top: 0;
@@ -558,9 +570,17 @@ a{text-decoration:none;}
 		line-height: 1rem;
 		color: $red;
 		font-size: 0.23rem;
+		display: table;
+    	height: 1rem;
 		i{
 	 	vertical-align: middle;
 	 	margin-left:0.1rem;
+	 	}
+	 	span{
+	 		color: $font2;
+	 		display: table-cell;
+    		vertical-align: middle;
+    		line-height: 0.3rem;
 	 	}
 	}
 }
