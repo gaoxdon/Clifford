@@ -629,6 +629,29 @@ a{text-decoration:none;}
 		display: block;
 	}
 }
+.rdata_imageD{
+	display:block;
+	img{
+		padding:0 1.5%;
+		width: 97%;
+	}
+}
+.lookover{
+	width:100%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding:0 0.24rem;
+	margin-top:0.24rem;
+	height:0.7rem;
+	a{
+		display: block;
+		background:$base-color;
+		line-height: 0.7rem;
+		font-size: 0.26rem;
+		color: #fff;
+		text-align: center;
+	}
+}
 .own_roomD{
 	font-size:0.24rem;
 }
