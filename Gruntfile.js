@@ -68,7 +68,8 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'src/css/wx.css': 'src/scss/wx.scss',
-                    'src/css/icon.css': 'src/scss/icon.scss'
+                    'src/css/icon.css': 'src/scss/icon.scss',
+                    'src/css/mobile.css': 'src/scss/mobile.scss'
                 },
                 options: {
                 	style: 'expanded',

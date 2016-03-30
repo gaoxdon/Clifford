@@ -50,3 +50,9 @@ $red:#ff375a;
 	-moz-border-radius: $bormun; 
 	-webkit-border-radius: $bormun; 
 }
+@mixin google-box-shadow($rgba:rgba(65, 170, 241, 0.25)){
+    box-shadow: 0 17px 20px 0 $rgba,
+                10px 0 20px 0 $rgba,
+                0 -3px 6px 0 $rgba,
+                -10px 0 20px 0 $rgba;
+}
