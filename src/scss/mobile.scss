@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import 'reset.css';
+@import 'gxd2';
+@import 'dlq2';
+
+html{
+    font-size: 50px;
+    color: $font1;
+}
+body{
+    max-width: 780px;
+    margin:0 auto;
+}
