@@ -1,56 +1,68 @@
-// proA.directive("scopetest",function(){
-// 	return {
-// 		restrict: "E",
-// 		replace: true,
-// 		scope:{
-// 			geet:"&"
-// 		},
-// 		template: "<div><input type='text' ng-model='flavomodel'>"+
-// 					"<button ng-click='geet({name:flavomodel})'>geet</button>
-// 					</div>"
-// 	}
-// });
-
-proA.directive("hello",function(){
-	return {
-		restrict: "E",
-		transclude: true,
-		replace: true,
-		templateUrl: "tpl/hello.html",
-		controller:function($scope){
-			$scope.ability = [];
-			this.addnode = function(){
-				$scope.ability.push("node");
-			}
-		},
-		link:function(scope,ele,attr){
-			ele.bind("click",function(){
-				console.log(scope.ability);
-			})
+(function(){
+	var inNav = document.getElementById("inNav");
+	var astNav = document.getElementById("listNav");
+	var functionNav = document.getElementById("functionNav");
+	var functionList = document.getElementById("functionList");
+	var searchNav = document.getElementById("searchNav");
+	var searchInput = document.getElementById("searchInput");
+	var hosLink_Han = document.getElementById("hosLink_Han");
+	var hosLink = document.getElementById("hosLink");
+	hosLink_Han.addEventListener("touchend",function(){
+		if(hosLink.className){
+			this.className= "";
+			hosLink.className = "";
+		}else{
+			this.className= "active";
+			hosLink.className = "active";
 		}
-	}
-});
-
-proA.directive("node",function(){
-	return {
-		require: "^hello",
-		link:function(scope,ele,attr,parentCtrl){
-			parentCtrl.addnode();
+	})
+	listNav.addEventListener("touchend",function(){
+		var str = inNav.className;
+		if(str.indexOf("active")==-1){
+			inNav.className = str + " active";
+			html.style.width = "100%";
+			html.style.height = "100%";
+			html.style.overflow = "hidden";
+		}else{
+			inNav.className = str.replace(" active", "");
+			html.style.width = "auto";
+			html.style.height = "auto";
+			html.style.overflow = "auto";
+			hosLink.className = "";
+			hosLink_Han.className = "";
 		}
-	}
-});
+	});
+	functionNav.addEventListener("touchend",function(){
+		var str = inNav.className;
+		if(str.indexOf("func")==-1){
+			inNav.className = str + " func";
+			html.style.width = "100%";
+			html.style.height = "100%";
+			html.style.overflow = "hidden";
+			functionList.style.zIndex = "20";
+		}else{
+			inNav.className = str.replace(" func", "");
+			html.style.width = "auto";
+			html.style.height = "auto";
+			html.style.overflow = "auto";
+			functionList.style.zIndex = "0";
+		}
+	});
+	searchNav.addEventListener("touchend",function(){
+		var str = inNav.className;
+		if(str.indexOf("search")==-1){
+			inNav.className = str + " search";
+			html.style.width = "100%";
+			html.style.height = "100%";
+			html.style.overflow = "hidden";
+			searchInput.style.zIndex = "20";
+		}else{
+			inNav.className = str.replace(" search", "");
+			html.style.width = "auto";
+			html.style.height = "auto";
+			html.style.overflow = "auto";
+			searchInput.style.zIndex = "0";
+		}
+	});
+})()
 
-window.onload = function(){
-    if(isWeiXin()){
-        var p = document.getElementsByTagName('p');
-        p[0].innerHTML = window.navigator.userAgent;
-    }
-}
-function isWeiXin(){
-    var ua = window.navigator.userAgent.toLowerCase();
-    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-        return true;
-    }else{
-        return false;
-    }
-}

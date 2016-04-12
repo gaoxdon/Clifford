@@ -66,7 +66,7 @@
 
 .icon_select {
   background-image: url("../slice/icon-select.png");
-  width: 16px;
+  width: 17px;
   height: 16px;
 }
 
@@ -118,18 +118,6 @@
   height: 116px;
 }
 
-.icon_jiaofei {
-  background-image: url("../slice/icon_jiaofei.png");
-  width: 32px;
-  height: 32px;
-}
-
-.icon_yuyue {
-  background-image: url("../slice/icon-yuyue.png");
-  width: 30px;
-  height: 30px;
-}
-
 .icon_clock {
   background-image: url("../slice/icon-clock.png");
   width: 18px;
@@ -140,12 +128,6 @@
   background-image: url("../slice/icon_tishi.png");
   width: 10px;
   height: 10px;
-}
-
-.icon_fabu {
-  background-image: url("../slice/icon_fabu.png");
-  width: 32px;
-  height: 32px;
 }
 
 .icon_nolist {
@@ -499,6 +481,90 @@
 .icon_white {
   background-image: url("../slice/icon_white.png");
   width: 6px;
+  height: 10px;
+}
+
+.icon_navicon {
+  background-image: url("../slice/navicon.png");
+  width: 23px;
+  height: 23px;
+}
+
+.icon_nav1 {
+  background-image: url("../slice/icon_nav1.png");
+  width: 17px;
+  height: 14px;
+}
+
+.icon_nav2 {
+  background-image: url("../slice/icon_nav2.png");
+  width: 17px;
+  height: 18px;
+}
+
+.icon_nav3 {
+  background-image: url("../slice/icon_nav3.png");
+  width: 17px;
+  height: 19px;
+}
+
+.icon_nav4 {
+  background-image: url("../slice/icon_nav4.png");
+  width: 19px;
+  height: 16px;
+}
+
+.icon_nav5 {
+  background-image: url("../slice/icon_nav5.png");
+  width: 18px;
+  height: 15px;
+}
+
+.icon_idept1 {
+  background-image: url("../slice/icon_idept1.png");
+  width: 18px;
+  height: 18px;
+}
+
+.icon_idept2 {
+  background-image: url("../slice/icon_idept2.png");
+  width: 18px;
+  height: 12px;
+}
+
+.icon_idept3 {
+  background-image: url("../slice/icon_idept3.png");
+  width: 18px;
+  height: 15px;
+}
+
+.icon_wulist {
+  background-image: url("../slice/icon_wulist.png");
+  width: 116px;
+  height: 116px;
+}
+
+.icon_foot01 {
+  background-image: url("../slice/icon_foot01.png");
+  width: 11px;
+  height: 14px;
+}
+
+.icon_foot02 {
+  background-image: url("../slice/icon_foot02.png");
+  width: 14px;
+  height: 10px;
+}
+
+.icon_foot03 {
+  background-image: url("../slice/icon_foot03.png");
+  width: 11px;
+  height: 10px;
+}
+
+.icon_foot04 {
+  background-image: url("../slice/icon_foot04.png");
+  width: 13px;
   height: 10px;
 }
 

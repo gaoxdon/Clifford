@@ -66,7 +66,7 @@
 #keshi_typeG {
   padding: 0 0.25rem;
   font-size: 0.26rem;
-  width: 1.75rem;
+  width: 30%;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   position: absolute;
@@ -80,7 +80,7 @@
 #keshi_typeG ul li {
   display: table;
   height: 1.1rem;
-  width: 1.25rem;
+  width: 100%;
   border-bottom: 1px solid #DBDCDC;
   text-align: center;
   position: relative;
@@ -107,7 +107,7 @@
 
 #keshi_listG {
   font-size: 0.26rem;
-  width: 4.65rem;
+  width: 70%;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   position: absolute;
@@ -419,7 +419,7 @@
 #keshi_listG .listG_ul .listG_li .listG_font .fontJJ {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 25px;
   margin-top: -6px;
 }
 #keshi_listG .listG_ul .listG_li .listG_font p {
@@ -773,6 +773,7 @@
   margin-top: 0.15rem;
 }
 .conf-add .conf-addline {
+  display: block;
   padding-left: 0.25rem;
   height: 0.75rem;
   line-height: 0.75rem;
