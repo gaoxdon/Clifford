@@ -56,3 +56,8 @@ $red:#ff375a;
                 0 -3px 6px 0 $rgba,
                 -10px 0 20px 0 $rgba;
 }
+
+@mixin icon_img($width:0,$x:0,$y:0){
+   width:$width;
+   background-position:$x $y; 
+}
