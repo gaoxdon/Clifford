@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/mobile.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <title>医院科室</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #eeedec;">
+	<div id="inNav">
+		<div class="inNav_wamp">
+			<span id="listNav" class="">
+				<b class="nav_iconb_1"></b>
+				<b class="nav_iconb_2"></b>
+				<b class="nav_iconb_3"></b>
+			</span>
+			<a class="index_icon" href=""></a>
+			<ul class="inNav_list">
+				<li id="hosLink_Han">医院介绍<i></i></li>
+				<div id="hosLink">
+					<a href="">医院介绍</a>
+					<a href="">环境设备</a>
+					<a href="">医院荣誉</a>
+					<a href="">特色服务</a>
+					<a href="">人才招聘</a>
+				</div>
+				<li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+				<li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+				<li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+				<li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+				<li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+			</ul>
+			<div id="searchNav"></div>
+			<div id="searchInput"><input id="searchInput_text" type="text" placeholder="请输入搜索的内容"><i id="searchInputCanc">搜索</i></div>
+			<div id="functionNav"></div>
+			<ul id="functionList">
+				<li>咨询<i class="icon icon_nav1"></i></li>
+				<li>咨询<i class="icon icon_nav2"></i></li>
+				<li>咨询<i class="icon icon_nav3"></i></li>
+				<li>咨询<i class="icon icon_nav4"></i></li>
+				<li>咨询<i class="icon icon_nav5"></i></li>
+			</ul>
+		</div>
+	</div>
+	<div class="keshi_pageG">
+		<div id="keshi_typeG">
+			<ul>
+				<li data-type="211" class="active"><i class="icon icon_sanjiao"></i><p>内科</p></li>
+				<li data-type="222"><i class="icon icon_sanjiao"></i><p>妇儿科</p></li>
+				<li data-type="233"><i class="icon icon_sanjiao"></i><p>外科</p></li>
+				<li data-type="244"><i class="icon icon_sanjiao"></i><p>其他<br>特色科室</p></li>
+				<li data-type="255"><i class="icon icon_sanjiao"></i><p>辅助科室</p></li>
+			</ul>
+		</div>
+		<div id="keshi_listG">
+			<ul class="listG_ul">
+				<li class="listG_li" data-type="211">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称1</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="211">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称2</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="211">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称3</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称4</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称5</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称6</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称7</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称8</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称9</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称10</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称11</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称12</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称13</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="222">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称14</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="233">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称15</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="233">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称16</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="244">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称17</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+				<li class="listG_li" data-type="255">
+					<a href="#">
+						<div class="listG_icon"><i class="icon icon_feibinke"></i></div>
+						<div class="listG_font">
+							<p>科室名称18</p>
+							<i class="icon icon_jj fontJJ"></i>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+	<script type="text/javascript" src="/static/js/jin.js"></script>
+	<script type="text/javascript" src="/static/js/iscroll.js"></script>
+	<script>
+		window.onload = function(){
+			var keshiType = new IScroll('#keshi_typeG', { mouseWheel: true, tap: true });
+			var list;
+
+			var ks = document.querySelectorAll("#keshi_typeG li");
+
+			for(var i = 0;i<ks.length;i++){
+				(function(j){
+					ks[j].addEventListener("tap",function(){
+						showkeshi(ks[j].getAttribute("data-type"));
+						for(index in ks){
+							if(ks[index].className=="active"){
+								ks[index].className="";
+							}
+						}
+						ks[j].className = "active";
+					});
+					ks[j].addEventListener("touchend",function(){
+						showkeshi(ks[j].getAttribute("data-type"));
+						for(index in ks){
+							if(ks[index].className=="active"){
+								ks[index].className="";
+							}
+						}
+						ks[j].className = "active";
+					});
+				})(i)
+			}
+			function showkeshi(type){
+				var keshi = document.querySelectorAll('.listG_li');
+				for(var i=0;i<keshi.length;i++){
+					if(keshi[i].getAttribute("data-type")!=type){
+						keshi[i].style.display = "none";
+					}else{
+						keshi[i].style.display = "block";
+					}
+				}
+				list = new IScroll('#keshi_listG', { mouseWheel: true,click: true });
+			}
+			showkeshi(ks[0].getAttribute("data-type"));
+		}
+	</script>
+</body>
+</html>

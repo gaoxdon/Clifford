@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/mobile.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <link rel="stylesheet" href="/static/css/photoswipe.css"> 
+    
+    <title></title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+</head>
+<body style="background: #F7F7F7;">
+  <div id="inNav">
+    <div class="inNav_wamp">
+      <span id="listNav" class="">
+        <b class="nav_iconb_1"></b>
+        <b class="nav_iconb_2"></b>
+        <b class="nav_iconb_3"></b>
+      </span>
+      <a class="index_icon" href=""></a>
+      <ul class="inNav_list">
+        <li id="hosLink_Han">医院介绍<i></i></li>
+        <div id="hosLink">
+          <a href="">医院介绍</a>
+          <a href="">环境设备</a>
+          <a href="">医院荣誉</a>
+          <a href="">特色服务</a>
+          <a href="">人才招聘</a>
+        </div>
+        <li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+        <li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+        <li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+        <li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+        <li><a href="">医院介绍</a><i class="icon icon_jj"></i></li>
+      </ul>
+      <div id="searchNav"></div>
+      <div id="searchInput"><input id="searchInput_text" type="text" placeholder="请输入搜索的内容"><i id="searchInputCanc">搜索</i></div>
+      <div id="functionNav"></div>
+      <ul id="functionList">
+        <li>咨询<i class="icon icon_nav1"></i></li>
+        <li>咨询<i class="icon icon_nav2"></i></li>
+        <li>咨询<i class="icon icon_nav3"></i></li>
+        <li>咨询<i class="icon icon_nav4"></i></li>
+        <li>咨询<i class="icon icon_nav5"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="m_contentD">
+      <div class="content_honorD content_environD">
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+           
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+            
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+           
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+            
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+           
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+            
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+           
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+           
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+           
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+            
+        </figure>
+        <figure>
+           <a href="/static/images/mobile/honor1.jpg" data-size="800x600"><img src="/static/images/mobile/honor1.jpg" /></a>
+           
+        </figure>
+
+      </div> 
+               
+    </div>
+   <!--  放大的盒子开始 -->
+   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+          <!--显示当前，以及前后各一张，可以用作延迟加载 -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+          <!-- 页面其他按钮 -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+              <!-- 头部按钮 -->
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <!-- 此处包含下载，放大，全屏按钮，在移动端用处不大 -->
+            <!--  <button class="pswp__button pswp__button--share" title="Share"></button>
+
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button> -->
+            <!--  加载 -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div> 
+          </div>
+          <!--  左右按钮 -->
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+          <!--   图片标题 -->
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 放大的盒子结束 -->
+</body>
+    <script type="text/javascript" src="/static/js/photoswipe.min.js"></script> 
+    <script type="text/javascript" src="/static/js/photoswipe-ui-default.min.js"></script>
+     <script type="text/javascript" src="/static/js/img-page.js"></script>
+     <script type="text/javascript" src="/static/js/jin.js"></script>
+</html>

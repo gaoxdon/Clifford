@@ -39,48 +39,55 @@
 	   				<i></i>
 	   				<b></b>
 	   			</div>
+	   			<style type="text/css">
+	   			/*.scheduling_jtdayD{overflow: hidden; }*/
+			   			</style>
 	   			<div id="wrapper">
 		   			<div id="scroller">
-			   			<div class="scheduling_jtdayD">
-			   				<div class="scheduling_dataD">
-			   						<a href="#" title=""><b><i class="icon icon_time_bigD"></i>2016-02-23</b> <p><i class="icon icon_data_bigD"></i>更多日期</p></a>
-			   					</div>
-			   					<ul>
-			   					<li>
-			   						<a href="" title=""><b>08:45</b><p><i class="icon icon_next_bigD"></i></p></a>
-			   					</li>
-			   					<li>
-			   						<b>09:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li>
-			   						<b>10:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li><a href="" title=""><b>11:45</b><p><i class="icon icon_next_bigD"></i></p></a>
-			   					</li>
-			   					<li><a href="" title=""><b>14:45</b><p><i class="icon icon_next_bigD"> </i></p></a></li>
-			   					<li class="on">
-			   						<b>11:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li class="on">
-			   						<b>12:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li class="on">
-			   						<b>13:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li class="on">
-			   						<b>14:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li class="on">
-			   						<b>15:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li class="on">
-			   						<b>16:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					<li class="on">
-			   						<b>17:45</b><p class="on">已约满<i></i></p>
-			   					</li>
-			   					
-			   				</ul>
+			   			<div class="scheduling_jtdayD" id="scheduling_jtdayD">
+				   			<div class="scheduling_boxD" id="scheduling_boxD">
+				   				<div class="scheduling_dataD">
+				   						<a href="#" title=""><b><i class="icon icon_time_bigD"></i>2016-02-23</b> <p><i class="icon icon_data_bigD"></i>更多日期</p></a>
+				   					</div>
+				   					<ul>
+				   					<li>
+				   						<a href="" title=""><b>08:45</b><p><i class="icon icon_next_bigD"></i></p></a>
+				   					</li> 
+				   					<li>
+				   						<b>09:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li>
+				   						<b>10:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li><a href="" title=""><b>11:45</b><p><i class="icon icon_next_bigD"></i></p></a>
+				   					</li>
+				   					<li><a href="" title=""><b>14:45</b><p><i class="icon icon_next_bigD"> </i></p></a></li>
+				   					<li class="on">
+				   						<b>11:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li class="on">
+				   						<b>12:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li class="on">
+				   						<b>13:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li class="on">
+				   						<b>14:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li class="on">
+				   						<b>15:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li class="on">
+				   						<b>16:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li class="on">
+				   						<b>17:45</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   					<li class="on">
+				   						<b>last</b><p class="on">已约满<i></i></p>
+				   					</li>
+				   				</ul>
+				   			</div>
 			   			</div>
 			   			<div class="paiban_jtdayD">
 			   				<div class=" paiban_titD">
@@ -132,18 +139,22 @@
 <script type="text/javascript">
 	//var num=0;
 	window.onload=function(){
-		var lengths=$(".scheduling_jtdayD li").length;
-		var heights=0.74*lengths+1.24+"rem"
-		//alert(heights);
-		$("#scroller").css("height",heights);
+		
+		//var lengths=$(".scheduling_jtdayD li").length;
+		//var heights=0.74*lengths+1.24+"rem";
+		var heights2=$("#wrapper").height();
+		//alert(heights2);
+		$("#scheduling_jtdayD").css("height",heights2);
+		//$("#scheduling_boxD").css("height",heights);
 		function listona(list){
 	    	$('.scheduling_titleD>ul>li').removeClass('on'); 
 	        $('.scheduling_titleD>ul>li').eq(list).addClass('on');
     	}
+    	var scheduling_jtdayD = new IScroll('#scheduling_jtdayD', { mouseWheel: true, tap: true });
 		myScroll = new IScroll('#wrapper', {
 			click: true,
             scrollX: true,
-            scrollY: true,
+            scrollY: false,
             momentum: false,
 			snap: true,
 			bounce:false
