@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
     <title>肿瘤科</title>
     <script>
-        var html = document.querySelector("html");
+    function reRem(){
+    	var html = document.querySelector("html");
         var rem,oW = html.offsetWidth;
         rem = oW>=640?100:oW/6.4;
         html.style.fontSize = rem + "px";
@@ -22,6 +23,16 @@
            html.style.fontSize = rem + "px";
         }
         html.removeChild(div);
+    }
+	reRem();
+
+    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", orient);
+    function orient() {
+		if(window.orientation==90||window.orientation==-90){
+    		alert("为了提升展示效果，请将手机竖屏。")
+    	}
+    	setTimeout(reRem,400);
+    }
     </script>
 </head>
 

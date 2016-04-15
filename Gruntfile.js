@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 			},
 			buildall:{
 				options:{
-					mangle:false,//混淆变量
+					mangle:true,//混淆变量
 					preserveComments: 'some',//去除部分注释
 					// compress:{  //去除console
 					// 	drop_console:true

@@ -2478,6 +2478,7 @@ a {
   float: left;
 }
 .own_moneyD a {
+  display: block;
   color: #9E9F9F;
 }
 .own_moneyD i {
