@@ -710,6 +710,7 @@ a{text-decoration:none;}
 	}
 	a{
 		color:$font2;
+		display: block;
 	}
 	i{
 		width: 1px;
@@ -794,5 +795,69 @@ a{text-decoration:none;}
 	i{
 		display: block;
 		margin:0 auto;
+	}
+}
+.Recharge_recordD{
+	font-size:0.25rem;
+}
+.record_moneyD{
+	dl{
+		overflow: hidden;
+		height: 0.76rem;
+		line-height: 0.76rem;
+		padding:0 0.24rem;
+		background:#fff;
+		dt{
+			width: 4.5rem;
+			float: left;
+			color: $font2;
+		}
+		dd{
+			width: 1.2rem;
+			float: right;
+			text-align: right;
+			a{
+				display: block;
+				color: $base-color;
+			}
+		}
+	}
+}
+.record_listD{
+	margin-top:0.16rem;
+	padding:0 0.24rem;
+	background:#fff;
+	dl{
+		padding:0.18rem 0;
+		border-bottom:1px solid $font4;
+		overflow: hidden;
+		position:relative;
+		height: 100%;
+		dt{
+			width: 4.5rem;
+			position:relative;
+			b{
+				display: block;
+				color: $font1;
+				padding-bottom:0.1rem;
+			}
+			span{
+				color: $font2;
+				font-size: 0.23rem;
+			}
+		}
+		dd{
+			color: $font2;
+			width: 1.2rem;
+			text-align: right;
+			position:absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -0.13rem;
+			line-height: 0.26rem;
+		}
+	}
+	dl:last-child{
+		border-bottom:0px;
 	}
 }
