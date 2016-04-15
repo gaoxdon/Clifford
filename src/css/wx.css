@@ -2482,6 +2482,7 @@ a {
 .own_moneyD a {
   display: block;
   color: #9E9F9F;
+  display: block;
 }
 .own_moneyD i {
   width: 1px;
@@ -2565,6 +2566,71 @@ a {
 .logoD i {
   display: block;
   margin: 0 auto;
+}
+
+.Recharge_recordD {
+  font-size: 0.25rem;
+}
+
+.record_moneyD dl {
+  overflow: hidden;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  padding: 0 0.24rem;
+  background: #fff;
+}
+.record_moneyD dl dt {
+  width: 4.5rem;
+  float: left;
+  color: #9E9F9F;
+}
+.record_moneyD dl dd {
+  width: 1.2rem;
+  float: right;
+  text-align: right;
+}
+.record_moneyD dl dd a {
+  display: block;
+  color: #00B1B5;
+}
+
+.record_listD {
+  margin-top: 0.16rem;
+  padding: 0 0.24rem;
+  background: #fff;
+}
+.record_listD dl {
+  padding: 0.18rem 0;
+  border-bottom: 1px solid #DBDCDC;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.record_listD dl dt {
+  width: 4.5rem;
+  position: relative;
+}
+.record_listD dl dt b {
+  display: block;
+  color: #595757;
+  padding-bottom: 0.1rem;
+}
+.record_listD dl dt span {
+  color: #9E9F9F;
+  font-size: 0.23rem;
+}
+.record_listD dl dd {
+  color: #9E9F9F;
+  width: 1.2rem;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -0.13rem;
+  line-height: 0.26rem;
+}
+.record_listD dl:last-child {
+  border-bottom: 0px;
 }
 
 html {
