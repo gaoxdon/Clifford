@@ -206,90 +206,30 @@
 			<div class="paiban_Wamp">
 				<div class="paiban_slide paiban_slide2">
 					<div>
-						<a href="keshi.html" style="display: block">
-							<div class="paiban_item">
-							<img src="/static/images/doctor.jpg">
-								<div class="paiban_info">
-									<h3>医生名称</h3>
-									<h4>副主任医师</h4>
-									<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
-								</div>
-								<div class="paiban_less"><span>号</span><span>排</span></div>
-								<i class="icon icon_jj"></i>
-							</div>
-						</a>
 					</div>
 				</div>
 			</div>
 			<div class="paiban_Wamp">
 				<div class="paiban_slide paiban_slide3">
 					<div>
-						<a href="keshi.html" style="display: block">
-							<div class="paiban_item">
-							<img src="/static/images/doctor.jpg">
-								<div class="paiban_info">
-									<h3>医生名称</h3>
-									<h4>副主任医师</h4>
-									<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
-								</div>
-								<div class="paiban_less"><span>号</span><span>排</span></div>
-								<i class="icon icon_jj"></i>
-							</div>
-						</a>
 					</div>
 				</div>
 			</div>
 			<div class="paiban_Wamp">
 				<div class="paiban_slide paiban_slide4">
 					<div>
-						<a href="keshi.html" style="display: block">
-							<div class="paiban_item">
-							<img src="/static/images/doctor.jpg">
-								<div class="paiban_info">
-									<h3>医生名称</h3>
-									<h4>副主任医师</h4>
-									<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
-								</div>
-								<div class="paiban_less"><span>号</span><span>排</span></div>
-								<i class="icon icon_jj"></i>
-							</div>
-						</a>
 					</div>
 				</div>
 			</div>
 			<div class="paiban_Wamp">
 				<div class="paiban_slide paiban_slide5">
 					<div>
-						<a href="keshi.html" style="display: block">
-							<div class="paiban_item">
-							<img src="/static/images/doctor.jpg">
-								<div class="paiban_info">
-									<h3>医生名称</h3>
-									<h4>副主任医师</h4>
-									<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
-								</div>
-								<div class="paiban_less"><span>号</span><span>排</span></div>
-								<i class="icon icon_jj"></i>
-							</div>
-						</a>
 					</div>
 				</div>
 			</div>
 			<div class="paiban_Wamp">
 				<div class="paiban_slide paiban_slide6">
 					<div>
-						<a href="keshi.html" style="display: block">
-							<div class="paiban_item">
-							<img src="/static/images/doctor.jpg">
-								<div class="paiban_info">
-									<h3>医生名称</h3>
-									<h4>副主任医师</h4>
-									<p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p>
-								</div>
-								<div class="paiban_less"><span>号</span><span>排</span></div>
-								<i class="icon icon_jj"></i>
-							</div>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -304,11 +244,15 @@
 			var timelist = time.getElementsByTagName("span");
 			var data = document.getElementById("paiban_time");
 			var doctorlist = document.querySelectorAll('.paiban_slide');
+			var scroll = [];
 			for(var i=0;i<doctorlist.length;i++){
-				new IScroll(doctorlist[i], { 
+				scroll[i] = new IScroll(doctorlist[i], { 
 					mouseWheel: true
-	             });
+	            });
 			}
+			var aL = parseInt(scroll[0].maxScrollY / doctorlist[0].getElementsByTagName("a").length);
+			
+			console.log(scroll[0]);
 			var keshiType = new IScroll("#paiban_doctor", { 
             	click: true,
             	scrollX: true,
@@ -317,14 +261,73 @@
 				snap: true,
 				bounce:false
              });
-			keshiType.on('scrollEnd', function(){
+
+
+			keshiType.on('scrollEnd', init);
+			function init(){
+				var pageX = keshiType.currentPage.pageX;
 				for(k in timelist){
 					if(timelist[k].className == "active")
 					timelist[k].className = "";
 				}
-				data.innerHTML = timelist[keshiType.currentPage.pageX].getAttribute("data-da");
-				timelist[keshiType.currentPage.pageX].className = "active";
-			});
+				data.innerHTML = timelist[pageX].getAttribute("data-da");
+				timelist[pageX].className = "active";
+				if(pageX!=0){
+					doctorlist[pageX].getElementsByTagName('div')[0].innerHTML = '<a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a><a href="keshi.html" style="display: block"><div class="paiban_item"><img src="/static/images/doctor.jpg"><div class="paiban_info"><h3>医生名称</h3><h4>副主任医师</h4><p>擅长：治疗食管癌、胃肠癌，肝癌、胰腺癌，前列腺癌、睾丸肿瘤……</p></div><div class="paiban_less"><span>号</span><span>排</span></div><i class="icon icon_jj"></i></div></a>';
+
+
+					scroll[pageX].refresh();
+					setTimeout(function(){
+						//scroll[0].absStartY = -200;
+						scroll[pageX].maxScrollY = aL * 9;
+						//scroll[0].startY = -200;
+					},2000)
+					// keshiType.destroy();
+					// keshiType = null;
+					// console.log(1);
+					// scroll[pageX].destroy();
+					// scroll[pageX] = null;
+					// scroll[pageX] = new IScroll(doctorlist[pageX], { 
+					// 	mouseWheel: true
+		   //          });
+					// keshiType = new IScroll("#paiban_doctor", {
+					// 	click: true,
+					// 	scrollX: true,
+					// 	scrollY: false,
+					// 	momentum: false,
+					// 	snap: true,
+					// 	bounce: false
+					// });
+					//keshiType.goToPage(pageX, 0, 500);
+					//keshiType.on('scrollEnd', init);
+
+					//setTimeout(function(){scroll[pageX].maxScrollY = -497;},20);
+
+
+					// console.log(scroll[0],scroll[0]);
+					// for (var i = 0; i < doctorlist.length; i++) {
+					// 	scroll[i].destroy();
+					// 	scroll[i] = null;
+					// }
+					// setTimeout(function(){
+					// 	for (var i = 0; i < doctorlist.length; i++) {
+					// 		scroll[i] = new IScroll(doctorlist[i], {
+					// 			mouseWheel: true
+					// 		});
+					// 	}
+					// 	keshiType = new IScroll("#paiban_doctor", {
+					// 		click: true,
+					// 		scrollX: true,
+					// 		scrollY: false,
+					// 		momentum: false,
+					// 		snap: true,
+					// 		bounce: false
+					// 	});
+					// 	keshiType.goToPage(pageX, 0, 500);
+					// 	keshiType.on('scrollEnd', init);
+					// },20);
+				}
+			}
 			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 			for(var i=0;i<timelist.length;i++){
 				(function(j){
