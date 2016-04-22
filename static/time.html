@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/wx.css"/>
+    <link rel="stylesheet" href="/static/css/icon/icon.sprite.css"/>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <title>充值列表</title>
+    <script>
+        var html = document.querySelector("html");
+        var rem,oW = html.offsetWidth;
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+    </script>
+    
+</head>
+<body>
+   <div class="Recharge_recordD">
+        <div class="record_moneyD">
+            <dl>
+                <dt>余额：13.50</dt>
+                <dd><a href="#" id="shaixuan">筛选</a></dd>
+            </dl>
+        </div>
+        <div class="record_listD">
+            <dl>
+                <dt><b>门诊充值</b><span>2016-3-22</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            <dl>
+                <dt><b>门诊充值</b><span>2016-4-02</span></dt>
+                <dd>＋135.76</dd>
+            </dl>
+            
+        </div>
+        <div class="recharge_timeD">
+            <div class="rechtime_boxD">
+                <p>开始时间<input id="begintime" type="text" value=""></input> </p>
+                <p>结束时间<input id="endtime"type="text" value=""></input></p>
+                <a href="#" id="sumb">确定</a>
+            </div>
+        </div>
+        <div id="datePlugin"></div>
+   </div>
+   <script type="text/javascript">
+   //日期验证
+    $(function(){
+        $('#begintime').date();
+        $('#endtime').date();
+    });
+   </script>
+   <script type="text/javascript">
+   var num=1;
+   $("#shaixuan").click(function(){
+        if(num){
+            $(".recharge_timeD").css('display', 'block');
+            $(this).html("取消");
+            num=0;
+        }else{
+            $(".recharge_timeD").css('display', 'none');
+            $(this).html("筛选");
+            num=1;
+        }
+   });
+     $("#sumb").click(function(){
+        var onname=$("#sumb").attr("class");
+        if(onname){
+           console.log("ajaxlian");
+       }else{
+           console.log("feion");
+       }
+         
+    });
+      
+        
+   </script>
+   <script type="text/javascript" src="/static/js/iscroll.js"></script>
+    <script type="text/javascript" src="/static/js/date.js"></script>
+</body>
+</html>
